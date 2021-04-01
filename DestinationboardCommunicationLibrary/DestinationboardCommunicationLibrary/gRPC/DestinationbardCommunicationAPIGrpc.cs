@@ -58,6 +58,14 @@ public static partial class DestinationbardCommunicationAPI
   static readonly grpc::Marshaller<global::RegistActionsReply> __Marshaller_RegistActionsReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionsReply.Parser));
   static readonly grpc::Marshaller<global::RegistDestinationsRequest> __Marshaller_RegistDestinationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistDestinationsRequest.Parser));
   static readonly grpc::Marshaller<global::RegistDestinationsReply> __Marshaller_RegistDestinationsReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistDestinationsReply.Parser));
+  static readonly grpc::Marshaller<global::ActionPlanTableRequest> __Marshaller_ActionPlanTableRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionPlanTableRequest.Parser));
+  static readonly grpc::Marshaller<global::ActionPlanTableReply> __Marshaller_ActionPlanTableReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionPlanTableReply.Parser));
+  static readonly grpc::Marshaller<global::StaffMasterRequest> __Marshaller_StaffMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::StaffMasterRequest.Parser));
+  static readonly grpc::Marshaller<global::StaffMasterReply> __Marshaller_StaffMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::StaffMasterReply.Parser));
+  static readonly grpc::Marshaller<global::ActionMasterRequest> __Marshaller_ActionMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionMasterRequest.Parser));
+  static readonly grpc::Marshaller<global::ActionMasterReply> __Marshaller_ActionMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionMasterReply.Parser));
+  static readonly grpc::Marshaller<global::DestinationMasterRequest> __Marshaller_DestinationMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DestinationMasterRequest.Parser));
+  static readonly grpc::Marshaller<global::DestinationMasterReply> __Marshaller_DestinationMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DestinationMasterReply.Parser));
 
   static readonly grpc::Method<global::RegstStaffRequest, global::RegstStaffReply> __Method_RegstStaff = new grpc::Method<global::RegstStaffRequest, global::RegstStaffReply>(
       grpc::MethodType.Unary,
@@ -107,6 +115,34 @@ public static partial class DestinationbardCommunicationAPI
       "RegistDestinations",
       __Marshaller_RegistDestinationsRequest,
       __Marshaller_RegistDestinationsReply);
+
+  static readonly grpc::Method<global::ActionPlanTableRequest, global::ActionPlanTableReply> __Method_ActionPlanTable = new grpc::Method<global::ActionPlanTableRequest, global::ActionPlanTableReply>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "ActionPlanTable",
+      __Marshaller_ActionPlanTableRequest,
+      __Marshaller_ActionPlanTableReply);
+
+  static readonly grpc::Method<global::StaffMasterRequest, global::StaffMasterReply> __Method_StaffMaster = new grpc::Method<global::StaffMasterRequest, global::StaffMasterReply>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "StaffMaster",
+      __Marshaller_StaffMasterRequest,
+      __Marshaller_StaffMasterReply);
+
+  static readonly grpc::Method<global::ActionMasterRequest, global::ActionMasterReply> __Method_ActionMaster = new grpc::Method<global::ActionMasterRequest, global::ActionMasterReply>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "ActionMaster",
+      __Marshaller_ActionMasterRequest,
+      __Marshaller_ActionMasterReply);
+
+  static readonly grpc::Method<global::DestinationMasterRequest, global::DestinationMasterReply> __Method_DestinationMaster = new grpc::Method<global::DestinationMasterRequest, global::DestinationMasterReply>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "DestinationMaster",
+      __Marshaller_DestinationMasterRequest,
+      __Marshaller_DestinationMasterReply);
 
   /// <summary>Service descriptor</summary>
   public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -195,6 +231,50 @@ public static partial class DestinationbardCommunicationAPI
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
 
+    /// <summary>
+    /// 現在の行動予定一覧表
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public virtual global::System.Threading.Tasks.Task<global::ActionPlanTableReply> ActionPlanTable(global::ActionPlanTableRequest request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public virtual global::System.Threading.Tasks.Task<global::StaffMasterReply> StaffMaster(global::StaffMasterRequest request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    /// <summary>
+    /// 行動マスター
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public virtual global::System.Threading.Tasks.Task<global::ActionMasterReply> ActionMaster(global::ActionMasterRequest request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    /// <summary>
+    /// 行先マスター
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public virtual global::System.Threading.Tasks.Task<global::DestinationMasterReply> DestinationMaster(global::DestinationMasterRequest request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
   }
 
   /// <summary>Creates service definition that can be registered with a server</summary>
@@ -208,7 +288,11 @@ public static partial class DestinationbardCommunicationAPI
         .AddMethod(__Method_GetDestinations, serviceImpl.GetDestinations)
         .AddMethod(__Method_RegistActionPlan, serviceImpl.RegistActionPlan)
         .AddMethod(__Method_RegistActions, serviceImpl.RegistActions)
-        .AddMethod(__Method_RegistDestinations, serviceImpl.RegistDestinations).Build();
+        .AddMethod(__Method_RegistDestinations, serviceImpl.RegistDestinations)
+        .AddMethod(__Method_ActionPlanTable, serviceImpl.ActionPlanTable)
+        .AddMethod(__Method_StaffMaster, serviceImpl.StaffMaster)
+        .AddMethod(__Method_ActionMaster, serviceImpl.ActionMaster)
+        .AddMethod(__Method_DestinationMaster, serviceImpl.DestinationMaster).Build();
   }
 
   /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -224,6 +308,10 @@ public static partial class DestinationbardCommunicationAPI
     serviceBinder.AddMethod(__Method_RegistActionPlan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionPlanRequest, global::RegistActionPlanReply>(serviceImpl.RegistActionPlan));
     serviceBinder.AddMethod(__Method_RegistActions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionsRequest, global::RegistActionsReply>(serviceImpl.RegistActions));
     serviceBinder.AddMethod(__Method_RegistDestinations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistDestinationsRequest, global::RegistDestinationsReply>(serviceImpl.RegistDestinations));
+    serviceBinder.AddMethod(__Method_ActionPlanTable, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ActionPlanTableRequest, global::ActionPlanTableReply>(serviceImpl.ActionPlanTable));
+    serviceBinder.AddMethod(__Method_StaffMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::StaffMasterRequest, global::StaffMasterReply>(serviceImpl.StaffMaster));
+    serviceBinder.AddMethod(__Method_ActionMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ActionMasterRequest, global::ActionMasterReply>(serviceImpl.ActionMaster));
+    serviceBinder.AddMethod(__Method_DestinationMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DestinationMasterRequest, global::DestinationMasterReply>(serviceImpl.DestinationMaster));
   }
 
 }
