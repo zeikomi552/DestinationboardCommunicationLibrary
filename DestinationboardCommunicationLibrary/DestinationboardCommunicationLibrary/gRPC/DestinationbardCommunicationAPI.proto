@@ -1,0 +1,120 @@
+﻿syntax = "proto3";
+
+// 行先ボード通信API
+service DestinationbardCommunicationAPI{
+
+	// スタッフ情報の登録
+	rpc RegstStaff (RegstStaffRequest) returns(RegstStaffReply) {}
+
+	// スタッフ情報の削除
+	rpc DeleteStaff (DeleteStaffRequest) returns(DeleteStaffReply) {}
+
+	// 行動一覧の取得
+	rpc GetActions (GetActionsRequest) returns(GetActionsReply) {}
+
+	// 行先一覧の取得
+	rpc GetDestinations (GetDestinationsRequest) returns(GetDestinationsReply) {}
+
+	// 行動予定の登録
+	rpc RegistActionPlan (RegistActionPlanRequest) returns(RegistActionPlanReply) {}
+
+	// 行動一覧の更新
+	rpc RegistActions (RegistActionsRequest) returns(RegistActionsReply) {}
+
+	// 行先一覧の更新
+	rpc RegistDestinations (RegistDestinationsRequest) returns(RegistDestinationsReply) {}
+
+}
+
+message IActionPlanTable
+{
+	string StaffID = 1;
+	string StaffName = 2;
+	string ActionID = 3;
+	string ActionName = 4;
+	string DestinationID = 5;
+	string DestinationName = 6;
+	string FromTime = 7;
+	string ToTime = 8;
+	string Memo = 9;
+
+}
+
+message IStaffMaster
+{
+	string StaffID = 1;
+	string StaffName = 2;
+	bool Display = 3;
+	string CreateDate = 4;
+	string CreateUser = 5;
+
+}
+
+message IActionMaster
+{
+	string ActionID = 1;
+	string ActionName = 2;
+	string CreateDate = 3;
+	string CreateUser = 4;
+	string UpdateDate = 5;
+	string UpdateUser = 6;
+
+}
+
+message IDestinationMaster
+{
+	string DestinationID = 1;
+	string DestinationName = 2;
+	string ActionID = 3;
+	string CreateDate = 4;
+	string CreateUser = 5;
+	string UpdateDate = 6;
+	string UpdateUser = 7;
+
+}
+
+message RegstStaffRequest {
+	string UserName = 1;
+	repeated IStaffMaster StaffInfoList = 2;
+}
+message RegstStaffReply {
+	int32 ErrorCode = 1;
+}
+message DeleteStaffRequest {
+	string UserName = 1;
+	IStaffMaster StaffInfo = 2;
+}
+message DeleteStaffReply {
+	int32 ErrorCode = 1;
+}
+message GetActionsRequest {
+	string UserName = 1;
+}
+message GetActionsReply {
+	int32 ErrorCode = 1;
+	IActionMaster ActionList = 2;
+}
+message GetDestinationsRequest {
+	string UserName = 1;
+}
+message GetDestinationsReply {
+	int32 ErrorCode = 1;
+}
+message RegistActionPlanRequest {
+	string UserName = 1;
+}
+message RegistActionPlanReply {
+	int32 ErrorCode = 1;
+}
+message RegistActionsRequest {
+	string UserName = 1;
+}
+message RegistActionsReply {
+	int32 ErrorCode = 1;
+}
+message RegistDestinationsRequest {
+	string UserName = 1;
+}
+message RegistDestinationsReply {
+	int32 ErrorCode = 1;
+}
