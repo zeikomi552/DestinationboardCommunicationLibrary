@@ -26,7 +26,7 @@ service DestinationbardCommunicationAPI{
 
 }
 
-message IActionPlanTable
+message ActionPlanTableMessage
 {
 	string StaffID = 1;
 	string StaffName = 2;
@@ -40,7 +40,7 @@ message IActionPlanTable
 
 }
 
-message IStaffMaster
+message StaffMasterMessage
 {
 	string StaffID = 1;
 	string StaffName = 2;
@@ -50,7 +50,7 @@ message IStaffMaster
 
 }
 
-message IActionMaster
+message ActionMasterMessage
 {
 	string ActionID = 1;
 	string ActionName = 2;
@@ -61,7 +61,7 @@ message IActionMaster
 
 }
 
-message IDestinationMaster
+message DestinationMasterMessage
 {
 	string DestinationID = 1;
 	string DestinationName = 2;
@@ -75,14 +75,14 @@ message IDestinationMaster
 
 message RegstStaffRequest {
 	string UserName = 1;
-	repeated IStaffMaster StaffInfoList = 2;
+	repeated StaffMasterMessage StaffInfoList = 2;
 }
 message RegstStaffReply {
 	int32 ErrorCode = 1;
 }
 message DeleteStaffRequest {
 	string UserName = 1;
-	IStaffMaster StaffInfo = 2;
+	StaffMasterMessage StaffInfo = 2;
 }
 message DeleteStaffReply {
 	int32 ErrorCode = 1;
@@ -92,7 +92,7 @@ message GetActionsRequest {
 }
 message GetActionsReply {
 	int32 ErrorCode = 1;
-	IActionMaster ActionList = 2;
+	StaffMasterMessage ActionList = 2;
 }
 message GetDestinationsRequest {
 	string UserName = 1;

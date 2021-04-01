@@ -23,53 +23,54 @@ public static partial class DestinationbardCommunicationAPIReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "CipnUlBDL0Rlc3RpbmF0aW9uYmFyZENvbW11bmljYXRpb25BUEkucHJvdG8i",
-          "vAEKEElBY3Rpb25QbGFuVGFibGUSDwoHU3RhZmZJRBgBIAEoCRIRCglTdGFm",
-          "Zk5hbWUYAiABKAkSEAoIQWN0aW9uSUQYAyABKAkSEgoKQWN0aW9uTmFtZRgE",
-          "IAEoCRIVCg1EZXN0aW5hdGlvbklEGAUgASgJEhcKD0Rlc3RpbmF0aW9uTmFt",
-          "ZRgGIAEoCRIQCghGcm9tVGltZRgHIAEoCRIOCgZUb1RpbWUYCCABKAkSDAoE",
-          "TWVtbxgJIAEoCSJrCgxJU3RhZmZNYXN0ZXISDwoHU3RhZmZJRBgBIAEoCRIR",
-          "CglTdGFmZk5hbWUYAiABKAkSDwoHRGlzcGxheRgDIAEoCBISCgpDcmVhdGVE",
-          "YXRlGAQgASgJEhIKCkNyZWF0ZVVzZXIYBSABKAkihQEKDUlBY3Rpb25NYXN0",
-          "ZXISEAoIQWN0aW9uSUQYASABKAkSEgoKQWN0aW9uTmFtZRgCIAEoCRISCgpD",
-          "cmVhdGVEYXRlGAMgASgJEhIKCkNyZWF0ZVVzZXIYBCABKAkSEgoKVXBkYXRl",
-          "RGF0ZRgFIAEoCRISCgpVcGRhdGVVc2VyGAYgASgJIqYBChJJRGVzdGluYXRp",
-          "b25NYXN0ZXISFQoNRGVzdGluYXRpb25JRBgBIAEoCRIXCg9EZXN0aW5hdGlv",
-          "bk5hbWUYAiABKAkSEAoIQWN0aW9uSUQYAyABKAkSEgoKQ3JlYXRlRGF0ZRgE",
-          "IAEoCRISCgpDcmVhdGVVc2VyGAUgASgJEhIKClVwZGF0ZURhdGUYBiABKAkS",
-          "EgoKVXBkYXRlVXNlchgHIAEoCSJLChFSZWdzdFN0YWZmUmVxdWVzdBIQCghV",
-          "c2VyTmFtZRgBIAEoCRIkCg1TdGFmZkluZm9MaXN0GAIgAygLMg0uSVN0YWZm",
-          "TWFzdGVyIiQKD1JlZ3N0U3RhZmZSZXBseRIRCglFcnJvckNvZGUYASABKAUi",
-          "SAoSRGVsZXRlU3RhZmZSZXF1ZXN0EhAKCFVzZXJOYW1lGAEgASgJEiAKCVN0",
-          "YWZmSW5mbxgCIAEoCzINLklTdGFmZk1hc3RlciIlChBEZWxldGVTdGFmZlJl",
-          "cGx5EhEKCUVycm9yQ29kZRgBIAEoBSIlChFHZXRBY3Rpb25zUmVxdWVzdBIQ",
-          "CghVc2VyTmFtZRgBIAEoCSJICg9HZXRBY3Rpb25zUmVwbHkSEQoJRXJyb3JD",
-          "b2RlGAEgASgFEiIKCkFjdGlvbkxpc3QYAiABKAsyDi5JQWN0aW9uTWFzdGVy",
-          "IioKFkdldERlc3RpbmF0aW9uc1JlcXVlc3QSEAoIVXNlck5hbWUYASABKAki",
-          "KQoUR2V0RGVzdGluYXRpb25zUmVwbHkSEQoJRXJyb3JDb2RlGAEgASgFIisK",
-          "F1JlZ2lzdEFjdGlvblBsYW5SZXF1ZXN0EhAKCFVzZXJOYW1lGAEgASgJIioK",
-          "FVJlZ2lzdEFjdGlvblBsYW5SZXBseRIRCglFcnJvckNvZGUYASABKAUiKAoU",
-          "UmVnaXN0QWN0aW9uc1JlcXVlc3QSEAoIVXNlck5hbWUYASABKAkiJwoSUmVn",
-          "aXN0QWN0aW9uc1JlcGx5EhEKCUVycm9yQ29kZRgBIAEoBSItChlSZWdpc3RE",
-          "ZXN0aW5hdGlvbnNSZXF1ZXN0EhAKCFVzZXJOYW1lGAEgASgJIiwKF1JlZ2lz",
-          "dERlc3RpbmF0aW9uc1JlcGx5EhEKCUVycm9yQ29kZRgBIAEoBTLgAwofRGVz",
-          "dGluYXRpb25iYXJkQ29tbXVuaWNhdGlvbkFQSRI0CgpSZWdzdFN0YWZmEhIu",
-          "UmVnc3RTdGFmZlJlcXVlc3QaEC5SZWdzdFN0YWZmUmVwbHkiABI3CgtEZWxl",
-          "dGVTdGFmZhITLkRlbGV0ZVN0YWZmUmVxdWVzdBoRLkRlbGV0ZVN0YWZmUmVw",
-          "bHkiABI0CgpHZXRBY3Rpb25zEhIuR2V0QWN0aW9uc1JlcXVlc3QaEC5HZXRB",
-          "Y3Rpb25zUmVwbHkiABJDCg9HZXREZXN0aW5hdGlvbnMSFy5HZXREZXN0aW5h",
-          "dGlvbnNSZXF1ZXN0GhUuR2V0RGVzdGluYXRpb25zUmVwbHkiABJGChBSZWdp",
-          "c3RBY3Rpb25QbGFuEhguUmVnaXN0QWN0aW9uUGxhblJlcXVlc3QaFi5SZWdp",
-          "c3RBY3Rpb25QbGFuUmVwbHkiABI9Cg1SZWdpc3RBY3Rpb25zEhUuUmVnaXN0",
-          "QWN0aW9uc1JlcXVlc3QaEy5SZWdpc3RBY3Rpb25zUmVwbHkiABJMChJSZWdp",
-          "c3REZXN0aW5hdGlvbnMSGi5SZWdpc3REZXN0aW5hdGlvbnNSZXF1ZXN0Ghgu",
-          "UmVnaXN0RGVzdGluYXRpb25zUmVwbHkiAGIGcHJvdG8z"));
+          "wgEKFkFjdGlvblBsYW5UYWJsZU1lc3NhZ2USDwoHU3RhZmZJRBgBIAEoCRIR",
+          "CglTdGFmZk5hbWUYAiABKAkSEAoIQWN0aW9uSUQYAyABKAkSEgoKQWN0aW9u",
+          "TmFtZRgEIAEoCRIVCg1EZXN0aW5hdGlvbklEGAUgASgJEhcKD0Rlc3RpbmF0",
+          "aW9uTmFtZRgGIAEoCRIQCghGcm9tVGltZRgHIAEoCRIOCgZUb1RpbWUYCCAB",
+          "KAkSDAoETWVtbxgJIAEoCSJxChJTdGFmZk1hc3Rlck1lc3NhZ2USDwoHU3Rh",
+          "ZmZJRBgBIAEoCRIRCglTdGFmZk5hbWUYAiABKAkSDwoHRGlzcGxheRgDIAEo",
+          "CBISCgpDcmVhdGVEYXRlGAQgASgJEhIKCkNyZWF0ZVVzZXIYBSABKAkiiwEK",
+          "E0FjdGlvbk1hc3Rlck1lc3NhZ2USEAoIQWN0aW9uSUQYASABKAkSEgoKQWN0",
+          "aW9uTmFtZRgCIAEoCRISCgpDcmVhdGVEYXRlGAMgASgJEhIKCkNyZWF0ZVVz",
+          "ZXIYBCABKAkSEgoKVXBkYXRlRGF0ZRgFIAEoCRISCgpVcGRhdGVVc2VyGAYg",
+          "ASgJIqwBChhEZXN0aW5hdGlvbk1hc3Rlck1lc3NhZ2USFQoNRGVzdGluYXRp",
+          "b25JRBgBIAEoCRIXCg9EZXN0aW5hdGlvbk5hbWUYAiABKAkSEAoIQWN0aW9u",
+          "SUQYAyABKAkSEgoKQ3JlYXRlRGF0ZRgEIAEoCRISCgpDcmVhdGVVc2VyGAUg",
+          "ASgJEhIKClVwZGF0ZURhdGUYBiABKAkSEgoKVXBkYXRlVXNlchgHIAEoCSJR",
+          "ChFSZWdzdFN0YWZmUmVxdWVzdBIQCghVc2VyTmFtZRgBIAEoCRIqCg1TdGFm",
+          "ZkluZm9MaXN0GAIgAygLMhMuU3RhZmZNYXN0ZXJNZXNzYWdlIiQKD1JlZ3N0",
+          "U3RhZmZSZXBseRIRCglFcnJvckNvZGUYASABKAUiTgoSRGVsZXRlU3RhZmZS",
+          "ZXF1ZXN0EhAKCFVzZXJOYW1lGAEgASgJEiYKCVN0YWZmSW5mbxgCIAEoCzIT",
+          "LlN0YWZmTWFzdGVyTWVzc2FnZSIlChBEZWxldGVTdGFmZlJlcGx5EhEKCUVy",
+          "cm9yQ29kZRgBIAEoBSIlChFHZXRBY3Rpb25zUmVxdWVzdBIQCghVc2VyTmFt",
+          "ZRgBIAEoCSJNCg9HZXRBY3Rpb25zUmVwbHkSEQoJRXJyb3JDb2RlGAEgASgF",
+          "EicKCkFjdGlvbkxpc3QYAiABKAsyEy5TdGFmZk1hc3Rlck1lc3NhZ2UiKgoW",
+          "R2V0RGVzdGluYXRpb25zUmVxdWVzdBIQCghVc2VyTmFtZRgBIAEoCSIpChRH",
+          "ZXREZXN0aW5hdGlvbnNSZXBseRIRCglFcnJvckNvZGUYASABKAUiKwoXUmVn",
+          "aXN0QWN0aW9uUGxhblJlcXVlc3QSEAoIVXNlck5hbWUYASABKAkiKgoVUmVn",
+          "aXN0QWN0aW9uUGxhblJlcGx5EhEKCUVycm9yQ29kZRgBIAEoBSIoChRSZWdp",
+          "c3RBY3Rpb25zUmVxdWVzdBIQCghVc2VyTmFtZRgBIAEoCSInChJSZWdpc3RB",
+          "Y3Rpb25zUmVwbHkSEQoJRXJyb3JDb2RlGAEgASgFIi0KGVJlZ2lzdERlc3Rp",
+          "bmF0aW9uc1JlcXVlc3QSEAoIVXNlck5hbWUYASABKAkiLAoXUmVnaXN0RGVz",
+          "dGluYXRpb25zUmVwbHkSEQoJRXJyb3JDb2RlGAEgASgFMuADCh9EZXN0aW5h",
+          "dGlvbmJhcmRDb21tdW5pY2F0aW9uQVBJEjQKClJlZ3N0U3RhZmYSEi5SZWdz",
+          "dFN0YWZmUmVxdWVzdBoQLlJlZ3N0U3RhZmZSZXBseSIAEjcKC0RlbGV0ZVN0",
+          "YWZmEhMuRGVsZXRlU3RhZmZSZXF1ZXN0GhEuRGVsZXRlU3RhZmZSZXBseSIA",
+          "EjQKCkdldEFjdGlvbnMSEi5HZXRBY3Rpb25zUmVxdWVzdBoQLkdldEFjdGlv",
+          "bnNSZXBseSIAEkMKD0dldERlc3RpbmF0aW9ucxIXLkdldERlc3RpbmF0aW9u",
+          "c1JlcXVlc3QaFS5HZXREZXN0aW5hdGlvbnNSZXBseSIAEkYKEFJlZ2lzdEFj",
+          "dGlvblBsYW4SGC5SZWdpc3RBY3Rpb25QbGFuUmVxdWVzdBoWLlJlZ2lzdEFj",
+          "dGlvblBsYW5SZXBseSIAEj0KDVJlZ2lzdEFjdGlvbnMSFS5SZWdpc3RBY3Rp",
+          "b25zUmVxdWVzdBoTLlJlZ2lzdEFjdGlvbnNSZXBseSIAEkwKElJlZ2lzdERl",
+          "c3RpbmF0aW9ucxIaLlJlZ2lzdERlc3RpbmF0aW9uc1JlcXVlc3QaGC5SZWdp",
+          "c3REZXN0aW5hdGlvbnNSZXBseSIAYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::IActionPlanTable), global::IActionPlanTable.Parser, new[]{ "StaffID", "StaffName", "ActionID", "ActionName", "DestinationID", "DestinationName", "FromTime", "ToTime", "Memo" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::IStaffMaster), global::IStaffMaster.Parser, new[]{ "StaffID", "StaffName", "Display", "CreateDate", "CreateUser" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::IActionMaster), global::IActionMaster.Parser, new[]{ "ActionID", "ActionName", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::IDestinationMaster), global::IDestinationMaster.Parser, new[]{ "DestinationID", "DestinationName", "ActionID", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ActionPlanTableMessage), global::ActionPlanTableMessage.Parser, new[]{ "StaffID", "StaffName", "ActionID", "ActionName", "DestinationID", "DestinationName", "FromTime", "ToTime", "Memo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::StaffMasterMessage), global::StaffMasterMessage.Parser, new[]{ "StaffID", "StaffName", "Display", "CreateDate", "CreateUser" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ActionMasterMessage), global::ActionMasterMessage.Parser, new[]{ "ActionID", "ActionName", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::DestinationMasterMessage), global::DestinationMasterMessage.Parser, new[]{ "DestinationID", "DestinationName", "ActionID", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::RegstStaffRequest), global::RegstStaffRequest.Parser, new[]{ "UserName", "StaffInfoList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::RegstStaffReply), global::RegstStaffReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::DeleteStaffRequest), global::DeleteStaffRequest.Parser, new[]{ "UserName", "StaffInfo" }, null, null, null, null),
@@ -90,15 +91,15 @@ public static partial class DestinationbardCommunicationAPIReflection {
 
 }
 #region Messages
-public sealed partial class IActionPlanTable : pb::IMessage<IActionPlanTable>
+public sealed partial class ActionPlanTableMessage : pb::IMessage<ActionPlanTableMessage>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<IActionPlanTable> _parser = new pb::MessageParser<IActionPlanTable>(() => new IActionPlanTable());
+  private static readonly pb::MessageParser<ActionPlanTableMessage> _parser = new pb::MessageParser<ActionPlanTableMessage>(() => new ActionPlanTableMessage());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<IActionPlanTable> Parser { get { return _parser; } }
+  public static pb::MessageParser<ActionPlanTableMessage> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -111,14 +112,14 @@ public sealed partial class IActionPlanTable : pb::IMessage<IActionPlanTable>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IActionPlanTable() {
+  public ActionPlanTableMessage() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IActionPlanTable(IActionPlanTable other) : this() {
+  public ActionPlanTableMessage(ActionPlanTableMessage other) : this() {
     staffID_ = other.staffID_;
     staffName_ = other.staffName_;
     actionID_ = other.actionID_;
@@ -132,8 +133,8 @@ public sealed partial class IActionPlanTable : pb::IMessage<IActionPlanTable>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IActionPlanTable Clone() {
-    return new IActionPlanTable(this);
+  public ActionPlanTableMessage Clone() {
+    return new ActionPlanTableMessage(this);
   }
 
   /// <summary>Field number for the "StaffID" field.</summary>
@@ -237,11 +238,11 @@ public sealed partial class IActionPlanTable : pb::IMessage<IActionPlanTable>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as IActionPlanTable);
+    return Equals(other as ActionPlanTableMessage);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(IActionPlanTable other) {
+  public bool Equals(ActionPlanTableMessage other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -412,7 +413,7 @@ public sealed partial class IActionPlanTable : pb::IMessage<IActionPlanTable>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(IActionPlanTable other) {
+  public void MergeFrom(ActionPlanTableMessage other) {
     if (other == null) {
       return;
     }
@@ -550,15 +551,15 @@ public sealed partial class IActionPlanTable : pb::IMessage<IActionPlanTable>
 
 }
 
-public sealed partial class IStaffMaster : pb::IMessage<IStaffMaster>
+public sealed partial class StaffMasterMessage : pb::IMessage<StaffMasterMessage>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<IStaffMaster> _parser = new pb::MessageParser<IStaffMaster>(() => new IStaffMaster());
+  private static readonly pb::MessageParser<StaffMasterMessage> _parser = new pb::MessageParser<StaffMasterMessage>(() => new StaffMasterMessage());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<IStaffMaster> Parser { get { return _parser; } }
+  public static pb::MessageParser<StaffMasterMessage> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -571,14 +572,14 @@ public sealed partial class IStaffMaster : pb::IMessage<IStaffMaster>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IStaffMaster() {
+  public StaffMasterMessage() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IStaffMaster(IStaffMaster other) : this() {
+  public StaffMasterMessage(StaffMasterMessage other) : this() {
     staffID_ = other.staffID_;
     staffName_ = other.staffName_;
     display_ = other.display_;
@@ -588,8 +589,8 @@ public sealed partial class IStaffMaster : pb::IMessage<IStaffMaster>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IStaffMaster Clone() {
-    return new IStaffMaster(this);
+  public StaffMasterMessage Clone() {
+    return new StaffMasterMessage(this);
   }
 
   /// <summary>Field number for the "StaffID" field.</summary>
@@ -649,11 +650,11 @@ public sealed partial class IStaffMaster : pb::IMessage<IStaffMaster>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as IStaffMaster);
+    return Equals(other as StaffMasterMessage);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(IStaffMaster other) {
+  public bool Equals(StaffMasterMessage other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -772,7 +773,7 @@ public sealed partial class IStaffMaster : pb::IMessage<IStaffMaster>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(IStaffMaster other) {
+  public void MergeFrom(StaffMasterMessage other) {
     if (other == null) {
       return;
     }
@@ -866,15 +867,15 @@ public sealed partial class IStaffMaster : pb::IMessage<IStaffMaster>
 
 }
 
-public sealed partial class IActionMaster : pb::IMessage<IActionMaster>
+public sealed partial class ActionMasterMessage : pb::IMessage<ActionMasterMessage>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<IActionMaster> _parser = new pb::MessageParser<IActionMaster>(() => new IActionMaster());
+  private static readonly pb::MessageParser<ActionMasterMessage> _parser = new pb::MessageParser<ActionMasterMessage>(() => new ActionMasterMessage());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<IActionMaster> Parser { get { return _parser; } }
+  public static pb::MessageParser<ActionMasterMessage> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -887,14 +888,14 @@ public sealed partial class IActionMaster : pb::IMessage<IActionMaster>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IActionMaster() {
+  public ActionMasterMessage() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IActionMaster(IActionMaster other) : this() {
+  public ActionMasterMessage(ActionMasterMessage other) : this() {
     actionID_ = other.actionID_;
     actionName_ = other.actionName_;
     createDate_ = other.createDate_;
@@ -905,8 +906,8 @@ public sealed partial class IActionMaster : pb::IMessage<IActionMaster>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IActionMaster Clone() {
-    return new IActionMaster(this);
+  public ActionMasterMessage Clone() {
+    return new ActionMasterMessage(this);
   }
 
   /// <summary>Field number for the "ActionID" field.</summary>
@@ -977,11 +978,11 @@ public sealed partial class IActionMaster : pb::IMessage<IActionMaster>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as IActionMaster);
+    return Equals(other as ActionMasterMessage);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(IActionMaster other) {
+  public bool Equals(ActionMasterMessage other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -1113,7 +1114,7 @@ public sealed partial class IActionMaster : pb::IMessage<IActionMaster>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(IActionMaster other) {
+  public void MergeFrom(ActionMasterMessage other) {
     if (other == null) {
       return;
     }
@@ -1218,15 +1219,15 @@ public sealed partial class IActionMaster : pb::IMessage<IActionMaster>
 
 }
 
-public sealed partial class IDestinationMaster : pb::IMessage<IDestinationMaster>
+public sealed partial class DestinationMasterMessage : pb::IMessage<DestinationMasterMessage>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<IDestinationMaster> _parser = new pb::MessageParser<IDestinationMaster>(() => new IDestinationMaster());
+  private static readonly pb::MessageParser<DestinationMasterMessage> _parser = new pb::MessageParser<DestinationMasterMessage>(() => new DestinationMasterMessage());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<IDestinationMaster> Parser { get { return _parser; } }
+  public static pb::MessageParser<DestinationMasterMessage> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -1239,14 +1240,14 @@ public sealed partial class IDestinationMaster : pb::IMessage<IDestinationMaster
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IDestinationMaster() {
+  public DestinationMasterMessage() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IDestinationMaster(IDestinationMaster other) : this() {
+  public DestinationMasterMessage(DestinationMasterMessage other) : this() {
     destinationID_ = other.destinationID_;
     destinationName_ = other.destinationName_;
     actionID_ = other.actionID_;
@@ -1258,8 +1259,8 @@ public sealed partial class IDestinationMaster : pb::IMessage<IDestinationMaster
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public IDestinationMaster Clone() {
-    return new IDestinationMaster(this);
+  public DestinationMasterMessage Clone() {
+    return new DestinationMasterMessage(this);
   }
 
   /// <summary>Field number for the "DestinationID" field.</summary>
@@ -1341,11 +1342,11 @@ public sealed partial class IDestinationMaster : pb::IMessage<IDestinationMaster
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as IDestinationMaster);
+    return Equals(other as DestinationMasterMessage);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(IDestinationMaster other) {
+  public bool Equals(DestinationMasterMessage other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -1490,7 +1491,7 @@ public sealed partial class IDestinationMaster : pb::IMessage<IDestinationMaster
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(IDestinationMaster other) {
+  public void MergeFrom(DestinationMasterMessage other) {
     if (other == null) {
       return;
     }
@@ -1658,11 +1659,11 @@ public sealed partial class RegstStaffRequest : pb::IMessage<RegstStaffRequest>
 
   /// <summary>Field number for the "StaffInfoList" field.</summary>
   public const int StaffInfoListFieldNumber = 2;
-  private static readonly pb::FieldCodec<global::IStaffMaster> _repeated_staffInfoList_codec
-      = pb::FieldCodec.ForMessage(18, global::IStaffMaster.Parser);
-  private readonly pbc::RepeatedField<global::IStaffMaster> staffInfoList_ = new pbc::RepeatedField<global::IStaffMaster>();
+  private static readonly pb::FieldCodec<global::StaffMasterMessage> _repeated_staffInfoList_codec
+      = pb::FieldCodec.ForMessage(18, global::StaffMasterMessage.Parser);
+  private readonly pbc::RepeatedField<global::StaffMasterMessage> staffInfoList_ = new pbc::RepeatedField<global::StaffMasterMessage>();
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<global::IStaffMaster> StaffInfoList {
+  public pbc::RepeatedField<global::StaffMasterMessage> StaffInfoList {
     get { return staffInfoList_; }
   }
 
@@ -2027,9 +2028,9 @@ public sealed partial class DeleteStaffRequest : pb::IMessage<DeleteStaffRequest
 
   /// <summary>Field number for the "StaffInfo" field.</summary>
   public const int StaffInfoFieldNumber = 2;
-  private global::IStaffMaster staffInfo_;
+  private global::StaffMasterMessage staffInfo_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::IStaffMaster StaffInfo {
+  public global::StaffMasterMessage StaffInfo {
     get { return staffInfo_; }
     set {
       staffInfo_ = value;
@@ -2131,7 +2132,7 @@ public sealed partial class DeleteStaffRequest : pb::IMessage<DeleteStaffRequest
     }
     if (other.staffInfo_ != null) {
       if (staffInfo_ == null) {
-        StaffInfo = new global::IStaffMaster();
+        StaffInfo = new global::StaffMasterMessage();
       }
       StaffInfo.MergeFrom(other.StaffInfo);
     }
@@ -2155,7 +2156,7 @@ public sealed partial class DeleteStaffRequest : pb::IMessage<DeleteStaffRequest
         }
         case 18: {
           if (staffInfo_ == null) {
-            StaffInfo = new global::IStaffMaster();
+            StaffInfo = new global::StaffMasterMessage();
           }
           input.ReadMessage(StaffInfo);
           break;
@@ -2180,7 +2181,7 @@ public sealed partial class DeleteStaffRequest : pb::IMessage<DeleteStaffRequest
         }
         case 18: {
           if (staffInfo_ == null) {
-            StaffInfo = new global::IStaffMaster();
+            StaffInfo = new global::StaffMasterMessage();
           }
           input.ReadMessage(StaffInfo);
           break;
@@ -2588,9 +2589,9 @@ public sealed partial class GetActionsReply : pb::IMessage<GetActionsReply>
 
   /// <summary>Field number for the "ActionList" field.</summary>
   public const int ActionListFieldNumber = 2;
-  private global::IActionMaster actionList_;
+  private global::StaffMasterMessage actionList_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::IActionMaster ActionList {
+  public global::StaffMasterMessage ActionList {
     get { return actionList_; }
     set {
       actionList_ = value;
@@ -2692,7 +2693,7 @@ public sealed partial class GetActionsReply : pb::IMessage<GetActionsReply>
     }
     if (other.actionList_ != null) {
       if (actionList_ == null) {
-        ActionList = new global::IActionMaster();
+        ActionList = new global::StaffMasterMessage();
       }
       ActionList.MergeFrom(other.ActionList);
     }
@@ -2716,7 +2717,7 @@ public sealed partial class GetActionsReply : pb::IMessage<GetActionsReply>
         }
         case 18: {
           if (actionList_ == null) {
-            ActionList = new global::IActionMaster();
+            ActionList = new global::StaffMasterMessage();
           }
           input.ReadMessage(ActionList);
           break;
@@ -2741,7 +2742,7 @@ public sealed partial class GetActionsReply : pb::IMessage<GetActionsReply>
         }
         case 18: {
           if (actionList_ == null) {
-            ActionList = new global::IActionMaster();
+            ActionList = new global::StaffMasterMessage();
           }
           input.ReadMessage(ActionList);
           break;
