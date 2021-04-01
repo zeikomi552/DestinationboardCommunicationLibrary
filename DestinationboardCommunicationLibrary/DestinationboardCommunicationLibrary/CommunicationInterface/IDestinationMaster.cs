@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace DestinationboardCommunicationLibrary.CommunicationInterface
 {
+	/// <summary>
+	/// 行先マスター
+	/// DestinationMasterテーブルをベースに作成したインターフェースクラス
+	/// 作成日：2021/03/28 作成者gohya
+	/// </summary>
 	interface IDestinationMaster
 	{
 		#region 行先ID[DestinationID]プロパティ

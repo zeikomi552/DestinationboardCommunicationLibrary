@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace DestinationboardCommunicationLibrary.CommunicationInterface
 {
+	/// <summary>
+	/// 現在の行動予定一覧表
+	/// ActionPlanTableテーブルをベースに作成したインターフェースクラス
+	/// 作成日：2021/03/28 作成者gohya
+	/// </summary>
 	interface IActionPlanTable
 	{
 		#region スタッフID[StaffID]プロパティ

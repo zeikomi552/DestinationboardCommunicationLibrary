@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace DestinationboardCommunicationLibrary.CommunicationInterface
 {
+	/// <summary>
+	/// スタッフマスター
+	/// StaffMasterテーブルをベースに作成したインターフェースクラス
+	/// 作成日：2021/03/28 作成者gohya
+	/// </summary>
 	interface IStaffMaster
 	{
 		#region 従業員ID[StaffID]プロパティ
