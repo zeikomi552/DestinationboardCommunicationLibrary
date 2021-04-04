@@ -3,11 +3,11 @@
 // 行先ボード通信API
 service DestinationbardCommunicationAPI{
 
-	// スタッフ情報の登録
-	rpc RegstStaff (RegstStaffRequest) returns(RegstStaffReply) {}
+	// 登録スタッフ情報の取得API
+	rpc GetRegistStaff (GetRegistStaffRequest) returns(GetRegistStaffReply) {}
 
-	// スタッフ情報の削除
-	rpc DeleteStaff (DeleteStaffRequest) returns(DeleteStaffReply) {}
+	// スタッフ情報の登録
+	rpc RegistStaff (RegistStaffRequest) returns(RegistStaffReply) {}
 
 	// 行動一覧の取得
 	rpc GetActions (GetActionsRequest) returns(GetActionsReply) {}
@@ -37,18 +37,15 @@ service DestinationbardCommunicationAPI{
 	rpc DestinationMaster (DestinationMasterRequest) returns(DestinationMasterReply) {}
 
 }
-message RegstStaffRequest {
+message GetRegistStaffRequest {
+}
+message GetRegistStaffReply {
+}
+message RegistStaffRequest {
 	string UserName = 1;
 	repeated StaffMasterRequest  StaffInfoList = 2;
 }
-message RegstStaffReply {
-	int32 ErrorCode = 1;
-}
-message DeleteStaffRequest {
-	string UserName = 1;
-	StaffMasterRequest  StaffInfo = 2;
-}
-message DeleteStaffReply {
+message RegistStaffReply {
 	int32 ErrorCode = 1;
 }
 message GetActionsRequest {

@@ -7,23 +7,46 @@ using System.Threading.Tasks;
 
 namespace DestinationboardCommunicationLibrary.Communication
 {
-    public class EventArgsRcv : EventArgs
+    public class gRPCArgsRcv : EventArgs
     {
         public object Request { get; set; }
         public object Replay { get; set; }
     }
 
+
     public class DestinationbardCommunicationAPIService : DestinationbardCommunicationAPI.DestinationbardCommunicationAPIBase
     {
+
+        public event EventHandler RecieveGetRegistStaffEvent;
+
+        public event EventHandler RecieveRegistStaffEvent;
+
+        public event EventHandler RecieveGetActionsEvent;
+
+        public event EventHandler RecieveGetDestinationsEvent;
+
+        public event EventHandler RecieveRegistActionPlanEvent;
+
+        public event EventHandler RecieveRegistActionsEvent;
+
+        public event EventHandler RecieveRegistDestinationsEvent;
+
+        public event EventHandler RecieveActionPlanTableEvent;
+
+        public event EventHandler RecieveStaffMasterEvent;
+
+        public event EventHandler RecieveActionMasterEvent;
+
+        public event EventHandler RecieveDestinationMasterEvent;
+
+
+
         public string HostName { get; set; } = "127.0.0.1";
 
         /// <summary>
         /// ポート番号
         /// </summary>
         public int Port { get; set; } = 552;
-
-        public event EventHandler RecieveRegstStaffEvent;
-
 
         /// <summary>
         /// コンストラクタ
@@ -52,46 +75,55 @@ namespace DestinationboardCommunicationLibrary.Communication
         }
 
 
-        #region [RegstStaff]APIリクエスト受付処理
+        #region [GetRegistStaff]APIリクエスト受付処理
         /// <summary>
-        /// [RegstStaff]APIリクエスト受付処理
+        /// [GetRegistStaff]APIリクエスト受付処理
         /// APIの要求を受け付けた時に走る処理
         /// </summary>
         /// <param name="request">リクエスト</param>
         /// <param name="context">コンテキスト</param>
         /// <returns>リプライ</returns>
-        public override Task<RegstStaffReply> RegstStaff(RegstStaffRequest request, ServerCallContext context)
+        public override Task<GetRegistStaffReply> GetRegistStaff(GetRegistStaffRequest request, ServerCallContext context)
         {
-            var message = new RegstStaffReply();
+            var message = new GetRegistStaffReply();
 
             // ここに処理を書く
-            EventArgsRcv ev = new EventArgsRcv();
+            gRPCArgsRcv ev = new gRPCArgsRcv();
             ev.Request = request;
             ev.Replay = message;
 
 
-            if (RecieveRegstStaffEvent != null)
+            if (RecieveGetRegistStaffEvent != null)
             {
-                RecieveRegstStaffEvent(this, ev);
+                RecieveGetRegistStaffEvent(this, ev);
             }
 
             return Task.FromResult(message);
         }
         #endregion
 
-        #region [DeleteStaff]APIリクエスト受付処理
+        #region [RegistStaff]APIリクエスト受付処理
         /// <summary>
-        /// [DeleteStaff]APIリクエスト受付処理
+        /// [RegistStaff]APIリクエスト受付処理
         /// APIの要求を受け付けた時に走る処理
         /// </summary>
         /// <param name="request">リクエスト</param>
         /// <param name="context">コンテキスト</param>
         /// <returns>リプライ</returns>
-        public override Task<DeleteStaffReply> DeleteStaff(DeleteStaffRequest request, ServerCallContext context)
+        public override Task<RegistStaffReply> RegistStaff(RegistStaffRequest request, ServerCallContext context)
         {
-            var message = new DeleteStaffReply();
+            var message = new RegistStaffReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveRegistStaffEvent != null)
+            {
+                RecieveRegistStaffEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -110,6 +142,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new GetActionsReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveGetActionsEvent != null)
+            {
+                RecieveGetActionsEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -128,6 +169,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new GetDestinationsReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveGetDestinationsEvent != null)
+            {
+                RecieveGetDestinationsEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -146,6 +196,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new RegistActionPlanReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveRegistActionPlanEvent != null)
+            {
+                RecieveRegistActionPlanEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -164,6 +223,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new RegistActionsReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveRegistActionsEvent != null)
+            {
+                RecieveRegistActionsEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -182,6 +250,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new RegistDestinationsReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveRegistDestinationsEvent != null)
+            {
+                RecieveRegistDestinationsEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -200,6 +277,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new ActionPlanTableReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveActionPlanTableEvent != null)
+            {
+                RecieveActionPlanTableEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -218,6 +304,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new StaffMasterReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveStaffMasterEvent != null)
+            {
+                RecieveStaffMasterEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -236,6 +331,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new ActionMasterReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveActionMasterEvent != null)
+            {
+                RecieveActionMasterEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
@@ -254,6 +358,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new DestinationMasterReply();
 
             // ここに処理を書く
+            gRPCArgsRcv ev = new gRPCArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveDestinationMasterEvent != null)
+            {
+                RecieveDestinationMasterEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }

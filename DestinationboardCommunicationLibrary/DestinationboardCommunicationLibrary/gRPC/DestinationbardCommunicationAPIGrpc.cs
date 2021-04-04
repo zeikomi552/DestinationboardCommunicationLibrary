@@ -44,10 +44,10 @@ public static partial class DestinationbardCommunicationAPI
     return parser.ParseFrom(context.PayloadAsNewBuffer());
   }
 
-  static readonly grpc::Marshaller<global::RegstStaffRequest> __Marshaller_RegstStaffRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegstStaffRequest.Parser));
-  static readonly grpc::Marshaller<global::RegstStaffReply> __Marshaller_RegstStaffReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegstStaffReply.Parser));
-  static readonly grpc::Marshaller<global::DeleteStaffRequest> __Marshaller_DeleteStaffRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DeleteStaffRequest.Parser));
-  static readonly grpc::Marshaller<global::DeleteStaffReply> __Marshaller_DeleteStaffReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DeleteStaffReply.Parser));
+  static readonly grpc::Marshaller<global::GetRegistStaffRequest> __Marshaller_GetRegistStaffRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetRegistStaffRequest.Parser));
+  static readonly grpc::Marshaller<global::GetRegistStaffReply> __Marshaller_GetRegistStaffReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetRegistStaffReply.Parser));
+  static readonly grpc::Marshaller<global::RegistStaffRequest> __Marshaller_RegistStaffRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistStaffRequest.Parser));
+  static readonly grpc::Marshaller<global::RegistStaffReply> __Marshaller_RegistStaffReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistStaffReply.Parser));
   static readonly grpc::Marshaller<global::GetActionsRequest> __Marshaller_GetActionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetActionsRequest.Parser));
   static readonly grpc::Marshaller<global::GetActionsReply> __Marshaller_GetActionsReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetActionsReply.Parser));
   static readonly grpc::Marshaller<global::GetDestinationsRequest> __Marshaller_GetDestinationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetDestinationsRequest.Parser));
@@ -67,19 +67,19 @@ public static partial class DestinationbardCommunicationAPI
   static readonly grpc::Marshaller<global::DestinationMasterRequest> __Marshaller_DestinationMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DestinationMasterRequest.Parser));
   static readonly grpc::Marshaller<global::DestinationMasterReply> __Marshaller_DestinationMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DestinationMasterReply.Parser));
 
-  static readonly grpc::Method<global::RegstStaffRequest, global::RegstStaffReply> __Method_RegstStaff = new grpc::Method<global::RegstStaffRequest, global::RegstStaffReply>(
+  static readonly grpc::Method<global::GetRegistStaffRequest, global::GetRegistStaffReply> __Method_GetRegistStaff = new grpc::Method<global::GetRegistStaffRequest, global::GetRegistStaffReply>(
       grpc::MethodType.Unary,
       __ServiceName,
-      "RegstStaff",
-      __Marshaller_RegstStaffRequest,
-      __Marshaller_RegstStaffReply);
+      "GetRegistStaff",
+      __Marshaller_GetRegistStaffRequest,
+      __Marshaller_GetRegistStaffReply);
 
-  static readonly grpc::Method<global::DeleteStaffRequest, global::DeleteStaffReply> __Method_DeleteStaff = new grpc::Method<global::DeleteStaffRequest, global::DeleteStaffReply>(
+  static readonly grpc::Method<global::RegistStaffRequest, global::RegistStaffReply> __Method_RegistStaff = new grpc::Method<global::RegistStaffRequest, global::RegistStaffReply>(
       grpc::MethodType.Unary,
       __ServiceName,
-      "DeleteStaff",
-      __Marshaller_DeleteStaffRequest,
-      __Marshaller_DeleteStaffReply);
+      "RegistStaff",
+      __Marshaller_RegistStaffRequest,
+      __Marshaller_RegistStaffReply);
 
   static readonly grpc::Method<global::GetActionsRequest, global::GetActionsReply> __Method_GetActions = new grpc::Method<global::GetActionsRequest, global::GetActionsReply>(
       grpc::MethodType.Unary,
@@ -155,23 +155,23 @@ public static partial class DestinationbardCommunicationAPI
   public abstract partial class DestinationbardCommunicationAPIBase
   {
     /// <summary>
-    /// スタッフ情報の登録
+    /// 登録スタッフ情報の取得API
     /// </summary>
     /// <param name="request">The request received from the client.</param>
     /// <param name="context">The context of the server-side call handler being invoked.</param>
     /// <returns>The response to send back to the client (wrapped by a task).</returns>
-    public virtual global::System.Threading.Tasks.Task<global::RegstStaffReply> RegstStaff(global::RegstStaffRequest request, grpc::ServerCallContext context)
+    public virtual global::System.Threading.Tasks.Task<global::GetRegistStaffReply> GetRegistStaff(global::GetRegistStaffRequest request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
 
     /// <summary>
-    /// スタッフ情報の削除
+    /// スタッフ情報の登録
     /// </summary>
     /// <param name="request">The request received from the client.</param>
     /// <param name="context">The context of the server-side call handler being invoked.</param>
     /// <returns>The response to send back to the client (wrapped by a task).</returns>
-    public virtual global::System.Threading.Tasks.Task<global::DeleteStaffReply> DeleteStaff(global::DeleteStaffRequest request, grpc::ServerCallContext context)
+    public virtual global::System.Threading.Tasks.Task<global::RegistStaffReply> RegistStaff(global::RegistStaffRequest request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -301,6 +301,50 @@ public static partial class DestinationbardCommunicationAPI
     }
 
     /// <summary>
+    /// 登録スタッフ情報の取得API
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::GetRegistStaffReply GetRegistStaff(global::GetRegistStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetRegistStaff(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 登録スタッフ情報の取得API
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::GetRegistStaffReply GetRegistStaff(global::GetRegistStaffRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_GetRegistStaff, null, options, request);
+    }
+    /// <summary>
+    /// 登録スタッフ情報の取得API
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::GetRegistStaffReply> GetRegistStaffAsync(global::GetRegistStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetRegistStaffAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 登録スタッフ情報の取得API
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::GetRegistStaffReply> GetRegistStaffAsync(global::GetRegistStaffRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_GetRegistStaff, null, options, request);
+    }
+    /// <summary>
     /// スタッフ情報の登録
     /// </summary>
     /// <param name="request">The request to send to the server.</param>
@@ -308,9 +352,9 @@ public static partial class DestinationbardCommunicationAPI
     /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
     /// <param name="cancellationToken">An optional token for canceling the call.</param>
     /// <returns>The response received from the server.</returns>
-    public virtual global::RegstStaffReply RegstStaff(global::RegstStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    public virtual global::RegistStaffReply RegistStaff(global::RegistStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
-      return RegstStaff(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      return RegistStaff(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
     /// <summary>
     /// スタッフ情報の登録
@@ -318,9 +362,9 @@ public static partial class DestinationbardCommunicationAPI
     /// <param name="request">The request to send to the server.</param>
     /// <param name="options">The options for the call.</param>
     /// <returns>The response received from the server.</returns>
-    public virtual global::RegstStaffReply RegstStaff(global::RegstStaffRequest request, grpc::CallOptions options)
+    public virtual global::RegistStaffReply RegistStaff(global::RegistStaffRequest request, grpc::CallOptions options)
     {
-      return CallInvoker.BlockingUnaryCall(__Method_RegstStaff, null, options, request);
+      return CallInvoker.BlockingUnaryCall(__Method_RegistStaff, null, options, request);
     }
     /// <summary>
     /// スタッフ情報の登録
@@ -330,9 +374,9 @@ public static partial class DestinationbardCommunicationAPI
     /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
     /// <param name="cancellationToken">An optional token for canceling the call.</param>
     /// <returns>The call object.</returns>
-    public virtual grpc::AsyncUnaryCall<global::RegstStaffReply> RegstStaffAsync(global::RegstStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    public virtual grpc::AsyncUnaryCall<global::RegistStaffReply> RegistStaffAsync(global::RegistStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
-      return RegstStaffAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      return RegistStaffAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
     /// <summary>
     /// スタッフ情報の登録
@@ -340,53 +384,9 @@ public static partial class DestinationbardCommunicationAPI
     /// <param name="request">The request to send to the server.</param>
     /// <param name="options">The options for the call.</param>
     /// <returns>The call object.</returns>
-    public virtual grpc::AsyncUnaryCall<global::RegstStaffReply> RegstStaffAsync(global::RegstStaffRequest request, grpc::CallOptions options)
+    public virtual grpc::AsyncUnaryCall<global::RegistStaffReply> RegistStaffAsync(global::RegistStaffRequest request, grpc::CallOptions options)
     {
-      return CallInvoker.AsyncUnaryCall(__Method_RegstStaff, null, options, request);
-    }
-    /// <summary>
-    /// スタッフ情報の削除
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-    /// <param name="cancellationToken">An optional token for canceling the call.</param>
-    /// <returns>The response received from the server.</returns>
-    public virtual global::DeleteStaffReply DeleteStaff(global::DeleteStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-    {
-      return DeleteStaff(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-    }
-    /// <summary>
-    /// スタッフ情報の削除
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="options">The options for the call.</param>
-    /// <returns>The response received from the server.</returns>
-    public virtual global::DeleteStaffReply DeleteStaff(global::DeleteStaffRequest request, grpc::CallOptions options)
-    {
-      return CallInvoker.BlockingUnaryCall(__Method_DeleteStaff, null, options, request);
-    }
-    /// <summary>
-    /// スタッフ情報の削除
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-    /// <param name="cancellationToken">An optional token for canceling the call.</param>
-    /// <returns>The call object.</returns>
-    public virtual grpc::AsyncUnaryCall<global::DeleteStaffReply> DeleteStaffAsync(global::DeleteStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-    {
-      return DeleteStaffAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-    }
-    /// <summary>
-    /// スタッフ情報の削除
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="options">The options for the call.</param>
-    /// <returns>The call object.</returns>
-    public virtual grpc::AsyncUnaryCall<global::DeleteStaffReply> DeleteStaffAsync(global::DeleteStaffRequest request, grpc::CallOptions options)
-    {
-      return CallInvoker.AsyncUnaryCall(__Method_DeleteStaff, null, options, request);
+      return CallInvoker.AsyncUnaryCall(__Method_RegistStaff, null, options, request);
     }
     /// <summary>
     /// 行動一覧の取得
@@ -796,8 +796,8 @@ public static partial class DestinationbardCommunicationAPI
   public static grpc::ServerServiceDefinition BindService(DestinationbardCommunicationAPIBase serviceImpl)
   {
     return grpc::ServerServiceDefinition.CreateBuilder()
-        .AddMethod(__Method_RegstStaff, serviceImpl.RegstStaff)
-        .AddMethod(__Method_DeleteStaff, serviceImpl.DeleteStaff)
+        .AddMethod(__Method_GetRegistStaff, serviceImpl.GetRegistStaff)
+        .AddMethod(__Method_RegistStaff, serviceImpl.RegistStaff)
         .AddMethod(__Method_GetActions, serviceImpl.GetActions)
         .AddMethod(__Method_GetDestinations, serviceImpl.GetDestinations)
         .AddMethod(__Method_RegistActionPlan, serviceImpl.RegistActionPlan)
@@ -815,8 +815,8 @@ public static partial class DestinationbardCommunicationAPI
   /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
   public static void BindService(grpc::ServiceBinderBase serviceBinder, DestinationbardCommunicationAPIBase serviceImpl)
   {
-    serviceBinder.AddMethod(__Method_RegstStaff, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegstStaffRequest, global::RegstStaffReply>(serviceImpl.RegstStaff));
-    serviceBinder.AddMethod(__Method_DeleteStaff, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DeleteStaffRequest, global::DeleteStaffReply>(serviceImpl.DeleteStaff));
+    serviceBinder.AddMethod(__Method_GetRegistStaff, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GetRegistStaffRequest, global::GetRegistStaffReply>(serviceImpl.GetRegistStaff));
+    serviceBinder.AddMethod(__Method_RegistStaff, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistStaffRequest, global::RegistStaffReply>(serviceImpl.RegistStaff));
     serviceBinder.AddMethod(__Method_GetActions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GetActionsRequest, global::GetActionsReply>(serviceImpl.GetActions));
     serviceBinder.AddMethod(__Method_GetDestinations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GetDestinationsRequest, global::GetDestinationsReply>(serviceImpl.GetDestinations));
     serviceBinder.AddMethod(__Method_RegistActionPlan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionPlanRequest, global::RegistActionPlanReply>(serviceImpl.RegistActionPlan));

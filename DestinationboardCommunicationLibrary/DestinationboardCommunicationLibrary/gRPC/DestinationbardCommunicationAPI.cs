@@ -23,74 +23,72 @@ public static partial class DestinationbardCommunicationAPIReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "CipnUlBDL0Rlc3RpbmF0aW9uYmFyZENvbW11bmljYXRpb25BUEkucHJvdG8i",
-          "UQoRUmVnc3RTdGFmZlJlcXVlc3QSEAoIVXNlck5hbWUYASABKAkSKgoNU3Rh",
-          "ZmZJbmZvTGlzdBgCIAMoCzITLlN0YWZmTWFzdGVyUmVxdWVzdCIkCg9SZWdz",
-          "dFN0YWZmUmVwbHkSEQoJRXJyb3JDb2RlGAEgASgFIk4KEkRlbGV0ZVN0YWZm",
-          "UmVxdWVzdBIQCghVc2VyTmFtZRgBIAEoCRImCglTdGFmZkluZm8YAiABKAsy",
-          "Ey5TdGFmZk1hc3RlclJlcXVlc3QiJQoQRGVsZXRlU3RhZmZSZXBseRIRCglF",
-          "cnJvckNvZGUYASABKAUiJQoRR2V0QWN0aW9uc1JlcXVlc3QSEAoIVXNlck5h",
-          "bWUYASABKAkiTgoPR2V0QWN0aW9uc1JlcGx5EhEKCUVycm9yQ29kZRgBIAEo",
-          "BRIoCgpBY3Rpb25MaXN0GAIgASgLMhQuQWN0aW9uTWFzdGVyUmVxdWVzdCIq",
-          "ChZHZXREZXN0aW5hdGlvbnNSZXF1ZXN0EhAKCFVzZXJOYW1lGAEgASgJIikK",
-          "FEdldERlc3RpbmF0aW9uc1JlcGx5EhEKCUVycm9yQ29kZRgBIAEoBSIrChdS",
-          "ZWdpc3RBY3Rpb25QbGFuUmVxdWVzdBIQCghVc2VyTmFtZRgBIAEoCSIqChVS",
-          "ZWdpc3RBY3Rpb25QbGFuUmVwbHkSEQoJRXJyb3JDb2RlGAEgASgFIigKFFJl",
-          "Z2lzdEFjdGlvbnNSZXF1ZXN0EhAKCFVzZXJOYW1lGAEgASgJIicKElJlZ2lz",
-          "dEFjdGlvbnNSZXBseRIRCglFcnJvckNvZGUYASABKAUiLQoZUmVnaXN0RGVz",
-          "dGluYXRpb25zUmVxdWVzdBIQCghVc2VyTmFtZRgBIAEoCSIsChdSZWdpc3RE",
-          "ZXN0aW5hdGlvbnNSZXBseRIRCglFcnJvckNvZGUYASABKAUiwgEKFkFjdGlv",
-          "blBsYW5UYWJsZVJlcXVlc3QSDwoHU3RhZmZJRBgBIAEoCRIRCglTdGFmZk5h",
-          "bWUYAiABKAkSEAoIQWN0aW9uSUQYAyABKAkSEgoKQWN0aW9uTmFtZRgEIAEo",
-          "CRIVCg1EZXN0aW5hdGlvbklEGAUgASgJEhcKD0Rlc3RpbmF0aW9uTmFtZRgG",
-          "IAEoCRIQCghGcm9tVGltZRgHIAEoCRIOCgZUb1RpbWUYCCABKAkSDAoETWVt",
-          "bxgJIAEoCSLAAQoUQWN0aW9uUGxhblRhYmxlUmVwbHkSDwoHU3RhZmZJRBgB",
-          "IAEoCRIRCglTdGFmZk5hbWUYAiABKAkSEAoIQWN0aW9uSUQYAyABKAkSEgoK",
-          "QWN0aW9uTmFtZRgEIAEoCRIVCg1EZXN0aW5hdGlvbklEGAUgASgJEhcKD0Rl",
-          "c3RpbmF0aW9uTmFtZRgGIAEoCRIQCghGcm9tVGltZRgHIAEoCRIOCgZUb1Rp",
-          "bWUYCCABKAkSDAoETWVtbxgJIAEoCSJxChJTdGFmZk1hc3RlclJlcXVlc3QS",
-          "DwoHU3RhZmZJRBgBIAEoCRIRCglTdGFmZk5hbWUYAiABKAkSDwoHRGlzcGxh",
-          "eRgDIAEoCBISCgpDcmVhdGVEYXRlGAQgASgJEhIKCkNyZWF0ZVVzZXIYBSAB",
-          "KAkibwoQU3RhZmZNYXN0ZXJSZXBseRIPCgdTdGFmZklEGAEgASgJEhEKCVN0",
-          "YWZmTmFtZRgCIAEoCRIPCgdEaXNwbGF5GAMgASgIEhIKCkNyZWF0ZURhdGUY",
-          "BCABKAkSEgoKQ3JlYXRlVXNlchgFIAEoCSKLAQoTQWN0aW9uTWFzdGVyUmVx",
-          "dWVzdBIQCghBY3Rpb25JRBgBIAEoCRISCgpBY3Rpb25OYW1lGAIgASgJEhIK",
-          "CkNyZWF0ZURhdGUYAyABKAkSEgoKQ3JlYXRlVXNlchgEIAEoCRISCgpVcGRh",
-          "dGVEYXRlGAUgASgJEhIKClVwZGF0ZVVzZXIYBiABKAkiiQEKEUFjdGlvbk1h",
-          "c3RlclJlcGx5EhAKCEFjdGlvbklEGAEgASgJEhIKCkFjdGlvbk5hbWUYAiAB",
-          "KAkSEgoKQ3JlYXRlRGF0ZRgDIAEoCRISCgpDcmVhdGVVc2VyGAQgASgJEhIK",
-          "ClVwZGF0ZURhdGUYBSABKAkSEgoKVXBkYXRlVXNlchgGIAEoCSKsAQoYRGVz",
-          "dGluYXRpb25NYXN0ZXJSZXF1ZXN0EhUKDURlc3RpbmF0aW9uSUQYASABKAkS",
-          "FwoPRGVzdGluYXRpb25OYW1lGAIgASgJEhAKCEFjdGlvbklEGAMgASgJEhIK",
-          "CkNyZWF0ZURhdGUYBCABKAkSEgoKQ3JlYXRlVXNlchgFIAEoCRISCgpVcGRh",
-          "dGVEYXRlGAYgASgJEhIKClVwZGF0ZVVzZXIYByABKAkiqgEKFkRlc3RpbmF0",
-          "aW9uTWFzdGVyUmVwbHkSFQoNRGVzdGluYXRpb25JRBgBIAEoCRIXCg9EZXN0",
-          "aW5hdGlvbk5hbWUYAiABKAkSEAoIQWN0aW9uSUQYAyABKAkSEgoKQ3JlYXRl",
-          "RGF0ZRgEIAEoCRISCgpDcmVhdGVVc2VyGAUgASgJEhIKClVwZGF0ZURhdGUY",
-          "BiABKAkSEgoKVXBkYXRlVXNlchgHIAEoCTLlBQofRGVzdGluYXRpb25iYXJk",
-          "Q29tbXVuaWNhdGlvbkFQSRI0CgpSZWdzdFN0YWZmEhIuUmVnc3RTdGFmZlJl",
-          "cXVlc3QaEC5SZWdzdFN0YWZmUmVwbHkiABI3CgtEZWxldGVTdGFmZhITLkRl",
-          "bGV0ZVN0YWZmUmVxdWVzdBoRLkRlbGV0ZVN0YWZmUmVwbHkiABI0CgpHZXRB",
-          "Y3Rpb25zEhIuR2V0QWN0aW9uc1JlcXVlc3QaEC5HZXRBY3Rpb25zUmVwbHki",
-          "ABJDCg9HZXREZXN0aW5hdGlvbnMSFy5HZXREZXN0aW5hdGlvbnNSZXF1ZXN0",
-          "GhUuR2V0RGVzdGluYXRpb25zUmVwbHkiABJGChBSZWdpc3RBY3Rpb25QbGFu",
-          "EhguUmVnaXN0QWN0aW9uUGxhblJlcXVlc3QaFi5SZWdpc3RBY3Rpb25QbGFu",
-          "UmVwbHkiABI9Cg1SZWdpc3RBY3Rpb25zEhUuUmVnaXN0QWN0aW9uc1JlcXVl",
-          "c3QaEy5SZWdpc3RBY3Rpb25zUmVwbHkiABJMChJSZWdpc3REZXN0aW5hdGlv",
-          "bnMSGi5SZWdpc3REZXN0aW5hdGlvbnNSZXF1ZXN0GhguUmVnaXN0RGVzdGlu",
-          "YXRpb25zUmVwbHkiABJDCg9BY3Rpb25QbGFuVGFibGUSFy5BY3Rpb25QbGFu",
-          "VGFibGVSZXF1ZXN0GhUuQWN0aW9uUGxhblRhYmxlUmVwbHkiABI3CgtTdGFm",
-          "Zk1hc3RlchITLlN0YWZmTWFzdGVyUmVxdWVzdBoRLlN0YWZmTWFzdGVyUmVw",
-          "bHkiABI6CgxBY3Rpb25NYXN0ZXISFC5BY3Rpb25NYXN0ZXJSZXF1ZXN0GhIu",
-          "QWN0aW9uTWFzdGVyUmVwbHkiABJJChFEZXN0aW5hdGlvbk1hc3RlchIZLkRl",
-          "c3RpbmF0aW9uTWFzdGVyUmVxdWVzdBoXLkRlc3RpbmF0aW9uTWFzdGVyUmVw",
-          "bHkiAGIGcHJvdG8z"));
+          "FwoVR2V0UmVnaXN0U3RhZmZSZXF1ZXN0IhUKE0dldFJlZ2lzdFN0YWZmUmVw",
+          "bHkiUgoSUmVnaXN0U3RhZmZSZXF1ZXN0EhAKCFVzZXJOYW1lGAEgASgJEioK",
+          "DVN0YWZmSW5mb0xpc3QYAiADKAsyEy5TdGFmZk1hc3RlclJlcXVlc3QiJQoQ",
+          "UmVnaXN0U3RhZmZSZXBseRIRCglFcnJvckNvZGUYASABKAUiJQoRR2V0QWN0",
+          "aW9uc1JlcXVlc3QSEAoIVXNlck5hbWUYASABKAkiTgoPR2V0QWN0aW9uc1Jl",
+          "cGx5EhEKCUVycm9yQ29kZRgBIAEoBRIoCgpBY3Rpb25MaXN0GAIgASgLMhQu",
+          "QWN0aW9uTWFzdGVyUmVxdWVzdCIqChZHZXREZXN0aW5hdGlvbnNSZXF1ZXN0",
+          "EhAKCFVzZXJOYW1lGAEgASgJIikKFEdldERlc3RpbmF0aW9uc1JlcGx5EhEK",
+          "CUVycm9yQ29kZRgBIAEoBSIrChdSZWdpc3RBY3Rpb25QbGFuUmVxdWVzdBIQ",
+          "CghVc2VyTmFtZRgBIAEoCSIqChVSZWdpc3RBY3Rpb25QbGFuUmVwbHkSEQoJ",
+          "RXJyb3JDb2RlGAEgASgFIigKFFJlZ2lzdEFjdGlvbnNSZXF1ZXN0EhAKCFVz",
+          "ZXJOYW1lGAEgASgJIicKElJlZ2lzdEFjdGlvbnNSZXBseRIRCglFcnJvckNv",
+          "ZGUYASABKAUiLQoZUmVnaXN0RGVzdGluYXRpb25zUmVxdWVzdBIQCghVc2Vy",
+          "TmFtZRgBIAEoCSIsChdSZWdpc3REZXN0aW5hdGlvbnNSZXBseRIRCglFcnJv",
+          "ckNvZGUYASABKAUiwgEKFkFjdGlvblBsYW5UYWJsZVJlcXVlc3QSDwoHU3Rh",
+          "ZmZJRBgBIAEoCRIRCglTdGFmZk5hbWUYAiABKAkSEAoIQWN0aW9uSUQYAyAB",
+          "KAkSEgoKQWN0aW9uTmFtZRgEIAEoCRIVCg1EZXN0aW5hdGlvbklEGAUgASgJ",
+          "EhcKD0Rlc3RpbmF0aW9uTmFtZRgGIAEoCRIQCghGcm9tVGltZRgHIAEoCRIO",
+          "CgZUb1RpbWUYCCABKAkSDAoETWVtbxgJIAEoCSLAAQoUQWN0aW9uUGxhblRh",
+          "YmxlUmVwbHkSDwoHU3RhZmZJRBgBIAEoCRIRCglTdGFmZk5hbWUYAiABKAkS",
+          "EAoIQWN0aW9uSUQYAyABKAkSEgoKQWN0aW9uTmFtZRgEIAEoCRIVCg1EZXN0",
+          "aW5hdGlvbklEGAUgASgJEhcKD0Rlc3RpbmF0aW9uTmFtZRgGIAEoCRIQCghG",
+          "cm9tVGltZRgHIAEoCRIOCgZUb1RpbWUYCCABKAkSDAoETWVtbxgJIAEoCSJx",
+          "ChJTdGFmZk1hc3RlclJlcXVlc3QSDwoHU3RhZmZJRBgBIAEoCRIRCglTdGFm",
+          "Zk5hbWUYAiABKAkSDwoHRGlzcGxheRgDIAEoCBISCgpDcmVhdGVEYXRlGAQg",
+          "ASgJEhIKCkNyZWF0ZVVzZXIYBSABKAkibwoQU3RhZmZNYXN0ZXJSZXBseRIP",
+          "CgdTdGFmZklEGAEgASgJEhEKCVN0YWZmTmFtZRgCIAEoCRIPCgdEaXNwbGF5",
+          "GAMgASgIEhIKCkNyZWF0ZURhdGUYBCABKAkSEgoKQ3JlYXRlVXNlchgFIAEo",
+          "CSKLAQoTQWN0aW9uTWFzdGVyUmVxdWVzdBIQCghBY3Rpb25JRBgBIAEoCRIS",
+          "CgpBY3Rpb25OYW1lGAIgASgJEhIKCkNyZWF0ZURhdGUYAyABKAkSEgoKQ3Jl",
+          "YXRlVXNlchgEIAEoCRISCgpVcGRhdGVEYXRlGAUgASgJEhIKClVwZGF0ZVVz",
+          "ZXIYBiABKAkiiQEKEUFjdGlvbk1hc3RlclJlcGx5EhAKCEFjdGlvbklEGAEg",
+          "ASgJEhIKCkFjdGlvbk5hbWUYAiABKAkSEgoKQ3JlYXRlRGF0ZRgDIAEoCRIS",
+          "CgpDcmVhdGVVc2VyGAQgASgJEhIKClVwZGF0ZURhdGUYBSABKAkSEgoKVXBk",
+          "YXRlVXNlchgGIAEoCSKsAQoYRGVzdGluYXRpb25NYXN0ZXJSZXF1ZXN0EhUK",
+          "DURlc3RpbmF0aW9uSUQYASABKAkSFwoPRGVzdGluYXRpb25OYW1lGAIgASgJ",
+          "EhAKCEFjdGlvbklEGAMgASgJEhIKCkNyZWF0ZURhdGUYBCABKAkSEgoKQ3Jl",
+          "YXRlVXNlchgFIAEoCRISCgpVcGRhdGVEYXRlGAYgASgJEhIKClVwZGF0ZVVz",
+          "ZXIYByABKAkiqgEKFkRlc3RpbmF0aW9uTWFzdGVyUmVwbHkSFQoNRGVzdGlu",
+          "YXRpb25JRBgBIAEoCRIXCg9EZXN0aW5hdGlvbk5hbWUYAiABKAkSEAoIQWN0",
+          "aW9uSUQYAyABKAkSEgoKQ3JlYXRlRGF0ZRgEIAEoCRISCgpDcmVhdGVVc2Vy",
+          "GAUgASgJEhIKClVwZGF0ZURhdGUYBiABKAkSEgoKVXBkYXRlVXNlchgHIAEo",
+          "CTLxBQofRGVzdGluYXRpb25iYXJkQ29tbXVuaWNhdGlvbkFQSRJACg5HZXRS",
+          "ZWdpc3RTdGFmZhIWLkdldFJlZ2lzdFN0YWZmUmVxdWVzdBoULkdldFJlZ2lz",
+          "dFN0YWZmUmVwbHkiABI3CgtSZWdpc3RTdGFmZhITLlJlZ2lzdFN0YWZmUmVx",
+          "dWVzdBoRLlJlZ2lzdFN0YWZmUmVwbHkiABI0CgpHZXRBY3Rpb25zEhIuR2V0",
+          "QWN0aW9uc1JlcXVlc3QaEC5HZXRBY3Rpb25zUmVwbHkiABJDCg9HZXREZXN0",
+          "aW5hdGlvbnMSFy5HZXREZXN0aW5hdGlvbnNSZXF1ZXN0GhUuR2V0RGVzdGlu",
+          "YXRpb25zUmVwbHkiABJGChBSZWdpc3RBY3Rpb25QbGFuEhguUmVnaXN0QWN0",
+          "aW9uUGxhblJlcXVlc3QaFi5SZWdpc3RBY3Rpb25QbGFuUmVwbHkiABI9Cg1S",
+          "ZWdpc3RBY3Rpb25zEhUuUmVnaXN0QWN0aW9uc1JlcXVlc3QaEy5SZWdpc3RB",
+          "Y3Rpb25zUmVwbHkiABJMChJSZWdpc3REZXN0aW5hdGlvbnMSGi5SZWdpc3RE",
+          "ZXN0aW5hdGlvbnNSZXF1ZXN0GhguUmVnaXN0RGVzdGluYXRpb25zUmVwbHki",
+          "ABJDCg9BY3Rpb25QbGFuVGFibGUSFy5BY3Rpb25QbGFuVGFibGVSZXF1ZXN0",
+          "GhUuQWN0aW9uUGxhblRhYmxlUmVwbHkiABI3CgtTdGFmZk1hc3RlchITLlN0",
+          "YWZmTWFzdGVyUmVxdWVzdBoRLlN0YWZmTWFzdGVyUmVwbHkiABI6CgxBY3Rp",
+          "b25NYXN0ZXISFC5BY3Rpb25NYXN0ZXJSZXF1ZXN0GhIuQWN0aW9uTWFzdGVy",
+          "UmVwbHkiABJJChFEZXN0aW5hdGlvbk1hc3RlchIZLkRlc3RpbmF0aW9uTWFz",
+          "dGVyUmVxdWVzdBoXLkRlc3RpbmF0aW9uTWFzdGVyUmVwbHkiAGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::RegstStaffRequest), global::RegstStaffRequest.Parser, new[]{ "UserName", "StaffInfoList" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::RegstStaffReply), global::RegstStaffReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::DeleteStaffRequest), global::DeleteStaffRequest.Parser, new[]{ "UserName", "StaffInfo" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::DeleteStaffReply), global::DeleteStaffReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GetRegistStaffRequest), global::GetRegistStaffRequest.Parser, null, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GetRegistStaffReply), global::GetRegistStaffReply.Parser, null, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RegistStaffRequest), global::RegistStaffRequest.Parser, new[]{ "UserName", "StaffInfoList" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RegistStaffReply), global::RegistStaffReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetActionsRequest), global::GetActionsRequest.Parser, new[]{ "UserName" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetActionsReply), global::GetActionsReply.Parser, new[]{ "ErrorCode", "ActionList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetDestinationsRequest), global::GetDestinationsRequest.Parser, new[]{ "UserName" }, null, null, null, null),
@@ -115,15 +113,15 @@ public static partial class DestinationbardCommunicationAPIReflection {
 
 }
 #region Messages
-public sealed partial class RegstStaffRequest : pb::IMessage<RegstStaffRequest>
+public sealed partial class GetRegistStaffRequest : pb::IMessage<GetRegistStaffRequest>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<RegstStaffRequest> _parser = new pb::MessageParser<RegstStaffRequest>(() => new RegstStaffRequest());
+  private static readonly pb::MessageParser<GetRegistStaffRequest> _parser = new pb::MessageParser<GetRegistStaffRequest>(() => new GetRegistStaffRequest());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<RegstStaffRequest> Parser { get { return _parser; } }
+  public static pb::MessageParser<GetRegistStaffRequest> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -136,22 +134,294 @@ public sealed partial class RegstStaffRequest : pb::IMessage<RegstStaffRequest>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RegstStaffRequest() {
+  public GetRegistStaffRequest() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RegstStaffRequest(RegstStaffRequest other) : this() {
+  public GetRegistStaffRequest(GetRegistStaffRequest other) : this() {
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetRegistStaffRequest Clone() {
+    return new GetRegistStaffRequest(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GetRegistStaffRequest);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GetRegistStaffRequest other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GetRegistStaffRequest other) {
+    if (other == null) {
+      return;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class GetRegistStaffReply : pb::IMessage<GetRegistStaffReply>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<GetRegistStaffReply> _parser = new pb::MessageParser<GetRegistStaffReply>(() => new GetRegistStaffReply());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GetRegistStaffReply> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[1]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetRegistStaffReply() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetRegistStaffReply(GetRegistStaffReply other) : this() {
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetRegistStaffReply Clone() {
+    return new GetRegistStaffReply(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GetRegistStaffReply);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GetRegistStaffReply other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GetRegistStaffReply other) {
+    if (other == null) {
+      return;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class RegistStaffRequest : pb::IMessage<RegistStaffRequest>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<RegistStaffRequest> _parser = new pb::MessageParser<RegistStaffRequest>(() => new RegistStaffRequest());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<RegistStaffRequest> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[2]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public RegistStaffRequest() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public RegistStaffRequest(RegistStaffRequest other) : this() {
     userName_ = other.userName_;
     staffInfoList_ = other.staffInfoList_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RegstStaffRequest Clone() {
-    return new RegstStaffRequest(this);
+  public RegistStaffRequest Clone() {
+    return new RegistStaffRequest(this);
   }
 
   /// <summary>Field number for the "UserName" field.</summary>
@@ -177,11 +447,11 @@ public sealed partial class RegstStaffRequest : pb::IMessage<RegstStaffRequest>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as RegstStaffRequest);
+    return Equals(other as RegistStaffRequest);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(RegstStaffRequest other) {
+  public bool Equals(RegistStaffRequest other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -253,7 +523,7 @@ public sealed partial class RegstStaffRequest : pb::IMessage<RegstStaffRequest>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(RegstStaffRequest other) {
+  public void MergeFrom(RegistStaffRequest other) {
     if (other == null) {
       return;
     }
@@ -312,404 +582,15 @@ public sealed partial class RegstStaffRequest : pb::IMessage<RegstStaffRequest>
 
 }
 
-public sealed partial class RegstStaffReply : pb::IMessage<RegstStaffReply>
+public sealed partial class RegistStaffReply : pb::IMessage<RegistStaffReply>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<RegstStaffReply> _parser = new pb::MessageParser<RegstStaffReply>(() => new RegstStaffReply());
+  private static readonly pb::MessageParser<RegistStaffReply> _parser = new pb::MessageParser<RegistStaffReply>(() => new RegistStaffReply());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<RegstStaffReply> Parser { get { return _parser; } }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[1]; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  pbr::MessageDescriptor pb::IMessage.Descriptor {
-    get { return Descriptor; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RegstStaffReply() {
-    OnConstruction();
-  }
-
-  partial void OnConstruction();
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RegstStaffReply(RegstStaffReply other) : this() {
-    errorCode_ = other.errorCode_;
-    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RegstStaffReply Clone() {
-    return new RegstStaffReply(this);
-  }
-
-  /// <summary>Field number for the "ErrorCode" field.</summary>
-  public const int ErrorCodeFieldNumber = 1;
-  private int errorCode_;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int ErrorCode {
-    get { return errorCode_; }
-    set {
-      errorCode_ = value;
-    }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override bool Equals(object other) {
-    return Equals(other as RegstStaffReply);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(RegstStaffReply other) {
-    if (ReferenceEquals(other, null)) {
-      return false;
-    }
-    if (ReferenceEquals(other, this)) {
-      return true;
-    }
-    if (ErrorCode != other.ErrorCode) return false;
-    return Equals(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override int GetHashCode() {
-    int hash = 1;
-    if (ErrorCode != 0) hash ^= ErrorCode.GetHashCode();
-    if (_unknownFields != null) {
-      hash ^= _unknownFields.GetHashCode();
-    }
-    return hash;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override string ToString() {
-    return pb::JsonFormatter.ToDiagnosticString(this);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void WriteTo(pb::CodedOutputStream output) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    output.WriteRawMessage(this);
-  #else
-    if (ErrorCode != 0) {
-      output.WriteRawTag(8);
-      output.WriteInt32(ErrorCode);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(output);
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (ErrorCode != 0) {
-      output.WriteRawTag(8);
-      output.WriteInt32(ErrorCode);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(ref output);
-    }
-  }
-  #endif
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CalculateSize() {
-    int size = 0;
-    if (ErrorCode != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ErrorCode);
-    }
-    if (_unknownFields != null) {
-      size += _unknownFields.CalculateSize();
-    }
-    return size;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(RegstStaffReply other) {
-    if (other == null) {
-      return;
-    }
-    if (other.ErrorCode != 0) {
-      ErrorCode = other.ErrorCode;
-    }
-    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(pb::CodedInputStream input) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    input.ReadRawMessage(this);
-  #else
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-          break;
-        case 8: {
-          ErrorCode = input.ReadInt32();
-          break;
-        }
-      }
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-          break;
-        case 8: {
-          ErrorCode = input.ReadInt32();
-          break;
-        }
-      }
-    }
-  }
-  #endif
-
-}
-
-public sealed partial class DeleteStaffRequest : pb::IMessage<DeleteStaffRequest>
-#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    , pb::IBufferMessage
-#endif
-{
-  private static readonly pb::MessageParser<DeleteStaffRequest> _parser = new pb::MessageParser<DeleteStaffRequest>(() => new DeleteStaffRequest());
-  private pb::UnknownFieldSet _unknownFields;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<DeleteStaffRequest> Parser { get { return _parser; } }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[2]; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  pbr::MessageDescriptor pb::IMessage.Descriptor {
-    get { return Descriptor; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DeleteStaffRequest() {
-    OnConstruction();
-  }
-
-  partial void OnConstruction();
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DeleteStaffRequest(DeleteStaffRequest other) : this() {
-    userName_ = other.userName_;
-    staffInfo_ = other.staffInfo_ != null ? other.staffInfo_.Clone() : null;
-    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DeleteStaffRequest Clone() {
-    return new DeleteStaffRequest(this);
-  }
-
-  /// <summary>Field number for the "UserName" field.</summary>
-  public const int UserNameFieldNumber = 1;
-  private string userName_ = "";
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string UserName {
-    get { return userName_; }
-    set {
-      userName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-    }
-  }
-
-  /// <summary>Field number for the "StaffInfo" field.</summary>
-  public const int StaffInfoFieldNumber = 2;
-  private global::StaffMasterRequest staffInfo_;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::StaffMasterRequest StaffInfo {
-    get { return staffInfo_; }
-    set {
-      staffInfo_ = value;
-    }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override bool Equals(object other) {
-    return Equals(other as DeleteStaffRequest);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(DeleteStaffRequest other) {
-    if (ReferenceEquals(other, null)) {
-      return false;
-    }
-    if (ReferenceEquals(other, this)) {
-      return true;
-    }
-    if (UserName != other.UserName) return false;
-    if (!object.Equals(StaffInfo, other.StaffInfo)) return false;
-    return Equals(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override int GetHashCode() {
-    int hash = 1;
-    if (UserName.Length != 0) hash ^= UserName.GetHashCode();
-    if (staffInfo_ != null) hash ^= StaffInfo.GetHashCode();
-    if (_unknownFields != null) {
-      hash ^= _unknownFields.GetHashCode();
-    }
-    return hash;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override string ToString() {
-    return pb::JsonFormatter.ToDiagnosticString(this);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void WriteTo(pb::CodedOutputStream output) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    output.WriteRawMessage(this);
-  #else
-    if (UserName.Length != 0) {
-      output.WriteRawTag(10);
-      output.WriteString(UserName);
-    }
-    if (staffInfo_ != null) {
-      output.WriteRawTag(18);
-      output.WriteMessage(StaffInfo);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(output);
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (UserName.Length != 0) {
-      output.WriteRawTag(10);
-      output.WriteString(UserName);
-    }
-    if (staffInfo_ != null) {
-      output.WriteRawTag(18);
-      output.WriteMessage(StaffInfo);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(ref output);
-    }
-  }
-  #endif
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CalculateSize() {
-    int size = 0;
-    if (UserName.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(UserName);
-    }
-    if (staffInfo_ != null) {
-      size += 1 + pb::CodedOutputStream.ComputeMessageSize(StaffInfo);
-    }
-    if (_unknownFields != null) {
-      size += _unknownFields.CalculateSize();
-    }
-    return size;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(DeleteStaffRequest other) {
-    if (other == null) {
-      return;
-    }
-    if (other.UserName.Length != 0) {
-      UserName = other.UserName;
-    }
-    if (other.staffInfo_ != null) {
-      if (staffInfo_ == null) {
-        StaffInfo = new global::StaffMasterRequest();
-      }
-      StaffInfo.MergeFrom(other.StaffInfo);
-    }
-    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(pb::CodedInputStream input) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    input.ReadRawMessage(this);
-  #else
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-          break;
-        case 10: {
-          UserName = input.ReadString();
-          break;
-        }
-        case 18: {
-          if (staffInfo_ == null) {
-            StaffInfo = new global::StaffMasterRequest();
-          }
-          input.ReadMessage(StaffInfo);
-          break;
-        }
-      }
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-          break;
-        case 10: {
-          UserName = input.ReadString();
-          break;
-        }
-        case 18: {
-          if (staffInfo_ == null) {
-            StaffInfo = new global::StaffMasterRequest();
-          }
-          input.ReadMessage(StaffInfo);
-          break;
-        }
-      }
-    }
-  }
-  #endif
-
-}
-
-public sealed partial class DeleteStaffReply : pb::IMessage<DeleteStaffReply>
-#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    , pb::IBufferMessage
-#endif
-{
-  private static readonly pb::MessageParser<DeleteStaffReply> _parser = new pb::MessageParser<DeleteStaffReply>(() => new DeleteStaffReply());
-  private pb::UnknownFieldSet _unknownFields;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<DeleteStaffReply> Parser { get { return _parser; } }
+  public static pb::MessageParser<RegistStaffReply> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -722,21 +603,21 @@ public sealed partial class DeleteStaffReply : pb::IMessage<DeleteStaffReply>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DeleteStaffReply() {
+  public RegistStaffReply() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DeleteStaffReply(DeleteStaffReply other) : this() {
+  public RegistStaffReply(RegistStaffReply other) : this() {
     errorCode_ = other.errorCode_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DeleteStaffReply Clone() {
-    return new DeleteStaffReply(this);
+  public RegistStaffReply Clone() {
+    return new RegistStaffReply(this);
   }
 
   /// <summary>Field number for the "ErrorCode" field.</summary>
@@ -752,11 +633,11 @@ public sealed partial class DeleteStaffReply : pb::IMessage<DeleteStaffReply>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as DeleteStaffReply);
+    return Equals(other as RegistStaffReply);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(DeleteStaffReply other) {
+  public bool Equals(RegistStaffReply other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -823,7 +704,7 @@ public sealed partial class DeleteStaffReply : pb::IMessage<DeleteStaffReply>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(DeleteStaffReply other) {
+  public void MergeFrom(RegistStaffReply other) {
     if (other == null) {
       return;
     }
