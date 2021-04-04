@@ -277,6 +277,520 @@ public static partial class DestinationbardCommunicationAPI
 
   }
 
+  /// <summary>Client for DestinationbardCommunicationAPI</summary>
+  public partial class DestinationbardCommunicationAPIClient : grpc::ClientBase<DestinationbardCommunicationAPIClient>
+  {
+    /// <summary>Creates a new client for DestinationbardCommunicationAPI</summary>
+    /// <param name="channel">The channel to use to make remote calls.</param>
+    public DestinationbardCommunicationAPIClient(grpc::ChannelBase channel) : base(channel)
+    {
+    }
+    /// <summary>Creates a new client for DestinationbardCommunicationAPI that uses a custom <c>CallInvoker</c>.</summary>
+    /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+    public DestinationbardCommunicationAPIClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+    {
+    }
+    /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+    protected DestinationbardCommunicationAPIClient() : base()
+    {
+    }
+    /// <summary>Protected constructor to allow creation of configured clients.</summary>
+    /// <param name="configuration">The client configuration.</param>
+    protected DestinationbardCommunicationAPIClient(ClientBaseConfiguration configuration) : base(configuration)
+    {
+    }
+
+    /// <summary>
+    /// スタッフ情報の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegstStaffReply RegstStaff(global::RegstStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegstStaff(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// スタッフ情報の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegstStaffReply RegstStaff(global::RegstStaffRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_RegstStaff, null, options, request);
+    }
+    /// <summary>
+    /// スタッフ情報の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegstStaffReply> RegstStaffAsync(global::RegstStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegstStaffAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// スタッフ情報の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegstStaffReply> RegstStaffAsync(global::RegstStaffRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_RegstStaff, null, options, request);
+    }
+    /// <summary>
+    /// スタッフ情報の削除
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::DeleteStaffReply DeleteStaff(global::DeleteStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return DeleteStaff(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// スタッフ情報の削除
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::DeleteStaffReply DeleteStaff(global::DeleteStaffRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_DeleteStaff, null, options, request);
+    }
+    /// <summary>
+    /// スタッフ情報の削除
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::DeleteStaffReply> DeleteStaffAsync(global::DeleteStaffRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return DeleteStaffAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// スタッフ情報の削除
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::DeleteStaffReply> DeleteStaffAsync(global::DeleteStaffRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_DeleteStaff, null, options, request);
+    }
+    /// <summary>
+    /// 行動一覧の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::GetActionsReply GetActions(global::GetActionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetActions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動一覧の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::GetActionsReply GetActions(global::GetActionsRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_GetActions, null, options, request);
+    }
+    /// <summary>
+    /// 行動一覧の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::GetActionsReply> GetActionsAsync(global::GetActionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetActionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動一覧の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::GetActionsReply> GetActionsAsync(global::GetActionsRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_GetActions, null, options, request);
+    }
+    /// <summary>
+    /// 行先一覧の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::GetDestinationsReply GetDestinations(global::GetDestinationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetDestinations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行先一覧の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::GetDestinationsReply GetDestinations(global::GetDestinationsRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_GetDestinations, null, options, request);
+    }
+    /// <summary>
+    /// 行先一覧の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::GetDestinationsReply> GetDestinationsAsync(global::GetDestinationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetDestinationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行先一覧の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::GetDestinationsReply> GetDestinationsAsync(global::GetDestinationsRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_GetDestinations, null, options, request);
+    }
+    /// <summary>
+    /// 行動予定の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistActionPlanReply RegistActionPlan(global::RegistActionPlanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistActionPlan(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動予定の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistActionPlanReply RegistActionPlan(global::RegistActionPlanRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_RegistActionPlan, null, options, request);
+    }
+    /// <summary>
+    /// 行動予定の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistActionPlanReply> RegistActionPlanAsync(global::RegistActionPlanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistActionPlanAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動予定の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistActionPlanReply> RegistActionPlanAsync(global::RegistActionPlanRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_RegistActionPlan, null, options, request);
+    }
+    /// <summary>
+    /// 行動一覧の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistActionsReply RegistActions(global::RegistActionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistActions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動一覧の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistActionsReply RegistActions(global::RegistActionsRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_RegistActions, null, options, request);
+    }
+    /// <summary>
+    /// 行動一覧の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistActionsReply> RegistActionsAsync(global::RegistActionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistActionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動一覧の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistActionsReply> RegistActionsAsync(global::RegistActionsRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_RegistActions, null, options, request);
+    }
+    /// <summary>
+    /// 行先一覧の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistDestinationsReply RegistDestinations(global::RegistDestinationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistDestinations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行先一覧の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistDestinationsReply RegistDestinations(global::RegistDestinationsRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_RegistDestinations, null, options, request);
+    }
+    /// <summary>
+    /// 行先一覧の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistDestinationsReply> RegistDestinationsAsync(global::RegistDestinationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistDestinationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行先一覧の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistDestinationsReply> RegistDestinationsAsync(global::RegistDestinationsRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_RegistDestinations, null, options, request);
+    }
+    /// <summary>
+    /// 現在の行動予定一覧表
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::ActionPlanTableReply ActionPlanTable(global::ActionPlanTableRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return ActionPlanTable(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 現在の行動予定一覧表
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::ActionPlanTableReply ActionPlanTable(global::ActionPlanTableRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_ActionPlanTable, null, options, request);
+    }
+    /// <summary>
+    /// 現在の行動予定一覧表
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::ActionPlanTableReply> ActionPlanTableAsync(global::ActionPlanTableRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return ActionPlanTableAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 現在の行動予定一覧表
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::ActionPlanTableReply> ActionPlanTableAsync(global::ActionPlanTableRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_ActionPlanTable, null, options, request);
+    }
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::StaffMasterReply StaffMaster(global::StaffMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return StaffMaster(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::StaffMasterReply StaffMaster(global::StaffMasterRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_StaffMaster, null, options, request);
+    }
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::StaffMasterReply> StaffMasterAsync(global::StaffMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return StaffMasterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::StaffMasterReply> StaffMasterAsync(global::StaffMasterRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_StaffMaster, null, options, request);
+    }
+    /// <summary>
+    /// 行動マスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::ActionMasterReply ActionMaster(global::ActionMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return ActionMaster(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動マスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::ActionMasterReply ActionMaster(global::ActionMasterRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_ActionMaster, null, options, request);
+    }
+    /// <summary>
+    /// 行動マスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::ActionMasterReply> ActionMasterAsync(global::ActionMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return ActionMasterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動マスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::ActionMasterReply> ActionMasterAsync(global::ActionMasterRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_ActionMaster, null, options, request);
+    }
+    /// <summary>
+    /// 行先マスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::DestinationMasterReply DestinationMaster(global::DestinationMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return DestinationMaster(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行先マスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::DestinationMasterReply DestinationMaster(global::DestinationMasterRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_DestinationMaster, null, options, request);
+    }
+    /// <summary>
+    /// 行先マスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::DestinationMasterReply> DestinationMasterAsync(global::DestinationMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return DestinationMasterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行先マスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::DestinationMasterReply> DestinationMasterAsync(global::DestinationMasterRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_DestinationMaster, null, options, request);
+    }
+    /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+    protected override DestinationbardCommunicationAPIClient NewInstance(ClientBaseConfiguration configuration)
+    {
+      return new DestinationbardCommunicationAPIClient(configuration);
+    }
+  }
+
   /// <summary>Creates service definition that can be registered with a server</summary>
   /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
   public static grpc::ServerServiceDefinition BindService(DestinationbardCommunicationAPIBase serviceImpl)

@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace DestinationboardCommunicationLibrary.Communication
 {
+    public class EventArgsRcv : EventArgs
+    {
+        public object Request { get; set; }
+        public object Replay { get; set; }
+    }
+
     public class DestinationbardCommunicationAPIService : DestinationbardCommunicationAPI.DestinationbardCommunicationAPIBase
     {
         public string HostName { get; set; } = "127.0.0.1";
@@ -15,6 +21,8 @@ namespace DestinationboardCommunicationLibrary.Communication
         /// ポート番号
         /// </summary>
         public int Port { get; set; } = 552;
+
+        public event EventHandler RecieveRegstStaffEvent;
 
 
         /// <summary>
@@ -57,6 +65,15 @@ namespace DestinationboardCommunicationLibrary.Communication
             var message = new RegstStaffReply();
 
             // ここに処理を書く
+            EventArgsRcv ev = new EventArgsRcv();
+            ev.Request = request;
+            ev.Replay = message;
+
+
+            if (RecieveRegstStaffEvent != null)
+            {
+                RecieveRegstStaffEvent(this, ev);
+            }
 
             return Task.FromResult(message);
         }
