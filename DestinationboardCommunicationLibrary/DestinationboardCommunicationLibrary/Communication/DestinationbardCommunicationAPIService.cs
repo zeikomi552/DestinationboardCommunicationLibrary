@@ -17,7 +17,7 @@ namespace DestinationboardCommunicationLibrary.Communication
     public class DestinationbardCommunicationAPIService : DestinationbardCommunicationAPI.DestinationbardCommunicationAPIBase
     {
 
-        public event EventHandler RecieveGetRegistStaffEvent;
+        public event EventHandler RecieveGetStaffsEvent;
 
         public event EventHandler RecieveRegistStaffEvent;
 
@@ -75,17 +75,17 @@ namespace DestinationboardCommunicationLibrary.Communication
         }
 
 
-        #region [GetRegistStaff]APIリクエスト受付処理
+        #region [GetStaffs]APIリクエスト受付処理
         /// <summary>
-        /// [GetRegistStaff]APIリクエスト受付処理
+        /// [GetStaffs]APIリクエスト受付処理
         /// APIの要求を受け付けた時に走る処理
         /// </summary>
         /// <param name="request">リクエスト</param>
         /// <param name="context">コンテキスト</param>
         /// <returns>リプライ</returns>
-        public override Task<GetRegistStaffReply> GetRegistStaff(GetRegistStaffRequest request, ServerCallContext context)
+        public override Task<GetStaffsReply> GetStaffs(GetStaffsRequest request, ServerCallContext context)
         {
-            var message = new GetRegistStaffReply();
+            var message = new GetStaffsReply();
 
             // ここに処理を書く
             gRPCArgsRcv ev = new gRPCArgsRcv();
@@ -93,9 +93,9 @@ namespace DestinationboardCommunicationLibrary.Communication
             ev.Replay = message;
 
 
-            if (RecieveGetRegistStaffEvent != null)
+            if (RecieveGetStaffsEvent != null)
             {
-                RecieveGetRegistStaffEvent(this, ev);
+                RecieveGetStaffsEvent(this, ev);
             }
 
             return Task.FromResult(message);

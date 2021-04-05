@@ -4,7 +4,7 @@
 service DestinationbardCommunicationAPI{
 
 	// 登録スタッフ情報の取得API
-	rpc GetRegistStaff (GetRegistStaffRequest) returns(GetRegistStaffReply) {}
+	rpc GetStaffs (GetStaffsRequest) returns(GetStaffsReply) {}
 
 	// スタッフ情報の登録
 	rpc RegistStaff (RegistStaffRequest) returns(RegistStaffReply) {}
@@ -37,9 +37,10 @@ service DestinationbardCommunicationAPI{
 	rpc DestinationMaster (DestinationMasterRequest) returns(DestinationMasterReply) {}
 
 }
-message GetRegistStaffRequest {
+message GetStaffsRequest {
 }
-message GetRegistStaffReply {
+message GetStaffsReply {
+	repeated StaffMasterReply StaffInfoList = 1;
 }
 message RegistStaffRequest {
 	string UserName = 1;
@@ -53,7 +54,7 @@ message GetActionsRequest {
 }
 message GetActionsReply {
 	int32 ErrorCode = 1;
-	ActionMasterRequest  ActionList = 2;
+	repeated ActionMasterRequest  ActionList = 2;
 }
 message GetDestinationsRequest {
 	string UserName = 1;
