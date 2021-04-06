@@ -46,43 +46,44 @@ public static partial class DestinationbardCommunicationAPIReflection {
           "dGFmZklEGAEgASgJEhEKCVN0YWZmTmFtZRgCIAEoCRIQCghBY3Rpb25JRBgD",
           "IAEoCRISCgpBY3Rpb25OYW1lGAQgASgJEhUKDURlc3RpbmF0aW9uSUQYBSAB",
           "KAkSFwoPRGVzdGluYXRpb25OYW1lGAYgASgJEhAKCEZyb21UaW1lGAcgASgJ",
-          "Eg4KBlRvVGltZRgIIAEoCRIMCgRNZW1vGAkgASgJInEKElN0YWZmTWFzdGVy",
-          "UmVxdWVzdBIPCgdTdGFmZklEGAEgASgJEhEKCVN0YWZmTmFtZRgCIAEoCRIP",
-          "CgdEaXNwbGF5GAMgASgIEhIKCkNyZWF0ZURhdGUYBCABKAkSEgoKQ3JlYXRl",
-          "VXNlchgFIAEoCSJvChBTdGFmZk1hc3RlclJlcGx5Eg8KB1N0YWZmSUQYASAB",
-          "KAkSEQoJU3RhZmZOYW1lGAIgASgJEg8KB0Rpc3BsYXkYAyABKAgSEgoKQ3Jl",
-          "YXRlRGF0ZRgEIAEoCRISCgpDcmVhdGVVc2VyGAUgASgJIosBChNBY3Rpb25N",
-          "YXN0ZXJSZXF1ZXN0EhAKCEFjdGlvbklEGAEgASgJEhIKCkFjdGlvbk5hbWUY",
+          "Eg4KBlRvVGltZRgIIAEoCRIMCgRNZW1vGAkgASgJIoQBChJTdGFmZk1hc3Rl",
+          "clJlcXVlc3QSDwoHU3RhZmZJRBgBIAEoCRIRCglTb3J0T3JkZXIYAiABKAUS",
+          "EQoJU3RhZmZOYW1lGAMgASgJEg8KB0Rpc3BsYXkYBCABKAgSEgoKQ3JlYXRl",
+          "RGF0ZRgFIAEoCRISCgpDcmVhdGVVc2VyGAYgASgJIoIBChBTdGFmZk1hc3Rl",
+          "clJlcGx5Eg8KB1N0YWZmSUQYASABKAkSEQoJU29ydE9yZGVyGAIgASgFEhEK",
+          "CVN0YWZmTmFtZRgDIAEoCRIPCgdEaXNwbGF5GAQgASgIEhIKCkNyZWF0ZURh",
+          "dGUYBSABKAkSEgoKQ3JlYXRlVXNlchgGIAEoCSKLAQoTQWN0aW9uTWFzdGVy",
+          "UmVxdWVzdBIQCghBY3Rpb25JRBgBIAEoCRISCgpBY3Rpb25OYW1lGAIgASgJ",
+          "EhIKCkNyZWF0ZURhdGUYAyABKAkSEgoKQ3JlYXRlVXNlchgEIAEoCRISCgpV",
+          "cGRhdGVEYXRlGAUgASgJEhIKClVwZGF0ZVVzZXIYBiABKAkiiQEKEUFjdGlv",
+          "bk1hc3RlclJlcGx5EhAKCEFjdGlvbklEGAEgASgJEhIKCkFjdGlvbk5hbWUY",
           "AiABKAkSEgoKQ3JlYXRlRGF0ZRgDIAEoCRISCgpDcmVhdGVVc2VyGAQgASgJ",
-          "EhIKClVwZGF0ZURhdGUYBSABKAkSEgoKVXBkYXRlVXNlchgGIAEoCSKJAQoR",
-          "QWN0aW9uTWFzdGVyUmVwbHkSEAoIQWN0aW9uSUQYASABKAkSEgoKQWN0aW9u",
-          "TmFtZRgCIAEoCRISCgpDcmVhdGVEYXRlGAMgASgJEhIKCkNyZWF0ZVVzZXIY",
-          "BCABKAkSEgoKVXBkYXRlRGF0ZRgFIAEoCRISCgpVcGRhdGVVc2VyGAYgASgJ",
-          "IqwBChhEZXN0aW5hdGlvbk1hc3RlclJlcXVlc3QSFQoNRGVzdGluYXRpb25J",
-          "RBgBIAEoCRIXCg9EZXN0aW5hdGlvbk5hbWUYAiABKAkSEAoIQWN0aW9uSUQY",
-          "AyABKAkSEgoKQ3JlYXRlRGF0ZRgEIAEoCRISCgpDcmVhdGVVc2VyGAUgASgJ",
-          "EhIKClVwZGF0ZURhdGUYBiABKAkSEgoKVXBkYXRlVXNlchgHIAEoCSKqAQoW",
-          "RGVzdGluYXRpb25NYXN0ZXJSZXBseRIVCg1EZXN0aW5hdGlvbklEGAEgASgJ",
-          "EhcKD0Rlc3RpbmF0aW9uTmFtZRgCIAEoCRIQCghBY3Rpb25JRBgDIAEoCRIS",
-          "CgpDcmVhdGVEYXRlGAQgASgJEhIKCkNyZWF0ZVVzZXIYBSABKAkSEgoKVXBk",
-          "YXRlRGF0ZRgGIAEoCRISCgpVcGRhdGVVc2VyGAcgASgJMuIFCh9EZXN0aW5h",
-          "dGlvbmJhcmRDb21tdW5pY2F0aW9uQVBJEjEKCUdldFN0YWZmcxIRLkdldFN0",
-          "YWZmc1JlcXVlc3QaDy5HZXRTdGFmZnNSZXBseSIAEjcKC1JlZ2lzdFN0YWZm",
-          "EhMuUmVnaXN0U3RhZmZSZXF1ZXN0GhEuUmVnaXN0U3RhZmZSZXBseSIAEjQK",
-          "CkdldEFjdGlvbnMSEi5HZXRBY3Rpb25zUmVxdWVzdBoQLkdldEFjdGlvbnNS",
-          "ZXBseSIAEkMKD0dldERlc3RpbmF0aW9ucxIXLkdldERlc3RpbmF0aW9uc1Jl",
-          "cXVlc3QaFS5HZXREZXN0aW5hdGlvbnNSZXBseSIAEkYKEFJlZ2lzdEFjdGlv",
-          "blBsYW4SGC5SZWdpc3RBY3Rpb25QbGFuUmVxdWVzdBoWLlJlZ2lzdEFjdGlv",
-          "blBsYW5SZXBseSIAEj0KDVJlZ2lzdEFjdGlvbnMSFS5SZWdpc3RBY3Rpb25z",
-          "UmVxdWVzdBoTLlJlZ2lzdEFjdGlvbnNSZXBseSIAEkwKElJlZ2lzdERlc3Rp",
-          "bmF0aW9ucxIaLlJlZ2lzdERlc3RpbmF0aW9uc1JlcXVlc3QaGC5SZWdpc3RE",
-          "ZXN0aW5hdGlvbnNSZXBseSIAEkMKD0FjdGlvblBsYW5UYWJsZRIXLkFjdGlv",
-          "blBsYW5UYWJsZVJlcXVlc3QaFS5BY3Rpb25QbGFuVGFibGVSZXBseSIAEjcK",
-          "C1N0YWZmTWFzdGVyEhMuU3RhZmZNYXN0ZXJSZXF1ZXN0GhEuU3RhZmZNYXN0",
-          "ZXJSZXBseSIAEjoKDEFjdGlvbk1hc3RlchIULkFjdGlvbk1hc3RlclJlcXVl",
-          "c3QaEi5BY3Rpb25NYXN0ZXJSZXBseSIAEkkKEURlc3RpbmF0aW9uTWFzdGVy",
-          "EhkuRGVzdGluYXRpb25NYXN0ZXJSZXF1ZXN0GhcuRGVzdGluYXRpb25NYXN0",
-          "ZXJSZXBseSIAYgZwcm90bzM="));
+          "EhIKClVwZGF0ZURhdGUYBSABKAkSEgoKVXBkYXRlVXNlchgGIAEoCSKsAQoY",
+          "RGVzdGluYXRpb25NYXN0ZXJSZXF1ZXN0EhUKDURlc3RpbmF0aW9uSUQYASAB",
+          "KAkSFwoPRGVzdGluYXRpb25OYW1lGAIgASgJEhAKCEFjdGlvbklEGAMgASgJ",
+          "EhIKCkNyZWF0ZURhdGUYBCABKAkSEgoKQ3JlYXRlVXNlchgFIAEoCRISCgpV",
+          "cGRhdGVEYXRlGAYgASgJEhIKClVwZGF0ZVVzZXIYByABKAkiqgEKFkRlc3Rp",
+          "bmF0aW9uTWFzdGVyUmVwbHkSFQoNRGVzdGluYXRpb25JRBgBIAEoCRIXCg9E",
+          "ZXN0aW5hdGlvbk5hbWUYAiABKAkSEAoIQWN0aW9uSUQYAyABKAkSEgoKQ3Jl",
+          "YXRlRGF0ZRgEIAEoCRISCgpDcmVhdGVVc2VyGAUgASgJEhIKClVwZGF0ZURh",
+          "dGUYBiABKAkSEgoKVXBkYXRlVXNlchgHIAEoCTLiBQofRGVzdGluYXRpb25i",
+          "YXJkQ29tbXVuaWNhdGlvbkFQSRIxCglHZXRTdGFmZnMSES5HZXRTdGFmZnNS",
+          "ZXF1ZXN0Gg8uR2V0U3RhZmZzUmVwbHkiABI3CgtSZWdpc3RTdGFmZhITLlJl",
+          "Z2lzdFN0YWZmUmVxdWVzdBoRLlJlZ2lzdFN0YWZmUmVwbHkiABI0CgpHZXRB",
+          "Y3Rpb25zEhIuR2V0QWN0aW9uc1JlcXVlc3QaEC5HZXRBY3Rpb25zUmVwbHki",
+          "ABJDCg9HZXREZXN0aW5hdGlvbnMSFy5HZXREZXN0aW5hdGlvbnNSZXF1ZXN0",
+          "GhUuR2V0RGVzdGluYXRpb25zUmVwbHkiABJGChBSZWdpc3RBY3Rpb25QbGFu",
+          "EhguUmVnaXN0QWN0aW9uUGxhblJlcXVlc3QaFi5SZWdpc3RBY3Rpb25QbGFu",
+          "UmVwbHkiABI9Cg1SZWdpc3RBY3Rpb25zEhUuUmVnaXN0QWN0aW9uc1JlcXVl",
+          "c3QaEy5SZWdpc3RBY3Rpb25zUmVwbHkiABJMChJSZWdpc3REZXN0aW5hdGlv",
+          "bnMSGi5SZWdpc3REZXN0aW5hdGlvbnNSZXF1ZXN0GhguUmVnaXN0RGVzdGlu",
+          "YXRpb25zUmVwbHkiABJDCg9BY3Rpb25QbGFuVGFibGUSFy5BY3Rpb25QbGFu",
+          "VGFibGVSZXF1ZXN0GhUuQWN0aW9uUGxhblRhYmxlUmVwbHkiABI3CgtTdGFm",
+          "Zk1hc3RlchITLlN0YWZmTWFzdGVyUmVxdWVzdBoRLlN0YWZmTWFzdGVyUmVw",
+          "bHkiABI6CgxBY3Rpb25NYXN0ZXISFC5BY3Rpb25NYXN0ZXJSZXF1ZXN0GhIu",
+          "QWN0aW9uTWFzdGVyUmVwbHkiABJJChFEZXN0aW5hdGlvbk1hc3RlchIZLkRl",
+          "c3RpbmF0aW9uTWFzdGVyUmVxdWVzdBoXLkRlc3RpbmF0aW9uTWFzdGVyUmVw",
+          "bHkiAGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -102,8 +103,8 @@ public static partial class DestinationbardCommunicationAPIReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::RegistDestinationsReply), global::RegistDestinationsReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::ActionPlanTableRequest), global::ActionPlanTableRequest.Parser, new[]{ "StaffID", "StaffName", "ActionID", "ActionName", "DestinationID", "DestinationName", "FromTime", "ToTime", "Memo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::ActionPlanTableReply), global::ActionPlanTableReply.Parser, new[]{ "StaffID", "StaffName", "ActionID", "ActionName", "DestinationID", "DestinationName", "FromTime", "ToTime", "Memo" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::StaffMasterRequest), global::StaffMasterRequest.Parser, new[]{ "StaffID", "StaffName", "Display", "CreateDate", "CreateUser" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::StaffMasterReply), global::StaffMasterReply.Parser, new[]{ "StaffID", "StaffName", "Display", "CreateDate", "CreateUser" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::StaffMasterRequest), global::StaffMasterRequest.Parser, new[]{ "StaffID", "SortOrder", "StaffName", "Display", "CreateDate", "CreateUser" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::StaffMasterReply), global::StaffMasterReply.Parser, new[]{ "StaffID", "SortOrder", "StaffName", "Display", "CreateDate", "CreateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::ActionMasterRequest), global::ActionMasterRequest.Parser, new[]{ "ActionID", "ActionName", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::ActionMasterReply), global::ActionMasterReply.Parser, new[]{ "ActionID", "ActionName", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::DestinationMasterRequest), global::DestinationMasterRequest.Parser, new[]{ "DestinationID", "DestinationName", "ActionID", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
@@ -3475,6 +3476,7 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public StaffMasterRequest(StaffMasterRequest other) : this() {
     staffID_ = other.staffID_;
+    sortOrder_ = other.sortOrder_;
     staffName_ = other.staffName_;
     display_ = other.display_;
     createDate_ = other.createDate_;
@@ -3498,8 +3500,19 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
     }
   }
 
+  /// <summary>Field number for the "SortOrder" field.</summary>
+  public const int SortOrderFieldNumber = 2;
+  private int sortOrder_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int SortOrder {
+    get { return sortOrder_; }
+    set {
+      sortOrder_ = value;
+    }
+  }
+
   /// <summary>Field number for the "StaffName" field.</summary>
-  public const int StaffNameFieldNumber = 2;
+  public const int StaffNameFieldNumber = 3;
   private string staffName_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string StaffName {
@@ -3510,7 +3523,7 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
   }
 
   /// <summary>Field number for the "Display" field.</summary>
-  public const int DisplayFieldNumber = 3;
+  public const int DisplayFieldNumber = 4;
   private bool display_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public bool Display {
@@ -3521,7 +3534,7 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
   }
 
   /// <summary>Field number for the "CreateDate" field.</summary>
-  public const int CreateDateFieldNumber = 4;
+  public const int CreateDateFieldNumber = 5;
   private string createDate_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CreateDate {
@@ -3532,7 +3545,7 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
   }
 
   /// <summary>Field number for the "CreateUser" field.</summary>
-  public const int CreateUserFieldNumber = 5;
+  public const int CreateUserFieldNumber = 6;
   private string createUser_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CreateUser {
@@ -3556,6 +3569,7 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
       return true;
     }
     if (StaffID != other.StaffID) return false;
+    if (SortOrder != other.SortOrder) return false;
     if (StaffName != other.StaffName) return false;
     if (Display != other.Display) return false;
     if (CreateDate != other.CreateDate) return false;
@@ -3567,6 +3581,7 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
   public override int GetHashCode() {
     int hash = 1;
     if (StaffID.Length != 0) hash ^= StaffID.GetHashCode();
+    if (SortOrder != 0) hash ^= SortOrder.GetHashCode();
     if (StaffName.Length != 0) hash ^= StaffName.GetHashCode();
     if (Display != false) hash ^= Display.GetHashCode();
     if (CreateDate.Length != 0) hash ^= CreateDate.GetHashCode();
@@ -3591,20 +3606,24 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
       output.WriteRawTag(10);
       output.WriteString(StaffID);
     }
+    if (SortOrder != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(SortOrder);
+    }
     if (StaffName.Length != 0) {
-      output.WriteRawTag(18);
+      output.WriteRawTag(26);
       output.WriteString(StaffName);
     }
     if (Display != false) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteBool(Display);
     }
     if (CreateDate.Length != 0) {
-      output.WriteRawTag(34);
+      output.WriteRawTag(42);
       output.WriteString(CreateDate);
     }
     if (CreateUser.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteString(CreateUser);
     }
     if (_unknownFields != null) {
@@ -3620,20 +3639,24 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
       output.WriteRawTag(10);
       output.WriteString(StaffID);
     }
+    if (SortOrder != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(SortOrder);
+    }
     if (StaffName.Length != 0) {
-      output.WriteRawTag(18);
+      output.WriteRawTag(26);
       output.WriteString(StaffName);
     }
     if (Display != false) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteBool(Display);
     }
     if (CreateDate.Length != 0) {
-      output.WriteRawTag(34);
+      output.WriteRawTag(42);
       output.WriteString(CreateDate);
     }
     if (CreateUser.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteString(CreateUser);
     }
     if (_unknownFields != null) {
@@ -3647,6 +3670,9 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
     int size = 0;
     if (StaffID.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(StaffID);
+    }
+    if (SortOrder != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(SortOrder);
     }
     if (StaffName.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(StaffName);
@@ -3673,6 +3699,9 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
     }
     if (other.StaffID.Length != 0) {
       StaffID = other.StaffID;
+    }
+    if (other.SortOrder != 0) {
+      SortOrder = other.SortOrder;
     }
     if (other.StaffName.Length != 0) {
       StaffName = other.StaffName;
@@ -3704,19 +3733,23 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
           StaffID = input.ReadString();
           break;
         }
-        case 18: {
+        case 16: {
+          SortOrder = input.ReadInt32();
+          break;
+        }
+        case 26: {
           StaffName = input.ReadString();
           break;
         }
-        case 24: {
+        case 32: {
           Display = input.ReadBool();
           break;
         }
-        case 34: {
+        case 42: {
           CreateDate = input.ReadString();
           break;
         }
-        case 42: {
+        case 50: {
           CreateUser = input.ReadString();
           break;
         }
@@ -3738,19 +3771,23 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
           StaffID = input.ReadString();
           break;
         }
-        case 18: {
+        case 16: {
+          SortOrder = input.ReadInt32();
+          break;
+        }
+        case 26: {
           StaffName = input.ReadString();
           break;
         }
-        case 24: {
+        case 32: {
           Display = input.ReadBool();
           break;
         }
-        case 34: {
+        case 42: {
           CreateDate = input.ReadString();
           break;
         }
-        case 42: {
+        case 50: {
           CreateUser = input.ReadString();
           break;
         }
@@ -3791,6 +3828,7 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public StaffMasterReply(StaffMasterReply other) : this() {
     staffID_ = other.staffID_;
+    sortOrder_ = other.sortOrder_;
     staffName_ = other.staffName_;
     display_ = other.display_;
     createDate_ = other.createDate_;
@@ -3814,8 +3852,19 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
     }
   }
 
+  /// <summary>Field number for the "SortOrder" field.</summary>
+  public const int SortOrderFieldNumber = 2;
+  private int sortOrder_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int SortOrder {
+    get { return sortOrder_; }
+    set {
+      sortOrder_ = value;
+    }
+  }
+
   /// <summary>Field number for the "StaffName" field.</summary>
-  public const int StaffNameFieldNumber = 2;
+  public const int StaffNameFieldNumber = 3;
   private string staffName_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string StaffName {
@@ -3826,7 +3875,7 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
   }
 
   /// <summary>Field number for the "Display" field.</summary>
-  public const int DisplayFieldNumber = 3;
+  public const int DisplayFieldNumber = 4;
   private bool display_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public bool Display {
@@ -3837,7 +3886,7 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
   }
 
   /// <summary>Field number for the "CreateDate" field.</summary>
-  public const int CreateDateFieldNumber = 4;
+  public const int CreateDateFieldNumber = 5;
   private string createDate_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CreateDate {
@@ -3848,7 +3897,7 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
   }
 
   /// <summary>Field number for the "CreateUser" field.</summary>
-  public const int CreateUserFieldNumber = 5;
+  public const int CreateUserFieldNumber = 6;
   private string createUser_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string CreateUser {
@@ -3872,6 +3921,7 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
       return true;
     }
     if (StaffID != other.StaffID) return false;
+    if (SortOrder != other.SortOrder) return false;
     if (StaffName != other.StaffName) return false;
     if (Display != other.Display) return false;
     if (CreateDate != other.CreateDate) return false;
@@ -3883,6 +3933,7 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
   public override int GetHashCode() {
     int hash = 1;
     if (StaffID.Length != 0) hash ^= StaffID.GetHashCode();
+    if (SortOrder != 0) hash ^= SortOrder.GetHashCode();
     if (StaffName.Length != 0) hash ^= StaffName.GetHashCode();
     if (Display != false) hash ^= Display.GetHashCode();
     if (CreateDate.Length != 0) hash ^= CreateDate.GetHashCode();
@@ -3907,20 +3958,24 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
       output.WriteRawTag(10);
       output.WriteString(StaffID);
     }
+    if (SortOrder != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(SortOrder);
+    }
     if (StaffName.Length != 0) {
-      output.WriteRawTag(18);
+      output.WriteRawTag(26);
       output.WriteString(StaffName);
     }
     if (Display != false) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteBool(Display);
     }
     if (CreateDate.Length != 0) {
-      output.WriteRawTag(34);
+      output.WriteRawTag(42);
       output.WriteString(CreateDate);
     }
     if (CreateUser.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteString(CreateUser);
     }
     if (_unknownFields != null) {
@@ -3936,20 +3991,24 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
       output.WriteRawTag(10);
       output.WriteString(StaffID);
     }
+    if (SortOrder != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(SortOrder);
+    }
     if (StaffName.Length != 0) {
-      output.WriteRawTag(18);
+      output.WriteRawTag(26);
       output.WriteString(StaffName);
     }
     if (Display != false) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteBool(Display);
     }
     if (CreateDate.Length != 0) {
-      output.WriteRawTag(34);
+      output.WriteRawTag(42);
       output.WriteString(CreateDate);
     }
     if (CreateUser.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteString(CreateUser);
     }
     if (_unknownFields != null) {
@@ -3963,6 +4022,9 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
     int size = 0;
     if (StaffID.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(StaffID);
+    }
+    if (SortOrder != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(SortOrder);
     }
     if (StaffName.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(StaffName);
@@ -3989,6 +4051,9 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
     }
     if (other.StaffID.Length != 0) {
       StaffID = other.StaffID;
+    }
+    if (other.SortOrder != 0) {
+      SortOrder = other.SortOrder;
     }
     if (other.StaffName.Length != 0) {
       StaffName = other.StaffName;
@@ -4020,19 +4085,23 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
           StaffID = input.ReadString();
           break;
         }
-        case 18: {
+        case 16: {
+          SortOrder = input.ReadInt32();
+          break;
+        }
+        case 26: {
           StaffName = input.ReadString();
           break;
         }
-        case 24: {
+        case 32: {
           Display = input.ReadBool();
           break;
         }
-        case 34: {
+        case 42: {
           CreateDate = input.ReadString();
           break;
         }
-        case 42: {
+        case 50: {
           CreateUser = input.ReadString();
           break;
         }
@@ -4054,19 +4123,23 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
           StaffID = input.ReadString();
           break;
         }
-        case 18: {
+        case 16: {
+          SortOrder = input.ReadInt32();
+          break;
+        }
+        case 26: {
           StaffName = input.ReadString();
           break;
         }
-        case 24: {
+        case 32: {
           Display = input.ReadBool();
           break;
         }
-        case 34: {
+        case 42: {
           CreateDate = input.ReadString();
           break;
         }
-        case 42: {
+        case 50: {
           CreateUser = input.ReadString();
           break;
         }

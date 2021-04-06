@@ -19,6 +19,12 @@ namespace DestinationboardCommunicationLibrary.CommunicationInterface
 		/// </summary>
 		String ActionID { get; set; }
 		#endregion
+		#region ソート順[SortOrder]プロパティ
+		/// <summary>
+		/// ソート順[SortOrder]インターフェースクラス
+		/// </summary>
+		Int32 SortOrder { get; set; }
+		#endregion
 		#region 行動名[ActionName]プロパティ
 		/// <summary>
 		/// 行動名[ActionName]インターフェースクラス

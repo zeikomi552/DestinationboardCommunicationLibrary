@@ -19,6 +19,12 @@ namespace DestinationboardCommunicationLibrary.CommunicationInterface
 		/// </summary>
 		String StaffID { get; set; }
 		#endregion
+		#region ソート順[SortOrder]プロパティ
+		/// <summary>
+		/// ソート順[SortOrder]インターフェースクラス
+		/// </summary>
+		Int32 SortOrder { get; set; }
+		#endregion
 		#region 従業員名[StaffName]プロパティ
 		/// <summary>
 		/// 従業員名[StaffName]インターフェースクラス
