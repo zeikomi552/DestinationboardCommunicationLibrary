@@ -30,8 +30,8 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
     // RegistActionsの受信イベントの作成
     public event EventHandler RecieveRegistActionsEvent;
 
-    // RegistActionPlanの受信イベントの作成
-    public event EventHandler RecieveRegistActionPlanEvent;
+    // RegistActionPlansの受信イベントの作成
+    public event EventHandler RecieveRegistActionPlansEvent;
 
     // GetActionPlansの受信イベントの作成
     public event EventHandler RecieveGetActionPlansEvent;
@@ -44,6 +44,9 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
 
     // DestinationMasterの受信イベントの作成
     public event EventHandler RecieveDestinationMasterEvent;
+
+    // ActionPlanTableの受信イベントの作成
+    public event EventHandler RecieveActionPlanTableEvent;
 
 
 
@@ -191,26 +194,26 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
     }
     #endregion
 
-    #region [RegistActionPlan]APIリクエスト受付処理
+    #region [RegistActionPlans]APIリクエスト受付処理
     /// <summary>
-    /// [RegistActionPlan]APIリクエスト受付処理
+    /// [RegistActionPlans]APIリクエスト受付処理
     /// APIの要求を受け付けた時に走る処理
     /// </summary>
     /// <param name="request">リクエスト</param>
     /// <param name="context">コンテキスト</param>
     /// <returns>リプライ</returns>
-    public override Task<RegistActionPlanReply> RegistActionPlan(RegistActionPlanRequest request, ServerCallContext context)
+    public override Task<RegistActionPlansReply> RegistActionPlans(RegistActionPlansRequest request, ServerCallContext context)
     {
-        var message = new RegistActionPlanReply();
+        var message = new RegistActionPlansReply();
 
         gRPCArgsRcv ev = new gRPCArgsRcv();
         ev.Request = request;
         ev.Replay = message;
 
         // nullチェック
-        if (RecieveRegistActionPlanEvent != null)
+        if (RecieveRegistActionPlansEvent != null)
         {
-            RecieveRegistActionPlanEvent(this, ev);
+            RecieveRegistActionPlansEvent(this, ev);
         }
 
         return Task.FromResult(message);
@@ -315,6 +318,32 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
         if (RecieveDestinationMasterEvent != null)
         {
             RecieveDestinationMasterEvent(this, ev);
+        }
+
+        return Task.FromResult(message);
+    }
+    #endregion
+
+    #region [ActionPlanTable]APIリクエスト受付処理
+    /// <summary>
+    /// [ActionPlanTable]APIリクエスト受付処理
+    /// APIの要求を受け付けた時に走る処理
+    /// </summary>
+    /// <param name="request">リクエスト</param>
+    /// <param name="context">コンテキスト</param>
+    /// <returns>リプライ</returns>
+    public override Task<ActionPlanTableReply> ActionPlanTable(ActionPlanTableRequest request, ServerCallContext context)
+    {
+        var message = new ActionPlanTableReply();
+
+        gRPCArgsRcv ev = new gRPCArgsRcv();
+        ev.Request = request;
+        ev.Replay = message;
+
+        // nullチェック
+        if (RecieveActionPlanTableEvent != null)
+        {
+            RecieveActionPlanTableEvent(this, ev);
         }
 
         return Task.FromResult(message);
