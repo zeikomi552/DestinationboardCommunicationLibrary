@@ -12,20 +12,14 @@ service DestinationbardCommunicationAPI{
 	// 行動一覧の取得
 	rpc GetActions (GetActionsRequest) returns(GetActionsReply) {}
 
-	// 行先一覧の取得
-	rpc GetDestinations (GetDestinationsRequest) returns(GetDestinationsReply) {}
+	// 行動一覧の更新
+	rpc RegistActions (RegistActionsRequest) returns(RegistActionsReply) {}
 
 	// 行動予定の登録
 	rpc RegistActionPlan (RegistActionPlanRequest) returns(RegistActionPlanReply) {}
 
-	// 行動一覧の更新
-	rpc RegistActions (RegistActionsRequest) returns(RegistActionsReply) {}
-
-	// 行先一覧の更新
-	rpc RegistDestinations (RegistDestinationsRequest) returns(RegistDestinationsReply) {}
-
 	// 現在の行動予定一覧表
-	rpc ActionPlanTable (ActionPlanTableRequest) returns(ActionPlanTableReply) {}
+	rpc GetActionPlans (GetActionPlansRequest) returns(GetActionPlansReply) {}
 
 	// スタッフマスター
 	rpc StaffMaster (StaffMasterRequest) returns(StaffMasterReply) {}
@@ -38,49 +32,42 @@ service DestinationbardCommunicationAPI{
 
 }
 message GetStaffsRequest {
+	string IP = 1;
 }
 message GetStaffsReply {
-	repeated StaffMasterReply StaffInfoList = 1;
+	int32 ErrorCode = 1;
+	repeated StaffMasterReply StaffInfoList = 2;
 }
 message RegistStaffRequest {
-	string UserName = 1;
+	string IP = 1;
 	repeated StaffMasterRequest  StaffInfoList = 2;
 }
 message RegistStaffReply {
 	int32 ErrorCode = 1;
 }
 message GetActionsRequest {
-	string UserName = 1;
+	string IP = 1;
 }
 message GetActionsReply {
 	int32 ErrorCode = 1;
-	repeated ActionMasterRequest  ActionList = 2;
-}
-message GetDestinationsRequest {
-	string UserName = 1;
-}
-message GetDestinationsReply {
-	int32 ErrorCode = 1;
-}
-message RegistActionPlanRequest {
-	string UserName = 1;
-}
-message RegistActionPlanReply {
-	int32 ErrorCode = 1;
+	repeated ActionMasterReply ActionList = 2;
+	repeated DestinationMasterReply DestinationList = 3;
 }
 message RegistActionsRequest {
-	string UserName = 1;
+	string IP = 1;
+	repeated ActionMasterRequest ActionMasterList = 2;
+	repeated DestinationMasterRequest DestinationMasterList = 3;
 }
 message RegistActionsReply {
 	int32 ErrorCode = 1;
 }
-message RegistDestinationsRequest {
-	string UserName = 1;
+message RegistActionPlanRequest {
+	string IP = 1;
 }
-message RegistDestinationsReply {
+message RegistActionPlanReply {
 	int32 ErrorCode = 1;
 }
-message ActionPlanTableRequest {
+message GetActionPlansRequest {
 	string StaffID = 1;
 	string StaffName = 2;
 	string ActionID = 3;
@@ -91,7 +78,7 @@ message ActionPlanTableRequest {
 	string ToTime = 8;
 	string Memo = 9;
 }
-message ActionPlanTableReply {
+message GetActionPlansReply {
 	string StaffID = 1;
 	string StaffName = 2;
 	string ActionID = 3;
@@ -120,35 +107,39 @@ message StaffMasterReply {
 }
 message ActionMasterRequest {
 	string ActionID = 1;
-	string ActionName = 2;
-	string CreateDate = 3;
-	string CreateUser = 4;
-	string UpdateDate = 5;
-	string UpdateUser = 6;
+	int32 SortOrder = 2;
+	string ActionName = 3;
+	string CreateDate = 4;
+	string CreateUser = 5;
+	string UpdateDate = 6;
+	string UpdateUser = 7;
 }
 message ActionMasterReply {
 	string ActionID = 1;
-	string ActionName = 2;
-	string CreateDate = 3;
-	string CreateUser = 4;
-	string UpdateDate = 5;
-	string UpdateUser = 6;
+	int32 SortOrder = 2;
+	string ActionName = 3;
+	string CreateDate = 4;
+	string CreateUser = 5;
+	string UpdateDate = 6;
+	string UpdateUser = 7;
 }
 message DestinationMasterRequest {
 	string DestinationID = 1;
-	string DestinationName = 2;
-	string ActionID = 3;
-	string CreateDate = 4;
-	string CreateUser = 5;
-	string UpdateDate = 6;
-	string UpdateUser = 7;
+	int32 SortOrder = 2;
+	string DestinationName = 3;
+	string ActionID = 4;
+	string CreateDate = 5;
+	string CreateUser = 6;
+	string UpdateDate = 7;
+	string UpdateUser = 8;
 }
 message DestinationMasterReply {
 	string DestinationID = 1;
-	string DestinationName = 2;
-	string ActionID = 3;
-	string CreateDate = 4;
-	string CreateUser = 5;
-	string UpdateDate = 6;
-	string UpdateUser = 7;
+	int32 SortOrder = 2;
+	string DestinationName = 3;
+	string ActionID = 4;
+	string CreateDate = 5;
+	string CreateUser = 6;
+	string UpdateDate = 7;
+	string UpdateUser = 8;
 }

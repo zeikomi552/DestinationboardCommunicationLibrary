@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 /// <summary>
 /// gRPC受信時に発生させるイベント
 /// </summary>
@@ -28,20 +27,14 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
     // GetActionsの受信イベントの作成
     public event EventHandler RecieveGetActionsEvent;
 
-    // GetDestinationsの受信イベントの作成
-    public event EventHandler RecieveGetDestinationsEvent;
+    // RegistActionsの受信イベントの作成
+    public event EventHandler RecieveRegistActionsEvent;
 
     // RegistActionPlanの受信イベントの作成
     public event EventHandler RecieveRegistActionPlanEvent;
 
-    // RegistActionsの受信イベントの作成
-    public event EventHandler RecieveRegistActionsEvent;
-
-    // RegistDestinationsの受信イベントの作成
-    public event EventHandler RecieveRegistDestinationsEvent;
-
-    // ActionPlanTableの受信イベントの作成
-    public event EventHandler RecieveActionPlanTableEvent;
+    // GetActionPlansの受信イベントの作成
+    public event EventHandler RecieveGetActionPlansEvent;
 
     // StaffMasterの受信イベントの作成
     public event EventHandler RecieveStaffMasterEvent;
@@ -172,26 +165,26 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
     }
     #endregion
 
-    #region [GetDestinations]APIリクエスト受付処理
+    #region [RegistActions]APIリクエスト受付処理
     /// <summary>
-    /// [GetDestinations]APIリクエスト受付処理
+    /// [RegistActions]APIリクエスト受付処理
     /// APIの要求を受け付けた時に走る処理
     /// </summary>
     /// <param name="request">リクエスト</param>
     /// <param name="context">コンテキスト</param>
     /// <returns>リプライ</returns>
-    public override Task<GetDestinationsReply> GetDestinations(GetDestinationsRequest request, ServerCallContext context)
+    public override Task<RegistActionsReply> RegistActions(RegistActionsRequest request, ServerCallContext context)
     {
-        var message = new GetDestinationsReply();
+        var message = new RegistActionsReply();
 
         gRPCArgsRcv ev = new gRPCArgsRcv();
         ev.Request = request;
         ev.Replay = message;
 
         // nullチェック
-        if (RecieveGetDestinationsEvent != null)
+        if (RecieveRegistActionsEvent != null)
         {
-            RecieveGetDestinationsEvent(this, ev);
+            RecieveRegistActionsEvent(this, ev);
         }
 
         return Task.FromResult(message);
@@ -224,78 +217,26 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
     }
     #endregion
 
-    #region [RegistActions]APIリクエスト受付処理
+    #region [GetActionPlans]APIリクエスト受付処理
     /// <summary>
-    /// [RegistActions]APIリクエスト受付処理
+    /// [GetActionPlans]APIリクエスト受付処理
     /// APIの要求を受け付けた時に走る処理
     /// </summary>
     /// <param name="request">リクエスト</param>
     /// <param name="context">コンテキスト</param>
     /// <returns>リプライ</returns>
-    public override Task<RegistActionsReply> RegistActions(RegistActionsRequest request, ServerCallContext context)
+    public override Task<GetActionPlansReply> GetActionPlans(GetActionPlansRequest request, ServerCallContext context)
     {
-        var message = new RegistActionsReply();
+        var message = new GetActionPlansReply();
 
         gRPCArgsRcv ev = new gRPCArgsRcv();
         ev.Request = request;
         ev.Replay = message;
 
         // nullチェック
-        if (RecieveRegistActionsEvent != null)
+        if (RecieveGetActionPlansEvent != null)
         {
-            RecieveRegistActionsEvent(this, ev);
-        }
-
-        return Task.FromResult(message);
-    }
-    #endregion
-
-    #region [RegistDestinations]APIリクエスト受付処理
-    /// <summary>
-    /// [RegistDestinations]APIリクエスト受付処理
-    /// APIの要求を受け付けた時に走る処理
-    /// </summary>
-    /// <param name="request">リクエスト</param>
-    /// <param name="context">コンテキスト</param>
-    /// <returns>リプライ</returns>
-    public override Task<RegistDestinationsReply> RegistDestinations(RegistDestinationsRequest request, ServerCallContext context)
-    {
-        var message = new RegistDestinationsReply();
-
-        gRPCArgsRcv ev = new gRPCArgsRcv();
-        ev.Request = request;
-        ev.Replay = message;
-
-        // nullチェック
-        if (RecieveRegistDestinationsEvent != null)
-        {
-            RecieveRegistDestinationsEvent(this, ev);
-        }
-
-        return Task.FromResult(message);
-    }
-    #endregion
-
-    #region [ActionPlanTable]APIリクエスト受付処理
-    /// <summary>
-    /// [ActionPlanTable]APIリクエスト受付処理
-    /// APIの要求を受け付けた時に走る処理
-    /// </summary>
-    /// <param name="request">リクエスト</param>
-    /// <param name="context">コンテキスト</param>
-    /// <returns>リプライ</returns>
-    public override Task<ActionPlanTableReply> ActionPlanTable(ActionPlanTableRequest request, ServerCallContext context)
-    {
-        var message = new ActionPlanTableReply();
-
-        gRPCArgsRcv ev = new gRPCArgsRcv();
-        ev.Request = request;
-        ev.Replay = message;
-
-        // nullチェック
-        if (RecieveActionPlanTableEvent != null)
-        {
-            RecieveActionPlanTableEvent(this, ev);
+            RecieveGetActionPlansEvent(this, ev);
         }
 
         return Task.FromResult(message);
