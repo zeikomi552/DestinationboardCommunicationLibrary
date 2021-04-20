@@ -15,11 +15,17 @@ service DestinationbardCommunicationAPI{
 	// 行動一覧の更新
 	rpc RegistActions (RegistActionsRequest) returns(RegistActionsReply) {}
 
-	// 行動予定の登録
+	// 行動予定一覧の取得
+	rpc GetActionPlans (GetActionPlansRequest) returns(GetActionPlansReply) {}
+
+	// 行動予定一覧の登録
 	rpc RegistActionPlans (RegistActionPlansRequest) returns(RegistActionPlansReply) {}
 
-	// 現在の行動予定一覧表
-	rpc GetActionPlans (GetActionPlansRequest) returns(GetActionPlansReply) {}
+	// 個人の行動予定の更新
+	rpc GetActionPlan (GetActionPlanRequest) returns(GetActionPlanReply) {}
+
+	// 個人の行動予定の取得
+	rpc RegistActionPlan (RegistActionPlanRequest) returns(RegistActionPlanReply) {}
 
 	// スタッフマスター
 	rpc StaffMaster (StaffMasterRequest) returns(StaffMasterReply) {}
@@ -64,6 +70,13 @@ message RegistActionsRequest {
 message RegistActionsReply {
 	int32 ErrorCode = 1;
 }
+message GetActionPlansRequest {
+	string IP = 1;
+}
+message GetActionPlansReply {
+	int32 ErrorCode = 1;
+	repeated ActionPlanTableReply ActionPlans = 2;
+}
 message RegistActionPlansRequest {
 	string IP = 1;
 	repeated ActionPlanTableRequest ActionPlans = 2;
@@ -71,12 +84,20 @@ message RegistActionPlansRequest {
 message RegistActionPlansReply {
 	int32 ErrorCode = 1;
 }
-message GetActionPlansRequest {
+message GetActionPlanRequest {
 	string IP = 1;
+	string StaffID = 2;
 }
-message GetActionPlansReply {
+message GetActionPlanReply {
 	int32 ErrorCode = 1;
-	repeated ActionPlanTableReply ActionPlans = 2;
+	ActionPlanTableReply ActionPlan = 2;
+}
+message RegistActionPlanRequest {
+	string IP = 1;
+	ActionPlanTableRequest ActionPlan = 2;
+}
+message RegistActionPlanReply {
+	int32 ErrorCode = 1;
 }
 message StaffMasterRequest {
 	string StaffID = 1;
@@ -135,22 +156,24 @@ message DestinationMasterReply {
 message ActionPlanTableRequest {
 	string StaffID = 1;
 	string StaffName = 2;
-	string ActionID = 3;
-	string ActionName = 4;
-	string DestinationID = 5;
-	string DestinationName = 6;
-	string FromTime = 7;
-	string ToTime = 8;
-	string Memo = 9;
+	int32 Status = 3;
+	string ActionID = 4;
+	string ActionName = 5;
+	string DestinationID = 6;
+	string DestinationName = 7;
+	string FromTime = 8;
+	string ToTime = 9;
+	string Memo = 10;
 }
 message ActionPlanTableReply {
 	string StaffID = 1;
 	string StaffName = 2;
-	string ActionID = 3;
-	string ActionName = 4;
-	string DestinationID = 5;
-	string DestinationName = 6;
-	string FromTime = 7;
-	string ToTime = 8;
-	string Memo = 9;
+	int32 Status = 3;
+	string ActionID = 4;
+	string ActionName = 5;
+	string DestinationID = 6;
+	string DestinationName = 7;
+	string FromTime = 8;
+	string ToTime = 9;
+	string Memo = 10;
 }

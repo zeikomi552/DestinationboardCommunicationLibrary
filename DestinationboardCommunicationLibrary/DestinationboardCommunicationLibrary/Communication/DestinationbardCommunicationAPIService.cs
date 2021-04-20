@@ -30,11 +30,17 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
     // RegistActionsの受信イベントの作成
     public event EventHandler RecieveRegistActionsEvent;
 
+    // GetActionPlansの受信イベントの作成
+    public event EventHandler RecieveGetActionPlansEvent;
+
     // RegistActionPlansの受信イベントの作成
     public event EventHandler RecieveRegistActionPlansEvent;
 
-    // GetActionPlansの受信イベントの作成
-    public event EventHandler RecieveGetActionPlansEvent;
+    // GetActionPlanの受信イベントの作成
+    public event EventHandler RecieveGetActionPlanEvent;
+
+    // RegistActionPlanの受信イベントの作成
+    public event EventHandler RecieveRegistActionPlanEvent;
 
     // StaffMasterの受信イベントの作成
     public event EventHandler RecieveStaffMasterEvent;
@@ -194,6 +200,32 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
     }
     #endregion
 
+    #region [GetActionPlans]APIリクエスト受付処理
+    /// <summary>
+    /// [GetActionPlans]APIリクエスト受付処理
+    /// APIの要求を受け付けた時に走る処理
+    /// </summary>
+    /// <param name="request">リクエスト</param>
+    /// <param name="context">コンテキスト</param>
+    /// <returns>リプライ</returns>
+    public override Task<GetActionPlansReply> GetActionPlans(GetActionPlansRequest request, ServerCallContext context)
+    {
+        var message = new GetActionPlansReply();
+
+        gRPCArgsRcv ev = new gRPCArgsRcv();
+        ev.Request = request;
+        ev.Replay = message;
+
+        // nullチェック
+        if (RecieveGetActionPlansEvent != null)
+        {
+            RecieveGetActionPlansEvent(this, ev);
+        }
+
+        return Task.FromResult(message);
+    }
+    #endregion
+
     #region [RegistActionPlans]APIリクエスト受付処理
     /// <summary>
     /// [RegistActionPlans]APIリクエスト受付処理
@@ -220,26 +252,52 @@ public class DestinationbardCommunicationAPIService : DestinationbardCommunicati
     }
     #endregion
 
-    #region [GetActionPlans]APIリクエスト受付処理
+    #region [GetActionPlan]APIリクエスト受付処理
     /// <summary>
-    /// [GetActionPlans]APIリクエスト受付処理
+    /// [GetActionPlan]APIリクエスト受付処理
     /// APIの要求を受け付けた時に走る処理
     /// </summary>
     /// <param name="request">リクエスト</param>
     /// <param name="context">コンテキスト</param>
     /// <returns>リプライ</returns>
-    public override Task<GetActionPlansReply> GetActionPlans(GetActionPlansRequest request, ServerCallContext context)
+    public override Task<GetActionPlanReply> GetActionPlan(GetActionPlanRequest request, ServerCallContext context)
     {
-        var message = new GetActionPlansReply();
+        var message = new GetActionPlanReply();
 
         gRPCArgsRcv ev = new gRPCArgsRcv();
         ev.Request = request;
         ev.Replay = message;
 
         // nullチェック
-        if (RecieveGetActionPlansEvent != null)
+        if (RecieveGetActionPlanEvent != null)
         {
-            RecieveGetActionPlansEvent(this, ev);
+            RecieveGetActionPlanEvent(this, ev);
+        }
+
+        return Task.FromResult(message);
+    }
+    #endregion
+
+    #region [RegistActionPlan]APIリクエスト受付処理
+    /// <summary>
+    /// [RegistActionPlan]APIリクエスト受付処理
+    /// APIの要求を受け付けた時に走る処理
+    /// </summary>
+    /// <param name="request">リクエスト</param>
+    /// <param name="context">コンテキスト</param>
+    /// <returns>リプライ</returns>
+    public override Task<RegistActionPlanReply> RegistActionPlan(RegistActionPlanRequest request, ServerCallContext context)
+    {
+        var message = new RegistActionPlanReply();
+
+        gRPCArgsRcv ev = new gRPCArgsRcv();
+        ev.Request = request;
+        ev.Replay = message;
+
+        // nullチェック
+        if (RecieveRegistActionPlanEvent != null)
+        {
+            RecieveRegistActionPlanEvent(this, ev);
         }
 
         return Task.FromResult(message);

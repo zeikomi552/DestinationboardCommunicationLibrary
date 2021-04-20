@@ -35,58 +35,68 @@ public static partial class DestinationbardCommunicationAPIReflection {
           "c1JlcXVlc3QSCgoCSVAYASABKAkSLgoQQWN0aW9uTWFzdGVyTGlzdBgCIAMo",
           "CzIULkFjdGlvbk1hc3RlclJlcXVlc3QSOAoVRGVzdGluYXRpb25NYXN0ZXJM",
           "aXN0GAMgAygLMhkuRGVzdGluYXRpb25NYXN0ZXJSZXF1ZXN0IicKElJlZ2lz",
-          "dEFjdGlvbnNSZXBseRIRCglFcnJvckNvZGUYASABKAUiVAoYUmVnaXN0QWN0",
-          "aW9uUGxhbnNSZXF1ZXN0EgoKAklQGAEgASgJEiwKC0FjdGlvblBsYW5zGAIg",
-          "AygLMhcuQWN0aW9uUGxhblRhYmxlUmVxdWVzdCIrChZSZWdpc3RBY3Rpb25Q",
-          "bGFuc1JlcGx5EhEKCUVycm9yQ29kZRgBIAEoBSIjChVHZXRBY3Rpb25QbGFu",
-          "c1JlcXVlc3QSCgoCSVAYASABKAkiVAoTR2V0QWN0aW9uUGxhbnNSZXBseRIR",
-          "CglFcnJvckNvZGUYASABKAUSKgoLQWN0aW9uUGxhbnMYAiADKAsyFS5BY3Rp",
-          "b25QbGFuVGFibGVSZXBseSKEAQoSU3RhZmZNYXN0ZXJSZXF1ZXN0Eg8KB1N0",
-          "YWZmSUQYASABKAkSEQoJU29ydE9yZGVyGAIgASgFEhEKCVN0YWZmTmFtZRgD",
-          "IAEoCRIPCgdEaXNwbGF5GAQgASgIEhIKCkNyZWF0ZURhdGUYBSABKAkSEgoK",
-          "Q3JlYXRlVXNlchgGIAEoCSKCAQoQU3RhZmZNYXN0ZXJSZXBseRIPCgdTdGFm",
-          "ZklEGAEgASgJEhEKCVNvcnRPcmRlchgCIAEoBRIRCglTdGFmZk5hbWUYAyAB",
-          "KAkSDwoHRGlzcGxheRgEIAEoCBISCgpDcmVhdGVEYXRlGAUgASgJEhIKCkNy",
-          "ZWF0ZVVzZXIYBiABKAkingEKE0FjdGlvbk1hc3RlclJlcXVlc3QSEAoIQWN0",
-          "aW9uSUQYASABKAkSEQoJU29ydE9yZGVyGAIgASgFEhIKCkFjdGlvbk5hbWUY",
-          "AyABKAkSEgoKQ3JlYXRlRGF0ZRgEIAEoCRISCgpDcmVhdGVVc2VyGAUgASgJ",
-          "EhIKClVwZGF0ZURhdGUYBiABKAkSEgoKVXBkYXRlVXNlchgHIAEoCSKcAQoR",
-          "QWN0aW9uTWFzdGVyUmVwbHkSEAoIQWN0aW9uSUQYASABKAkSEQoJU29ydE9y",
-          "ZGVyGAIgASgFEhIKCkFjdGlvbk5hbWUYAyABKAkSEgoKQ3JlYXRlRGF0ZRgE",
-          "IAEoCRISCgpDcmVhdGVVc2VyGAUgASgJEhIKClVwZGF0ZURhdGUYBiABKAkS",
-          "EgoKVXBkYXRlVXNlchgHIAEoCSK/AQoYRGVzdGluYXRpb25NYXN0ZXJSZXF1",
-          "ZXN0EhUKDURlc3RpbmF0aW9uSUQYASABKAkSEQoJU29ydE9yZGVyGAIgASgF",
-          "EhcKD0Rlc3RpbmF0aW9uTmFtZRgDIAEoCRIQCghBY3Rpb25JRBgEIAEoCRIS",
-          "CgpDcmVhdGVEYXRlGAUgASgJEhIKCkNyZWF0ZVVzZXIYBiABKAkSEgoKVXBk",
-          "YXRlRGF0ZRgHIAEoCRISCgpVcGRhdGVVc2VyGAggASgJIr0BChZEZXN0aW5h",
-          "dGlvbk1hc3RlclJlcGx5EhUKDURlc3RpbmF0aW9uSUQYASABKAkSEQoJU29y",
-          "dE9yZGVyGAIgASgFEhcKD0Rlc3RpbmF0aW9uTmFtZRgDIAEoCRIQCghBY3Rp",
-          "b25JRBgEIAEoCRISCgpDcmVhdGVEYXRlGAUgASgJEhIKCkNyZWF0ZVVzZXIY",
-          "BiABKAkSEgoKVXBkYXRlRGF0ZRgHIAEoCRISCgpVcGRhdGVVc2VyGAggASgJ",
-          "IsIBChZBY3Rpb25QbGFuVGFibGVSZXF1ZXN0Eg8KB1N0YWZmSUQYASABKAkS",
-          "EQoJU3RhZmZOYW1lGAIgASgJEhAKCEFjdGlvbklEGAMgASgJEhIKCkFjdGlv",
-          "bk5hbWUYBCABKAkSFQoNRGVzdGluYXRpb25JRBgFIAEoCRIXCg9EZXN0aW5h",
-          "dGlvbk5hbWUYBiABKAkSEAoIRnJvbVRpbWUYByABKAkSDgoGVG9UaW1lGAgg",
-          "ASgJEgwKBE1lbW8YCSABKAkiwAEKFEFjdGlvblBsYW5UYWJsZVJlcGx5Eg8K",
-          "B1N0YWZmSUQYASABKAkSEQoJU3RhZmZOYW1lGAIgASgJEhAKCEFjdGlvbklE",
-          "GAMgASgJEhIKCkFjdGlvbk5hbWUYBCABKAkSFQoNRGVzdGluYXRpb25JRBgF",
-          "IAEoCRIXCg9EZXN0aW5hdGlvbk5hbWUYBiABKAkSEAoIRnJvbVRpbWUYByAB",
-          "KAkSDgoGVG9UaW1lGAggASgJEgwKBE1lbW8YCSABKAkylAUKH0Rlc3RpbmF0",
-          "aW9uYmFyZENvbW11bmljYXRpb25BUEkSMQoJR2V0U3RhZmZzEhEuR2V0U3Rh",
-          "ZmZzUmVxdWVzdBoPLkdldFN0YWZmc1JlcGx5IgASNwoLUmVnaXN0U3RhZmYS",
-          "Ey5SZWdpc3RTdGFmZlJlcXVlc3QaES5SZWdpc3RTdGFmZlJlcGx5IgASNAoK",
-          "R2V0QWN0aW9ucxISLkdldEFjdGlvbnNSZXF1ZXN0GhAuR2V0QWN0aW9uc1Jl",
-          "cGx5IgASPQoNUmVnaXN0QWN0aW9ucxIVLlJlZ2lzdEFjdGlvbnNSZXF1ZXN0",
-          "GhMuUmVnaXN0QWN0aW9uc1JlcGx5IgASSQoRUmVnaXN0QWN0aW9uUGxhbnMS",
-          "GS5SZWdpc3RBY3Rpb25QbGFuc1JlcXVlc3QaFy5SZWdpc3RBY3Rpb25QbGFu",
-          "c1JlcGx5IgASQAoOR2V0QWN0aW9uUGxhbnMSFi5HZXRBY3Rpb25QbGFuc1Jl",
-          "cXVlc3QaFC5HZXRBY3Rpb25QbGFuc1JlcGx5IgASNwoLU3RhZmZNYXN0ZXIS",
-          "Ey5TdGFmZk1hc3RlclJlcXVlc3QaES5TdGFmZk1hc3RlclJlcGx5IgASOgoM",
-          "QWN0aW9uTWFzdGVyEhQuQWN0aW9uTWFzdGVyUmVxdWVzdBoSLkFjdGlvbk1h",
-          "c3RlclJlcGx5IgASSQoRRGVzdGluYXRpb25NYXN0ZXISGS5EZXN0aW5hdGlv",
-          "bk1hc3RlclJlcXVlc3QaFy5EZXN0aW5hdGlvbk1hc3RlclJlcGx5IgASQwoP",
-          "QWN0aW9uUGxhblRhYmxlEhcuQWN0aW9uUGxhblRhYmxlUmVxdWVzdBoVLkFj",
-          "dGlvblBsYW5UYWJsZVJlcGx5IgBiBnByb3RvMw=="));
+          "dEFjdGlvbnNSZXBseRIRCglFcnJvckNvZGUYASABKAUiIwoVR2V0QWN0aW9u",
+          "UGxhbnNSZXF1ZXN0EgoKAklQGAEgASgJIlQKE0dldEFjdGlvblBsYW5zUmVw",
+          "bHkSEQoJRXJyb3JDb2RlGAEgASgFEioKC0FjdGlvblBsYW5zGAIgAygLMhUu",
+          "QWN0aW9uUGxhblRhYmxlUmVwbHkiVAoYUmVnaXN0QWN0aW9uUGxhbnNSZXF1",
+          "ZXN0EgoKAklQGAEgASgJEiwKC0FjdGlvblBsYW5zGAIgAygLMhcuQWN0aW9u",
+          "UGxhblRhYmxlUmVxdWVzdCIrChZSZWdpc3RBY3Rpb25QbGFuc1JlcGx5EhEK",
+          "CUVycm9yQ29kZRgBIAEoBSIzChRHZXRBY3Rpb25QbGFuUmVxdWVzdBIKCgJJ",
+          "UBgBIAEoCRIPCgdTdGFmZklEGAIgASgJIlIKEkdldEFjdGlvblBsYW5SZXBs",
+          "eRIRCglFcnJvckNvZGUYASABKAUSKQoKQWN0aW9uUGxhbhgCIAEoCzIVLkFj",
+          "dGlvblBsYW5UYWJsZVJlcGx5IlIKF1JlZ2lzdEFjdGlvblBsYW5SZXF1ZXN0",
+          "EgoKAklQGAEgASgJEisKCkFjdGlvblBsYW4YAiABKAsyFy5BY3Rpb25QbGFu",
+          "VGFibGVSZXF1ZXN0IioKFVJlZ2lzdEFjdGlvblBsYW5SZXBseRIRCglFcnJv",
+          "ckNvZGUYASABKAUihAEKElN0YWZmTWFzdGVyUmVxdWVzdBIPCgdTdGFmZklE",
+          "GAEgASgJEhEKCVNvcnRPcmRlchgCIAEoBRIRCglTdGFmZk5hbWUYAyABKAkS",
+          "DwoHRGlzcGxheRgEIAEoCBISCgpDcmVhdGVEYXRlGAUgASgJEhIKCkNyZWF0",
+          "ZVVzZXIYBiABKAkiggEKEFN0YWZmTWFzdGVyUmVwbHkSDwoHU3RhZmZJRBgB",
+          "IAEoCRIRCglTb3J0T3JkZXIYAiABKAUSEQoJU3RhZmZOYW1lGAMgASgJEg8K",
+          "B0Rpc3BsYXkYBCABKAgSEgoKQ3JlYXRlRGF0ZRgFIAEoCRISCgpDcmVhdGVV",
+          "c2VyGAYgASgJIp4BChNBY3Rpb25NYXN0ZXJSZXF1ZXN0EhAKCEFjdGlvbklE",
+          "GAEgASgJEhEKCVNvcnRPcmRlchgCIAEoBRISCgpBY3Rpb25OYW1lGAMgASgJ",
+          "EhIKCkNyZWF0ZURhdGUYBCABKAkSEgoKQ3JlYXRlVXNlchgFIAEoCRISCgpV",
+          "cGRhdGVEYXRlGAYgASgJEhIKClVwZGF0ZVVzZXIYByABKAkinAEKEUFjdGlv",
+          "bk1hc3RlclJlcGx5EhAKCEFjdGlvbklEGAEgASgJEhEKCVNvcnRPcmRlchgC",
+          "IAEoBRISCgpBY3Rpb25OYW1lGAMgASgJEhIKCkNyZWF0ZURhdGUYBCABKAkS",
+          "EgoKQ3JlYXRlVXNlchgFIAEoCRISCgpVcGRhdGVEYXRlGAYgASgJEhIKClVw",
+          "ZGF0ZVVzZXIYByABKAkivwEKGERlc3RpbmF0aW9uTWFzdGVyUmVxdWVzdBIV",
+          "Cg1EZXN0aW5hdGlvbklEGAEgASgJEhEKCVNvcnRPcmRlchgCIAEoBRIXCg9E",
+          "ZXN0aW5hdGlvbk5hbWUYAyABKAkSEAoIQWN0aW9uSUQYBCABKAkSEgoKQ3Jl",
+          "YXRlRGF0ZRgFIAEoCRISCgpDcmVhdGVVc2VyGAYgASgJEhIKClVwZGF0ZURh",
+          "dGUYByABKAkSEgoKVXBkYXRlVXNlchgIIAEoCSK9AQoWRGVzdGluYXRpb25N",
+          "YXN0ZXJSZXBseRIVCg1EZXN0aW5hdGlvbklEGAEgASgJEhEKCVNvcnRPcmRl",
+          "chgCIAEoBRIXCg9EZXN0aW5hdGlvbk5hbWUYAyABKAkSEAoIQWN0aW9uSUQY",
+          "BCABKAkSEgoKQ3JlYXRlRGF0ZRgFIAEoCRISCgpDcmVhdGVVc2VyGAYgASgJ",
+          "EhIKClVwZGF0ZURhdGUYByABKAkSEgoKVXBkYXRlVXNlchgIIAEoCSLSAQoW",
+          "QWN0aW9uUGxhblRhYmxlUmVxdWVzdBIPCgdTdGFmZklEGAEgASgJEhEKCVN0",
+          "YWZmTmFtZRgCIAEoCRIOCgZTdGF0dXMYAyABKAUSEAoIQWN0aW9uSUQYBCAB",
+          "KAkSEgoKQWN0aW9uTmFtZRgFIAEoCRIVCg1EZXN0aW5hdGlvbklEGAYgASgJ",
+          "EhcKD0Rlc3RpbmF0aW9uTmFtZRgHIAEoCRIQCghGcm9tVGltZRgIIAEoCRIO",
+          "CgZUb1RpbWUYCSABKAkSDAoETWVtbxgKIAEoCSLQAQoUQWN0aW9uUGxhblRh",
+          "YmxlUmVwbHkSDwoHU3RhZmZJRBgBIAEoCRIRCglTdGFmZk5hbWUYAiABKAkS",
+          "DgoGU3RhdHVzGAMgASgFEhAKCEFjdGlvbklEGAQgASgJEhIKCkFjdGlvbk5h",
+          "bWUYBSABKAkSFQoNRGVzdGluYXRpb25JRBgGIAEoCRIXCg9EZXN0aW5hdGlv",
+          "bk5hbWUYByABKAkSEAoIRnJvbVRpbWUYCCABKAkSDgoGVG9UaW1lGAkgASgJ",
+          "EgwKBE1lbW8YCiABKAkymwYKH0Rlc3RpbmF0aW9uYmFyZENvbW11bmljYXRp",
+          "b25BUEkSMQoJR2V0U3RhZmZzEhEuR2V0U3RhZmZzUmVxdWVzdBoPLkdldFN0",
+          "YWZmc1JlcGx5IgASNwoLUmVnaXN0U3RhZmYSEy5SZWdpc3RTdGFmZlJlcXVl",
+          "c3QaES5SZWdpc3RTdGFmZlJlcGx5IgASNAoKR2V0QWN0aW9ucxISLkdldEFj",
+          "dGlvbnNSZXF1ZXN0GhAuR2V0QWN0aW9uc1JlcGx5IgASPQoNUmVnaXN0QWN0",
+          "aW9ucxIVLlJlZ2lzdEFjdGlvbnNSZXF1ZXN0GhMuUmVnaXN0QWN0aW9uc1Jl",
+          "cGx5IgASQAoOR2V0QWN0aW9uUGxhbnMSFi5HZXRBY3Rpb25QbGFuc1JlcXVl",
+          "c3QaFC5HZXRBY3Rpb25QbGFuc1JlcGx5IgASSQoRUmVnaXN0QWN0aW9uUGxh",
+          "bnMSGS5SZWdpc3RBY3Rpb25QbGFuc1JlcXVlc3QaFy5SZWdpc3RBY3Rpb25Q",
+          "bGFuc1JlcGx5IgASPQoNR2V0QWN0aW9uUGxhbhIVLkdldEFjdGlvblBsYW5S",
+          "ZXF1ZXN0GhMuR2V0QWN0aW9uUGxhblJlcGx5IgASRgoQUmVnaXN0QWN0aW9u",
+          "UGxhbhIYLlJlZ2lzdEFjdGlvblBsYW5SZXF1ZXN0GhYuUmVnaXN0QWN0aW9u",
+          "UGxhblJlcGx5IgASNwoLU3RhZmZNYXN0ZXISEy5TdGFmZk1hc3RlclJlcXVl",
+          "c3QaES5TdGFmZk1hc3RlclJlcGx5IgASOgoMQWN0aW9uTWFzdGVyEhQuQWN0",
+          "aW9uTWFzdGVyUmVxdWVzdBoSLkFjdGlvbk1hc3RlclJlcGx5IgASSQoRRGVz",
+          "dGluYXRpb25NYXN0ZXISGS5EZXN0aW5hdGlvbk1hc3RlclJlcXVlc3QaFy5E",
+          "ZXN0aW5hdGlvbk1hc3RlclJlcGx5IgASQwoPQWN0aW9uUGxhblRhYmxlEhcu",
+          "QWN0aW9uUGxhblRhYmxlUmVxdWVzdBoVLkFjdGlvblBsYW5UYWJsZVJlcGx5",
+          "IgBiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -98,18 +108,22 @@ public static partial class DestinationbardCommunicationAPIReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::GetActionsReply), global::GetActionsReply.Parser, new[]{ "ErrorCode", "ActionList", "DestinationList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::RegistActionsRequest), global::RegistActionsRequest.Parser, new[]{ "IP", "ActionMasterList", "DestinationMasterList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::RegistActionsReply), global::RegistActionsReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::RegistActionPlansRequest), global::RegistActionPlansRequest.Parser, new[]{ "IP", "ActionPlans" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::RegistActionPlansReply), global::RegistActionPlansReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetActionPlansRequest), global::GetActionPlansRequest.Parser, new[]{ "IP" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetActionPlansReply), global::GetActionPlansReply.Parser, new[]{ "ErrorCode", "ActionPlans" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RegistActionPlansRequest), global::RegistActionPlansRequest.Parser, new[]{ "IP", "ActionPlans" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RegistActionPlansReply), global::RegistActionPlansReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GetActionPlanRequest), global::GetActionPlanRequest.Parser, new[]{ "IP", "StaffID" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GetActionPlanReply), global::GetActionPlanReply.Parser, new[]{ "ErrorCode", "ActionPlan" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RegistActionPlanRequest), global::RegistActionPlanRequest.Parser, new[]{ "IP", "ActionPlan" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RegistActionPlanReply), global::RegistActionPlanReply.Parser, new[]{ "ErrorCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::StaffMasterRequest), global::StaffMasterRequest.Parser, new[]{ "StaffID", "SortOrder", "StaffName", "Display", "CreateDate", "CreateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::StaffMasterReply), global::StaffMasterReply.Parser, new[]{ "StaffID", "SortOrder", "StaffName", "Display", "CreateDate", "CreateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::ActionMasterRequest), global::ActionMasterRequest.Parser, new[]{ "ActionID", "SortOrder", "ActionName", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::ActionMasterReply), global::ActionMasterReply.Parser, new[]{ "ActionID", "SortOrder", "ActionName", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::DestinationMasterRequest), global::DestinationMasterRequest.Parser, new[]{ "DestinationID", "SortOrder", "DestinationName", "ActionID", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::DestinationMasterReply), global::DestinationMasterReply.Parser, new[]{ "DestinationID", "SortOrder", "DestinationName", "ActionID", "CreateDate", "CreateUser", "UpdateDate", "UpdateUser" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::ActionPlanTableRequest), global::ActionPlanTableRequest.Parser, new[]{ "StaffID", "StaffName", "ActionID", "ActionName", "DestinationID", "DestinationName", "FromTime", "ToTime", "Memo" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::ActionPlanTableReply), global::ActionPlanTableReply.Parser, new[]{ "StaffID", "StaffName", "ActionID", "ActionName", "DestinationID", "DestinationName", "FromTime", "ToTime", "Memo" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::ActionPlanTableRequest), global::ActionPlanTableRequest.Parser, new[]{ "StaffID", "StaffName", "Status", "ActionID", "ActionName", "DestinationID", "DestinationName", "FromTime", "ToTime", "Memo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ActionPlanTableReply), global::ActionPlanTableReply.Parser, new[]{ "StaffID", "StaffName", "Status", "ActionID", "ActionName", "DestinationID", "DestinationName", "FromTime", "ToTime", "Memo" }, null, null, null, null)
         }));
   }
   #endregion
@@ -1642,6 +1656,375 @@ public sealed partial class RegistActionsReply : pb::IMessage<RegistActionsReply
 
 }
 
+public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansRequest>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<GetActionPlansRequest> _parser = new pb::MessageParser<GetActionPlansRequest>(() => new GetActionPlansRequest());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GetActionPlansRequest> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[8]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetActionPlansRequest() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetActionPlansRequest(GetActionPlansRequest other) : this() {
+    iP_ = other.iP_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetActionPlansRequest Clone() {
+    return new GetActionPlansRequest(this);
+  }
+
+  /// <summary>Field number for the "IP" field.</summary>
+  public const int IPFieldNumber = 1;
+  private string iP_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string IP {
+    get { return iP_; }
+    set {
+      iP_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GetActionPlansRequest);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GetActionPlansRequest other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (IP != other.IP) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (IP.Length != 0) hash ^= IP.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (IP.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(IP);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (IP.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(IP);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (IP.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(IP);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GetActionPlansRequest other) {
+    if (other == null) {
+      return;
+    }
+    if (other.IP.Length != 0) {
+      IP = other.IP;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          IP = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          IP = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansReply>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<GetActionPlansReply> _parser = new pb::MessageParser<GetActionPlansReply>(() => new GetActionPlansReply());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GetActionPlansReply> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[9]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetActionPlansReply() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetActionPlansReply(GetActionPlansReply other) : this() {
+    errorCode_ = other.errorCode_;
+    actionPlans_ = other.actionPlans_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GetActionPlansReply Clone() {
+    return new GetActionPlansReply(this);
+  }
+
+  /// <summary>Field number for the "ErrorCode" field.</summary>
+  public const int ErrorCodeFieldNumber = 1;
+  private int errorCode_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ErrorCode {
+    get { return errorCode_; }
+    set {
+      errorCode_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "ActionPlans" field.</summary>
+  public const int ActionPlansFieldNumber = 2;
+  private static readonly pb::FieldCodec<global::ActionPlanTableReply> _repeated_actionPlans_codec
+      = pb::FieldCodec.ForMessage(18, global::ActionPlanTableReply.Parser);
+  private readonly pbc::RepeatedField<global::ActionPlanTableReply> actionPlans_ = new pbc::RepeatedField<global::ActionPlanTableReply>();
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::ActionPlanTableReply> ActionPlans {
+    get { return actionPlans_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GetActionPlansReply);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GetActionPlansReply other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (ErrorCode != other.ErrorCode) return false;
+    if(!actionPlans_.Equals(other.actionPlans_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (ErrorCode != 0) hash ^= ErrorCode.GetHashCode();
+    hash ^= actionPlans_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (ErrorCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ErrorCode);
+    }
+    actionPlans_.WriteTo(output, _repeated_actionPlans_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (ErrorCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ErrorCode);
+    }
+    actionPlans_.WriteTo(ref output, _repeated_actionPlans_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (ErrorCode != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ErrorCode);
+    }
+    size += actionPlans_.CalculateSize(_repeated_actionPlans_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GetActionPlansReply other) {
+    if (other == null) {
+      return;
+    }
+    if (other.ErrorCode != 0) {
+      ErrorCode = other.ErrorCode;
+    }
+    actionPlans_.Add(other.actionPlans_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          ErrorCode = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          actionPlans_.AddEntriesFrom(input, _repeated_actionPlans_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ErrorCode = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          actionPlans_.AddEntriesFrom(ref input, _repeated_actionPlans_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
 public sealed partial class RegistActionPlansRequest : pb::IMessage<RegistActionPlansRequest>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -1654,7 +2037,7 @@ public sealed partial class RegistActionPlansRequest : pb::IMessage<RegistAction
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[8]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[10]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1851,7 +2234,7 @@ public sealed partial class RegistActionPlansReply : pb::IMessage<RegistActionPl
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[9]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[11]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2011,19 +2394,19 @@ public sealed partial class RegistActionPlansReply : pb::IMessage<RegistActionPl
 
 }
 
-public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansRequest>
+public sealed partial class GetActionPlanRequest : pb::IMessage<GetActionPlanRequest>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<GetActionPlansRequest> _parser = new pb::MessageParser<GetActionPlansRequest>(() => new GetActionPlansRequest());
+  private static readonly pb::MessageParser<GetActionPlanRequest> _parser = new pb::MessageParser<GetActionPlanRequest>(() => new GetActionPlanRequest());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<GetActionPlansRequest> Parser { get { return _parser; } }
+  public static pb::MessageParser<GetActionPlanRequest> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[10]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[12]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2032,21 +2415,22 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public GetActionPlansRequest() {
+  public GetActionPlanRequest() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public GetActionPlansRequest(GetActionPlansRequest other) : this() {
+  public GetActionPlanRequest(GetActionPlanRequest other) : this() {
     iP_ = other.iP_;
+    staffID_ = other.staffID_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public GetActionPlansRequest Clone() {
-    return new GetActionPlansRequest(this);
+  public GetActionPlanRequest Clone() {
+    return new GetActionPlanRequest(this);
   }
 
   /// <summary>Field number for the "IP" field.</summary>
@@ -2060,13 +2444,24 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
     }
   }
 
+  /// <summary>Field number for the "StaffID" field.</summary>
+  public const int StaffIDFieldNumber = 2;
+  private string staffID_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override bool Equals(object other) {
-    return Equals(other as GetActionPlansRequest);
+  public string StaffID {
+    get { return staffID_; }
+    set {
+      staffID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(GetActionPlansRequest other) {
+  public override bool Equals(object other) {
+    return Equals(other as GetActionPlanRequest);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GetActionPlanRequest other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -2074,6 +2469,7 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
       return true;
     }
     if (IP != other.IP) return false;
+    if (StaffID != other.StaffID) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -2081,6 +2477,7 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
   public override int GetHashCode() {
     int hash = 1;
     if (IP.Length != 0) hash ^= IP.GetHashCode();
+    if (StaffID.Length != 0) hash ^= StaffID.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -2101,6 +2498,10 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
       output.WriteRawTag(10);
       output.WriteString(IP);
     }
+    if (StaffID.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(StaffID);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -2113,6 +2514,10 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
     if (IP.Length != 0) {
       output.WriteRawTag(10);
       output.WriteString(IP);
+    }
+    if (StaffID.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(StaffID);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -2126,6 +2531,9 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
     if (IP.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(IP);
     }
+    if (StaffID.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(StaffID);
+    }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -2133,12 +2541,15 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(GetActionPlansRequest other) {
+  public void MergeFrom(GetActionPlanRequest other) {
     if (other == null) {
       return;
     }
     if (other.IP.Length != 0) {
       IP = other.IP;
+    }
+    if (other.StaffID.Length != 0) {
+      StaffID = other.StaffID;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -2156,6 +2567,10 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
           break;
         case 10: {
           IP = input.ReadString();
+          break;
+        }
+        case 18: {
+          StaffID = input.ReadString();
           break;
         }
       }
@@ -2176,6 +2591,10 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
           IP = input.ReadString();
           break;
         }
+        case 18: {
+          StaffID = input.ReadString();
+          break;
+        }
       }
     }
   }
@@ -2183,19 +2602,19 @@ public sealed partial class GetActionPlansRequest : pb::IMessage<GetActionPlansR
 
 }
 
-public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansReply>
+public sealed partial class GetActionPlanReply : pb::IMessage<GetActionPlanReply>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<GetActionPlansReply> _parser = new pb::MessageParser<GetActionPlansReply>(() => new GetActionPlansReply());
+  private static readonly pb::MessageParser<GetActionPlanReply> _parser = new pb::MessageParser<GetActionPlanReply>(() => new GetActionPlanReply());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<GetActionPlansReply> Parser { get { return _parser; } }
+  public static pb::MessageParser<GetActionPlanReply> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[11]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[13]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2204,22 +2623,22 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public GetActionPlansReply() {
+  public GetActionPlanReply() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public GetActionPlansReply(GetActionPlansReply other) : this() {
+  public GetActionPlanReply(GetActionPlanReply other) : this() {
     errorCode_ = other.errorCode_;
-    actionPlans_ = other.actionPlans_.Clone();
+    actionPlan_ = other.actionPlan_ != null ? other.actionPlan_.Clone() : null;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public GetActionPlansReply Clone() {
-    return new GetActionPlansReply(this);
+  public GetActionPlanReply Clone() {
+    return new GetActionPlanReply(this);
   }
 
   /// <summary>Field number for the "ErrorCode" field.</summary>
@@ -2233,23 +2652,24 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
     }
   }
 
-  /// <summary>Field number for the "ActionPlans" field.</summary>
-  public const int ActionPlansFieldNumber = 2;
-  private static readonly pb::FieldCodec<global::ActionPlanTableReply> _repeated_actionPlans_codec
-      = pb::FieldCodec.ForMessage(18, global::ActionPlanTableReply.Parser);
-  private readonly pbc::RepeatedField<global::ActionPlanTableReply> actionPlans_ = new pbc::RepeatedField<global::ActionPlanTableReply>();
+  /// <summary>Field number for the "ActionPlan" field.</summary>
+  public const int ActionPlanFieldNumber = 2;
+  private global::ActionPlanTableReply actionPlan_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<global::ActionPlanTableReply> ActionPlans {
-    get { return actionPlans_; }
+  public global::ActionPlanTableReply ActionPlan {
+    get { return actionPlan_; }
+    set {
+      actionPlan_ = value;
+    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as GetActionPlansReply);
+    return Equals(other as GetActionPlanReply);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(GetActionPlansReply other) {
+  public bool Equals(GetActionPlanReply other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -2257,7 +2677,7 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
       return true;
     }
     if (ErrorCode != other.ErrorCode) return false;
-    if(!actionPlans_.Equals(other.actionPlans_)) return false;
+    if (!object.Equals(ActionPlan, other.ActionPlan)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -2265,7 +2685,7 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
   public override int GetHashCode() {
     int hash = 1;
     if (ErrorCode != 0) hash ^= ErrorCode.GetHashCode();
-    hash ^= actionPlans_.GetHashCode();
+    if (actionPlan_ != null) hash ^= ActionPlan.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -2286,7 +2706,10 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
       output.WriteRawTag(8);
       output.WriteInt32(ErrorCode);
     }
-    actionPlans_.WriteTo(output, _repeated_actionPlans_codec);
+    if (actionPlan_ != null) {
+      output.WriteRawTag(18);
+      output.WriteMessage(ActionPlan);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -2300,7 +2723,10 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
       output.WriteRawTag(8);
       output.WriteInt32(ErrorCode);
     }
-    actionPlans_.WriteTo(ref output, _repeated_actionPlans_codec);
+    if (actionPlan_ != null) {
+      output.WriteRawTag(18);
+      output.WriteMessage(ActionPlan);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -2313,7 +2739,9 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
     if (ErrorCode != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ErrorCode);
     }
-    size += actionPlans_.CalculateSize(_repeated_actionPlans_codec);
+    if (actionPlan_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActionPlan);
+    }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -2321,14 +2749,19 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(GetActionPlansReply other) {
+  public void MergeFrom(GetActionPlanReply other) {
     if (other == null) {
       return;
     }
     if (other.ErrorCode != 0) {
       ErrorCode = other.ErrorCode;
     }
-    actionPlans_.Add(other.actionPlans_);
+    if (other.actionPlan_ != null) {
+      if (actionPlan_ == null) {
+        ActionPlan = new global::ActionPlanTableReply();
+      }
+      ActionPlan.MergeFrom(other.ActionPlan);
+    }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -2348,7 +2781,10 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
           break;
         }
         case 18: {
-          actionPlans_.AddEntriesFrom(input, _repeated_actionPlans_codec);
+          if (actionPlan_ == null) {
+            ActionPlan = new global::ActionPlanTableReply();
+          }
+          input.ReadMessage(ActionPlan);
           break;
         }
       }
@@ -2370,7 +2806,399 @@ public sealed partial class GetActionPlansReply : pb::IMessage<GetActionPlansRep
           break;
         }
         case 18: {
-          actionPlans_.AddEntriesFrom(ref input, _repeated_actionPlans_codec);
+          if (actionPlan_ == null) {
+            ActionPlan = new global::ActionPlanTableReply();
+          }
+          input.ReadMessage(ActionPlan);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class RegistActionPlanRequest : pb::IMessage<RegistActionPlanRequest>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<RegistActionPlanRequest> _parser = new pb::MessageParser<RegistActionPlanRequest>(() => new RegistActionPlanRequest());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<RegistActionPlanRequest> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[14]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public RegistActionPlanRequest() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public RegistActionPlanRequest(RegistActionPlanRequest other) : this() {
+    iP_ = other.iP_;
+    actionPlan_ = other.actionPlan_ != null ? other.actionPlan_.Clone() : null;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public RegistActionPlanRequest Clone() {
+    return new RegistActionPlanRequest(this);
+  }
+
+  /// <summary>Field number for the "IP" field.</summary>
+  public const int IPFieldNumber = 1;
+  private string iP_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string IP {
+    get { return iP_; }
+    set {
+      iP_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "ActionPlan" field.</summary>
+  public const int ActionPlanFieldNumber = 2;
+  private global::ActionPlanTableRequest actionPlan_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::ActionPlanTableRequest ActionPlan {
+    get { return actionPlan_; }
+    set {
+      actionPlan_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as RegistActionPlanRequest);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(RegistActionPlanRequest other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (IP != other.IP) return false;
+    if (!object.Equals(ActionPlan, other.ActionPlan)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (IP.Length != 0) hash ^= IP.GetHashCode();
+    if (actionPlan_ != null) hash ^= ActionPlan.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (IP.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(IP);
+    }
+    if (actionPlan_ != null) {
+      output.WriteRawTag(18);
+      output.WriteMessage(ActionPlan);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (IP.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(IP);
+    }
+    if (actionPlan_ != null) {
+      output.WriteRawTag(18);
+      output.WriteMessage(ActionPlan);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (IP.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(IP);
+    }
+    if (actionPlan_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActionPlan);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(RegistActionPlanRequest other) {
+    if (other == null) {
+      return;
+    }
+    if (other.IP.Length != 0) {
+      IP = other.IP;
+    }
+    if (other.actionPlan_ != null) {
+      if (actionPlan_ == null) {
+        ActionPlan = new global::ActionPlanTableRequest();
+      }
+      ActionPlan.MergeFrom(other.ActionPlan);
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          IP = input.ReadString();
+          break;
+        }
+        case 18: {
+          if (actionPlan_ == null) {
+            ActionPlan = new global::ActionPlanTableRequest();
+          }
+          input.ReadMessage(ActionPlan);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          IP = input.ReadString();
+          break;
+        }
+        case 18: {
+          if (actionPlan_ == null) {
+            ActionPlan = new global::ActionPlanTableRequest();
+          }
+          input.ReadMessage(ActionPlan);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class RegistActionPlanReply : pb::IMessage<RegistActionPlanReply>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<RegistActionPlanReply> _parser = new pb::MessageParser<RegistActionPlanReply>(() => new RegistActionPlanReply());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<RegistActionPlanReply> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[15]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public RegistActionPlanReply() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public RegistActionPlanReply(RegistActionPlanReply other) : this() {
+    errorCode_ = other.errorCode_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public RegistActionPlanReply Clone() {
+    return new RegistActionPlanReply(this);
+  }
+
+  /// <summary>Field number for the "ErrorCode" field.</summary>
+  public const int ErrorCodeFieldNumber = 1;
+  private int errorCode_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ErrorCode {
+    get { return errorCode_; }
+    set {
+      errorCode_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as RegistActionPlanReply);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(RegistActionPlanReply other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (ErrorCode != other.ErrorCode) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (ErrorCode != 0) hash ^= ErrorCode.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (ErrorCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ErrorCode);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (ErrorCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ErrorCode);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (ErrorCode != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ErrorCode);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(RegistActionPlanReply other) {
+    if (other == null) {
+      return;
+    }
+    if (other.ErrorCode != 0) {
+      ErrorCode = other.ErrorCode;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          ErrorCode = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ErrorCode = input.ReadInt32();
           break;
         }
       }
@@ -2392,7 +3220,7 @@ public sealed partial class StaffMasterRequest : pb::IMessage<StaffMasterRequest
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[12]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[16]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2744,7 +3572,7 @@ public sealed partial class StaffMasterReply : pb::IMessage<StaffMasterReply>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[13]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[17]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3096,7 +3924,7 @@ public sealed partial class ActionMasterRequest : pb::IMessage<ActionMasterReque
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[14]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[18]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3484,7 +4312,7 @@ public sealed partial class ActionMasterReply : pb::IMessage<ActionMasterReply>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[15]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[19]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3872,7 +4700,7 @@ public sealed partial class DestinationMasterRequest : pb::IMessage<DestinationM
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[16]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[20]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4296,7 +5124,7 @@ public sealed partial class DestinationMasterReply : pb::IMessage<DestinationMas
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[17]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[21]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4720,7 +5548,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[18]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[22]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4739,6 +5567,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
   public ActionPlanTableRequest(ActionPlanTableRequest other) : this() {
     staffID_ = other.staffID_;
     staffName_ = other.staffName_;
+    status_ = other.status_;
     actionID_ = other.actionID_;
     actionName_ = other.actionName_;
     destinationID_ = other.destinationID_;
@@ -4776,8 +5605,19 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
     }
   }
 
+  /// <summary>Field number for the "Status" field.</summary>
+  public const int StatusFieldNumber = 3;
+  private int status_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Status {
+    get { return status_; }
+    set {
+      status_ = value;
+    }
+  }
+
   /// <summary>Field number for the "ActionID" field.</summary>
-  public const int ActionIDFieldNumber = 3;
+  public const int ActionIDFieldNumber = 4;
   private string actionID_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string ActionID {
@@ -4788,7 +5628,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
   }
 
   /// <summary>Field number for the "ActionName" field.</summary>
-  public const int ActionNameFieldNumber = 4;
+  public const int ActionNameFieldNumber = 5;
   private string actionName_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string ActionName {
@@ -4799,7 +5639,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
   }
 
   /// <summary>Field number for the "DestinationID" field.</summary>
-  public const int DestinationIDFieldNumber = 5;
+  public const int DestinationIDFieldNumber = 6;
   private string destinationID_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string DestinationID {
@@ -4810,7 +5650,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
   }
 
   /// <summary>Field number for the "DestinationName" field.</summary>
-  public const int DestinationNameFieldNumber = 6;
+  public const int DestinationNameFieldNumber = 7;
   private string destinationName_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string DestinationName {
@@ -4821,7 +5661,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
   }
 
   /// <summary>Field number for the "FromTime" field.</summary>
-  public const int FromTimeFieldNumber = 7;
+  public const int FromTimeFieldNumber = 8;
   private string fromTime_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string FromTime {
@@ -4832,7 +5672,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
   }
 
   /// <summary>Field number for the "ToTime" field.</summary>
-  public const int ToTimeFieldNumber = 8;
+  public const int ToTimeFieldNumber = 9;
   private string toTime_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string ToTime {
@@ -4843,7 +5683,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
   }
 
   /// <summary>Field number for the "Memo" field.</summary>
-  public const int MemoFieldNumber = 9;
+  public const int MemoFieldNumber = 10;
   private string memo_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Memo {
@@ -4868,6 +5708,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
     }
     if (StaffID != other.StaffID) return false;
     if (StaffName != other.StaffName) return false;
+    if (Status != other.Status) return false;
     if (ActionID != other.ActionID) return false;
     if (ActionName != other.ActionName) return false;
     if (DestinationID != other.DestinationID) return false;
@@ -4883,6 +5724,7 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
     int hash = 1;
     if (StaffID.Length != 0) hash ^= StaffID.GetHashCode();
     if (StaffName.Length != 0) hash ^= StaffName.GetHashCode();
+    if (Status != 0) hash ^= Status.GetHashCode();
     if (ActionID.Length != 0) hash ^= ActionID.GetHashCode();
     if (ActionName.Length != 0) hash ^= ActionName.GetHashCode();
     if (DestinationID.Length != 0) hash ^= DestinationID.GetHashCode();
@@ -4914,32 +5756,36 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
       output.WriteRawTag(18);
       output.WriteString(StaffName);
     }
+    if (Status != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Status);
+    }
     if (ActionID.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(34);
       output.WriteString(ActionID);
     }
     if (ActionName.Length != 0) {
-      output.WriteRawTag(34);
+      output.WriteRawTag(42);
       output.WriteString(ActionName);
     }
     if (DestinationID.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteString(DestinationID);
     }
     if (DestinationName.Length != 0) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(58);
       output.WriteString(DestinationName);
     }
     if (FromTime.Length != 0) {
-      output.WriteRawTag(58);
+      output.WriteRawTag(66);
       output.WriteString(FromTime);
     }
     if (ToTime.Length != 0) {
-      output.WriteRawTag(66);
+      output.WriteRawTag(74);
       output.WriteString(ToTime);
     }
     if (Memo.Length != 0) {
-      output.WriteRawTag(74);
+      output.WriteRawTag(82);
       output.WriteString(Memo);
     }
     if (_unknownFields != null) {
@@ -4959,32 +5805,36 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
       output.WriteRawTag(18);
       output.WriteString(StaffName);
     }
+    if (Status != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Status);
+    }
     if (ActionID.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(34);
       output.WriteString(ActionID);
     }
     if (ActionName.Length != 0) {
-      output.WriteRawTag(34);
+      output.WriteRawTag(42);
       output.WriteString(ActionName);
     }
     if (DestinationID.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteString(DestinationID);
     }
     if (DestinationName.Length != 0) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(58);
       output.WriteString(DestinationName);
     }
     if (FromTime.Length != 0) {
-      output.WriteRawTag(58);
+      output.WriteRawTag(66);
       output.WriteString(FromTime);
     }
     if (ToTime.Length != 0) {
-      output.WriteRawTag(66);
+      output.WriteRawTag(74);
       output.WriteString(ToTime);
     }
     if (Memo.Length != 0) {
-      output.WriteRawTag(74);
+      output.WriteRawTag(82);
       output.WriteString(Memo);
     }
     if (_unknownFields != null) {
@@ -5001,6 +5851,9 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
     }
     if (StaffName.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(StaffName);
+    }
+    if (Status != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Status);
     }
     if (ActionID.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(ActionID);
@@ -5040,6 +5893,9 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
     if (other.StaffName.Length != 0) {
       StaffName = other.StaffName;
     }
+    if (other.Status != 0) {
+      Status = other.Status;
+    }
     if (other.ActionID.Length != 0) {
       ActionID = other.ActionID;
     }
@@ -5083,31 +5939,35 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
           StaffName = input.ReadString();
           break;
         }
-        case 26: {
-          ActionID = input.ReadString();
+        case 24: {
+          Status = input.ReadInt32();
           break;
         }
         case 34: {
-          ActionName = input.ReadString();
+          ActionID = input.ReadString();
           break;
         }
         case 42: {
-          DestinationID = input.ReadString();
+          ActionName = input.ReadString();
           break;
         }
         case 50: {
-          DestinationName = input.ReadString();
+          DestinationID = input.ReadString();
           break;
         }
         case 58: {
-          FromTime = input.ReadString();
+          DestinationName = input.ReadString();
           break;
         }
         case 66: {
-          ToTime = input.ReadString();
+          FromTime = input.ReadString();
           break;
         }
         case 74: {
+          ToTime = input.ReadString();
+          break;
+        }
+        case 82: {
           Memo = input.ReadString();
           break;
         }
@@ -5133,31 +5993,35 @@ public sealed partial class ActionPlanTableRequest : pb::IMessage<ActionPlanTabl
           StaffName = input.ReadString();
           break;
         }
-        case 26: {
-          ActionID = input.ReadString();
+        case 24: {
+          Status = input.ReadInt32();
           break;
         }
         case 34: {
-          ActionName = input.ReadString();
+          ActionID = input.ReadString();
           break;
         }
         case 42: {
-          DestinationID = input.ReadString();
+          ActionName = input.ReadString();
           break;
         }
         case 50: {
-          DestinationName = input.ReadString();
+          DestinationID = input.ReadString();
           break;
         }
         case 58: {
-          FromTime = input.ReadString();
+          DestinationName = input.ReadString();
           break;
         }
         case 66: {
-          ToTime = input.ReadString();
+          FromTime = input.ReadString();
           break;
         }
         case 74: {
+          ToTime = input.ReadString();
+          break;
+        }
+        case 82: {
           Memo = input.ReadString();
           break;
         }
@@ -5180,7 +6044,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[19]; }
+    get { return global::DestinationbardCommunicationAPIReflection.Descriptor.MessageTypes[23]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5199,6 +6063,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
   public ActionPlanTableReply(ActionPlanTableReply other) : this() {
     staffID_ = other.staffID_;
     staffName_ = other.staffName_;
+    status_ = other.status_;
     actionID_ = other.actionID_;
     actionName_ = other.actionName_;
     destinationID_ = other.destinationID_;
@@ -5236,8 +6101,19 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
     }
   }
 
+  /// <summary>Field number for the "Status" field.</summary>
+  public const int StatusFieldNumber = 3;
+  private int status_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Status {
+    get { return status_; }
+    set {
+      status_ = value;
+    }
+  }
+
   /// <summary>Field number for the "ActionID" field.</summary>
-  public const int ActionIDFieldNumber = 3;
+  public const int ActionIDFieldNumber = 4;
   private string actionID_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string ActionID {
@@ -5248,7 +6124,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
   }
 
   /// <summary>Field number for the "ActionName" field.</summary>
-  public const int ActionNameFieldNumber = 4;
+  public const int ActionNameFieldNumber = 5;
   private string actionName_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string ActionName {
@@ -5259,7 +6135,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
   }
 
   /// <summary>Field number for the "DestinationID" field.</summary>
-  public const int DestinationIDFieldNumber = 5;
+  public const int DestinationIDFieldNumber = 6;
   private string destinationID_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string DestinationID {
@@ -5270,7 +6146,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
   }
 
   /// <summary>Field number for the "DestinationName" field.</summary>
-  public const int DestinationNameFieldNumber = 6;
+  public const int DestinationNameFieldNumber = 7;
   private string destinationName_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string DestinationName {
@@ -5281,7 +6157,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
   }
 
   /// <summary>Field number for the "FromTime" field.</summary>
-  public const int FromTimeFieldNumber = 7;
+  public const int FromTimeFieldNumber = 8;
   private string fromTime_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string FromTime {
@@ -5292,7 +6168,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
   }
 
   /// <summary>Field number for the "ToTime" field.</summary>
-  public const int ToTimeFieldNumber = 8;
+  public const int ToTimeFieldNumber = 9;
   private string toTime_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string ToTime {
@@ -5303,7 +6179,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
   }
 
   /// <summary>Field number for the "Memo" field.</summary>
-  public const int MemoFieldNumber = 9;
+  public const int MemoFieldNumber = 10;
   private string memo_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public string Memo {
@@ -5328,6 +6204,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
     }
     if (StaffID != other.StaffID) return false;
     if (StaffName != other.StaffName) return false;
+    if (Status != other.Status) return false;
     if (ActionID != other.ActionID) return false;
     if (ActionName != other.ActionName) return false;
     if (DestinationID != other.DestinationID) return false;
@@ -5343,6 +6220,7 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
     int hash = 1;
     if (StaffID.Length != 0) hash ^= StaffID.GetHashCode();
     if (StaffName.Length != 0) hash ^= StaffName.GetHashCode();
+    if (Status != 0) hash ^= Status.GetHashCode();
     if (ActionID.Length != 0) hash ^= ActionID.GetHashCode();
     if (ActionName.Length != 0) hash ^= ActionName.GetHashCode();
     if (DestinationID.Length != 0) hash ^= DestinationID.GetHashCode();
@@ -5374,32 +6252,36 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
       output.WriteRawTag(18);
       output.WriteString(StaffName);
     }
+    if (Status != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Status);
+    }
     if (ActionID.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(34);
       output.WriteString(ActionID);
     }
     if (ActionName.Length != 0) {
-      output.WriteRawTag(34);
+      output.WriteRawTag(42);
       output.WriteString(ActionName);
     }
     if (DestinationID.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteString(DestinationID);
     }
     if (DestinationName.Length != 0) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(58);
       output.WriteString(DestinationName);
     }
     if (FromTime.Length != 0) {
-      output.WriteRawTag(58);
+      output.WriteRawTag(66);
       output.WriteString(FromTime);
     }
     if (ToTime.Length != 0) {
-      output.WriteRawTag(66);
+      output.WriteRawTag(74);
       output.WriteString(ToTime);
     }
     if (Memo.Length != 0) {
-      output.WriteRawTag(74);
+      output.WriteRawTag(82);
       output.WriteString(Memo);
     }
     if (_unknownFields != null) {
@@ -5419,32 +6301,36 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
       output.WriteRawTag(18);
       output.WriteString(StaffName);
     }
+    if (Status != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Status);
+    }
     if (ActionID.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(34);
       output.WriteString(ActionID);
     }
     if (ActionName.Length != 0) {
-      output.WriteRawTag(34);
+      output.WriteRawTag(42);
       output.WriteString(ActionName);
     }
     if (DestinationID.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteString(DestinationID);
     }
     if (DestinationName.Length != 0) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(58);
       output.WriteString(DestinationName);
     }
     if (FromTime.Length != 0) {
-      output.WriteRawTag(58);
+      output.WriteRawTag(66);
       output.WriteString(FromTime);
     }
     if (ToTime.Length != 0) {
-      output.WriteRawTag(66);
+      output.WriteRawTag(74);
       output.WriteString(ToTime);
     }
     if (Memo.Length != 0) {
-      output.WriteRawTag(74);
+      output.WriteRawTag(82);
       output.WriteString(Memo);
     }
     if (_unknownFields != null) {
@@ -5461,6 +6347,9 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
     }
     if (StaffName.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(StaffName);
+    }
+    if (Status != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Status);
     }
     if (ActionID.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(ActionID);
@@ -5500,6 +6389,9 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
     if (other.StaffName.Length != 0) {
       StaffName = other.StaffName;
     }
+    if (other.Status != 0) {
+      Status = other.Status;
+    }
     if (other.ActionID.Length != 0) {
       ActionID = other.ActionID;
     }
@@ -5543,31 +6435,35 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
           StaffName = input.ReadString();
           break;
         }
-        case 26: {
-          ActionID = input.ReadString();
+        case 24: {
+          Status = input.ReadInt32();
           break;
         }
         case 34: {
-          ActionName = input.ReadString();
+          ActionID = input.ReadString();
           break;
         }
         case 42: {
-          DestinationID = input.ReadString();
+          ActionName = input.ReadString();
           break;
         }
         case 50: {
-          DestinationName = input.ReadString();
+          DestinationID = input.ReadString();
           break;
         }
         case 58: {
-          FromTime = input.ReadString();
+          DestinationName = input.ReadString();
           break;
         }
         case 66: {
-          ToTime = input.ReadString();
+          FromTime = input.ReadString();
           break;
         }
         case 74: {
+          ToTime = input.ReadString();
+          break;
+        }
+        case 82: {
           Memo = input.ReadString();
           break;
         }
@@ -5593,31 +6489,35 @@ public sealed partial class ActionPlanTableReply : pb::IMessage<ActionPlanTableR
           StaffName = input.ReadString();
           break;
         }
-        case 26: {
-          ActionID = input.ReadString();
+        case 24: {
+          Status = input.ReadInt32();
           break;
         }
         case 34: {
-          ActionName = input.ReadString();
+          ActionID = input.ReadString();
           break;
         }
         case 42: {
-          DestinationID = input.ReadString();
+          ActionName = input.ReadString();
           break;
         }
         case 50: {
-          DestinationName = input.ReadString();
+          DestinationID = input.ReadString();
           break;
         }
         case 58: {
-          FromTime = input.ReadString();
+          DestinationName = input.ReadString();
           break;
         }
         case 66: {
-          ToTime = input.ReadString();
+          FromTime = input.ReadString();
           break;
         }
         case 74: {
+          ToTime = input.ReadString();
+          break;
+        }
+        case 82: {
           Memo = input.ReadString();
           break;
         }

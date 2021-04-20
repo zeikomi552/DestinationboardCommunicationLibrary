@@ -52,10 +52,14 @@ public static partial class DestinationbardCommunicationAPI
   static readonly grpc::Marshaller<global::GetActionsReply> __Marshaller_GetActionsReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetActionsReply.Parser));
   static readonly grpc::Marshaller<global::RegistActionsRequest> __Marshaller_RegistActionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionsRequest.Parser));
   static readonly grpc::Marshaller<global::RegistActionsReply> __Marshaller_RegistActionsReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionsReply.Parser));
-  static readonly grpc::Marshaller<global::RegistActionPlansRequest> __Marshaller_RegistActionPlansRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionPlansRequest.Parser));
-  static readonly grpc::Marshaller<global::RegistActionPlansReply> __Marshaller_RegistActionPlansReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionPlansReply.Parser));
   static readonly grpc::Marshaller<global::GetActionPlansRequest> __Marshaller_GetActionPlansRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetActionPlansRequest.Parser));
   static readonly grpc::Marshaller<global::GetActionPlansReply> __Marshaller_GetActionPlansReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetActionPlansReply.Parser));
+  static readonly grpc::Marshaller<global::RegistActionPlansRequest> __Marshaller_RegistActionPlansRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionPlansRequest.Parser));
+  static readonly grpc::Marshaller<global::RegistActionPlansReply> __Marshaller_RegistActionPlansReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionPlansReply.Parser));
+  static readonly grpc::Marshaller<global::GetActionPlanRequest> __Marshaller_GetActionPlanRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetActionPlanRequest.Parser));
+  static readonly grpc::Marshaller<global::GetActionPlanReply> __Marshaller_GetActionPlanReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetActionPlanReply.Parser));
+  static readonly grpc::Marshaller<global::RegistActionPlanRequest> __Marshaller_RegistActionPlanRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionPlanRequest.Parser));
+  static readonly grpc::Marshaller<global::RegistActionPlanReply> __Marshaller_RegistActionPlanReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionPlanReply.Parser));
   static readonly grpc::Marshaller<global::StaffMasterRequest> __Marshaller_StaffMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::StaffMasterRequest.Parser));
   static readonly grpc::Marshaller<global::StaffMasterReply> __Marshaller_StaffMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::StaffMasterReply.Parser));
   static readonly grpc::Marshaller<global::ActionMasterRequest> __Marshaller_ActionMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionMasterRequest.Parser));
@@ -93,6 +97,13 @@ public static partial class DestinationbardCommunicationAPI
       __Marshaller_RegistActionsRequest,
       __Marshaller_RegistActionsReply);
 
+  static readonly grpc::Method<global::GetActionPlansRequest, global::GetActionPlansReply> __Method_GetActionPlans = new grpc::Method<global::GetActionPlansRequest, global::GetActionPlansReply>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "GetActionPlans",
+      __Marshaller_GetActionPlansRequest,
+      __Marshaller_GetActionPlansReply);
+
   static readonly grpc::Method<global::RegistActionPlansRequest, global::RegistActionPlansReply> __Method_RegistActionPlans = new grpc::Method<global::RegistActionPlansRequest, global::RegistActionPlansReply>(
       grpc::MethodType.Unary,
       __ServiceName,
@@ -100,12 +111,19 @@ public static partial class DestinationbardCommunicationAPI
       __Marshaller_RegistActionPlansRequest,
       __Marshaller_RegistActionPlansReply);
 
-  static readonly grpc::Method<global::GetActionPlansRequest, global::GetActionPlansReply> __Method_GetActionPlans = new grpc::Method<global::GetActionPlansRequest, global::GetActionPlansReply>(
+  static readonly grpc::Method<global::GetActionPlanRequest, global::GetActionPlanReply> __Method_GetActionPlan = new grpc::Method<global::GetActionPlanRequest, global::GetActionPlanReply>(
       grpc::MethodType.Unary,
       __ServiceName,
-      "GetActionPlans",
-      __Marshaller_GetActionPlansRequest,
-      __Marshaller_GetActionPlansReply);
+      "GetActionPlan",
+      __Marshaller_GetActionPlanRequest,
+      __Marshaller_GetActionPlanReply);
+
+  static readonly grpc::Method<global::RegistActionPlanRequest, global::RegistActionPlanReply> __Method_RegistActionPlan = new grpc::Method<global::RegistActionPlanRequest, global::RegistActionPlanReply>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "RegistActionPlan",
+      __Marshaller_RegistActionPlanRequest,
+      __Marshaller_RegistActionPlanReply);
 
   static readonly grpc::Method<global::StaffMasterRequest, global::StaffMasterReply> __Method_StaffMaster = new grpc::Method<global::StaffMasterRequest, global::StaffMasterReply>(
       grpc::MethodType.Unary,
@@ -190,7 +208,18 @@ public static partial class DestinationbardCommunicationAPI
     }
 
     /// <summary>
-    /// 行動予定の登録
+    /// 行動予定一覧の取得
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public virtual global::System.Threading.Tasks.Task<global::GetActionPlansReply> GetActionPlans(global::GetActionPlansRequest request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    /// <summary>
+    /// 行動予定一覧の登録
     /// </summary>
     /// <param name="request">The request received from the client.</param>
     /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -201,12 +230,23 @@ public static partial class DestinationbardCommunicationAPI
     }
 
     /// <summary>
-    /// 現在の行動予定一覧表
+    /// 個人の行動予定の更新
     /// </summary>
     /// <param name="request">The request received from the client.</param>
     /// <param name="context">The context of the server-side call handler being invoked.</param>
     /// <returns>The response to send back to the client (wrapped by a task).</returns>
-    public virtual global::System.Threading.Tasks.Task<global::GetActionPlansReply> GetActionPlans(global::GetActionPlansRequest request, grpc::ServerCallContext context)
+    public virtual global::System.Threading.Tasks.Task<global::GetActionPlanReply> GetActionPlan(global::GetActionPlanRequest request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    /// <summary>
+    /// 個人の行動予定の取得
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public virtual global::System.Threading.Tasks.Task<global::RegistActionPlanReply> RegistActionPlan(global::RegistActionPlanRequest request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -457,51 +497,7 @@ public static partial class DestinationbardCommunicationAPI
       return CallInvoker.AsyncUnaryCall(__Method_RegistActions, null, options, request);
     }
     /// <summary>
-    /// 行動予定の登録
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-    /// <param name="cancellationToken">An optional token for canceling the call.</param>
-    /// <returns>The response received from the server.</returns>
-    public virtual global::RegistActionPlansReply RegistActionPlans(global::RegistActionPlansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-    {
-      return RegistActionPlans(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-    }
-    /// <summary>
-    /// 行動予定の登録
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="options">The options for the call.</param>
-    /// <returns>The response received from the server.</returns>
-    public virtual global::RegistActionPlansReply RegistActionPlans(global::RegistActionPlansRequest request, grpc::CallOptions options)
-    {
-      return CallInvoker.BlockingUnaryCall(__Method_RegistActionPlans, null, options, request);
-    }
-    /// <summary>
-    /// 行動予定の登録
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-    /// <param name="cancellationToken">An optional token for canceling the call.</param>
-    /// <returns>The call object.</returns>
-    public virtual grpc::AsyncUnaryCall<global::RegistActionPlansReply> RegistActionPlansAsync(global::RegistActionPlansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-    {
-      return RegistActionPlansAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-    }
-    /// <summary>
-    /// 行動予定の登録
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="options">The options for the call.</param>
-    /// <returns>The call object.</returns>
-    public virtual grpc::AsyncUnaryCall<global::RegistActionPlansReply> RegistActionPlansAsync(global::RegistActionPlansRequest request, grpc::CallOptions options)
-    {
-      return CallInvoker.AsyncUnaryCall(__Method_RegistActionPlans, null, options, request);
-    }
-    /// <summary>
-    /// 現在の行動予定一覧表
+    /// 行動予定一覧の取得
     /// </summary>
     /// <param name="request">The request to send to the server.</param>
     /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -513,7 +509,7 @@ public static partial class DestinationbardCommunicationAPI
       return GetActionPlans(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
     /// <summary>
-    /// 現在の行動予定一覧表
+    /// 行動予定一覧の取得
     /// </summary>
     /// <param name="request">The request to send to the server.</param>
     /// <param name="options">The options for the call.</param>
@@ -523,7 +519,7 @@ public static partial class DestinationbardCommunicationAPI
       return CallInvoker.BlockingUnaryCall(__Method_GetActionPlans, null, options, request);
     }
     /// <summary>
-    /// 現在の行動予定一覧表
+    /// 行動予定一覧の取得
     /// </summary>
     /// <param name="request">The request to send to the server.</param>
     /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -535,7 +531,7 @@ public static partial class DestinationbardCommunicationAPI
       return GetActionPlansAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
     /// <summary>
-    /// 現在の行動予定一覧表
+    /// 行動予定一覧の取得
     /// </summary>
     /// <param name="request">The request to send to the server.</param>
     /// <param name="options">The options for the call.</param>
@@ -543,6 +539,138 @@ public static partial class DestinationbardCommunicationAPI
     public virtual grpc::AsyncUnaryCall<global::GetActionPlansReply> GetActionPlansAsync(global::GetActionPlansRequest request, grpc::CallOptions options)
     {
       return CallInvoker.AsyncUnaryCall(__Method_GetActionPlans, null, options, request);
+    }
+    /// <summary>
+    /// 行動予定一覧の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistActionPlansReply RegistActionPlans(global::RegistActionPlansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistActionPlans(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動予定一覧の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistActionPlansReply RegistActionPlans(global::RegistActionPlansRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_RegistActionPlans, null, options, request);
+    }
+    /// <summary>
+    /// 行動予定一覧の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistActionPlansReply> RegistActionPlansAsync(global::RegistActionPlansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistActionPlansAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 行動予定一覧の登録
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistActionPlansReply> RegistActionPlansAsync(global::RegistActionPlansRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_RegistActionPlans, null, options, request);
+    }
+    /// <summary>
+    /// 個人の行動予定の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::GetActionPlanReply GetActionPlan(global::GetActionPlanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetActionPlan(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 個人の行動予定の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::GetActionPlanReply GetActionPlan(global::GetActionPlanRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_GetActionPlan, null, options, request);
+    }
+    /// <summary>
+    /// 個人の行動予定の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::GetActionPlanReply> GetActionPlanAsync(global::GetActionPlanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetActionPlanAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 個人の行動予定の更新
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::GetActionPlanReply> GetActionPlanAsync(global::GetActionPlanRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_GetActionPlan, null, options, request);
+    }
+    /// <summary>
+    /// 個人の行動予定の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistActionPlanReply RegistActionPlan(global::RegistActionPlanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistActionPlan(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 個人の行動予定の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::RegistActionPlanReply RegistActionPlan(global::RegistActionPlanRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_RegistActionPlan, null, options, request);
+    }
+    /// <summary>
+    /// 個人の行動予定の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistActionPlanReply> RegistActionPlanAsync(global::RegistActionPlanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return RegistActionPlanAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// 個人の行動予定の取得
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::RegistActionPlanReply> RegistActionPlanAsync(global::RegistActionPlanRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_RegistActionPlan, null, options, request);
     }
     /// <summary>
     /// スタッフマスター
@@ -736,8 +864,10 @@ public static partial class DestinationbardCommunicationAPI
         .AddMethod(__Method_RegistStaff, serviceImpl.RegistStaff)
         .AddMethod(__Method_GetActions, serviceImpl.GetActions)
         .AddMethod(__Method_RegistActions, serviceImpl.RegistActions)
-        .AddMethod(__Method_RegistActionPlans, serviceImpl.RegistActionPlans)
         .AddMethod(__Method_GetActionPlans, serviceImpl.GetActionPlans)
+        .AddMethod(__Method_RegistActionPlans, serviceImpl.RegistActionPlans)
+        .AddMethod(__Method_GetActionPlan, serviceImpl.GetActionPlan)
+        .AddMethod(__Method_RegistActionPlan, serviceImpl.RegistActionPlan)
         .AddMethod(__Method_StaffMaster, serviceImpl.StaffMaster)
         .AddMethod(__Method_ActionMaster, serviceImpl.ActionMaster)
         .AddMethod(__Method_DestinationMaster, serviceImpl.DestinationMaster)
@@ -754,8 +884,10 @@ public static partial class DestinationbardCommunicationAPI
     serviceBinder.AddMethod(__Method_RegistStaff, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistStaffRequest, global::RegistStaffReply>(serviceImpl.RegistStaff));
     serviceBinder.AddMethod(__Method_GetActions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GetActionsRequest, global::GetActionsReply>(serviceImpl.GetActions));
     serviceBinder.AddMethod(__Method_RegistActions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionsRequest, global::RegistActionsReply>(serviceImpl.RegistActions));
-    serviceBinder.AddMethod(__Method_RegistActionPlans, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionPlansRequest, global::RegistActionPlansReply>(serviceImpl.RegistActionPlans));
     serviceBinder.AddMethod(__Method_GetActionPlans, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GetActionPlansRequest, global::GetActionPlansReply>(serviceImpl.GetActionPlans));
+    serviceBinder.AddMethod(__Method_RegistActionPlans, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionPlansRequest, global::RegistActionPlansReply>(serviceImpl.RegistActionPlans));
+    serviceBinder.AddMethod(__Method_GetActionPlan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GetActionPlanRequest, global::GetActionPlanReply>(serviceImpl.GetActionPlan));
+    serviceBinder.AddMethod(__Method_RegistActionPlan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionPlanRequest, global::RegistActionPlanReply>(serviceImpl.RegistActionPlan));
     serviceBinder.AddMethod(__Method_StaffMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::StaffMasterRequest, global::StaffMasterReply>(serviceImpl.StaffMaster));
     serviceBinder.AddMethod(__Method_ActionMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ActionMasterRequest, global::ActionMasterReply>(serviceImpl.ActionMaster));
     serviceBinder.AddMethod(__Method_DestinationMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DestinationMasterRequest, global::DestinationMasterReply>(serviceImpl.DestinationMaster));
