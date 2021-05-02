@@ -27,9 +27,6 @@ service DestinationbardCommunicationAPI{
 	// 個人の行動予定の取得
 	rpc RegistActionPlan (RegistActionPlanRequest) returns(RegistActionPlanReply) {}
 
-	// スタッフマスター
-	rpc StaffMaster (StaffMasterRequest) returns(StaffMasterReply) {}
-
 	// 行動マスター
 	rpc ActionMaster (ActionMasterRequest) returns(ActionMasterReply) {}
 
@@ -38,6 +35,9 @@ service DestinationbardCommunicationAPI{
 
 	// 現在の行動予定一覧表
 	rpc ActionPlanTable (ActionPlanTableRequest) returns(ActionPlanTableReply) {}
+
+	// スタッフマスター
+	rpc StaffMaster (StaffMasterRequest) returns(StaffMasterReply) {}
 
 }
 message GetStaffsRequest {
@@ -98,22 +98,6 @@ message RegistActionPlanRequest {
 }
 message RegistActionPlanReply {
 	int32 ErrorCode = 1;
-}
-message StaffMasterRequest {
-	string StaffID = 1;
-	int32 SortOrder = 2;
-	string StaffName = 3;
-	bool Display = 4;
-	string CreateDate = 5;
-	string CreateUser = 6;
-}
-message StaffMasterReply {
-	string StaffID = 1;
-	int32 SortOrder = 2;
-	string StaffName = 3;
-	bool Display = 4;
-	string CreateDate = 5;
-	string CreateUser = 6;
 }
 message ActionMasterRequest {
 	string ActionID = 1;
@@ -176,4 +160,24 @@ message ActionPlanTableReply {
 	string FromTime = 8;
 	string ToTime = 9;
 	string Memo = 10;
+}
+message StaffMasterRequest {
+	string StaffID = 1;
+	int32 SortOrder = 2;
+	string StaffName = 3;
+	bool Display = 4;
+	string FelicaID = 5;
+	string QRCode = 6;
+	string CreateDate = 7;
+	string CreateUser = 8;
+}
+message StaffMasterReply {
+	string StaffID = 1;
+	int32 SortOrder = 2;
+	string StaffName = 3;
+	bool Display = 4;
+	string FelicaID = 5;
+	string QRCode = 6;
+	string CreateDate = 7;
+	string CreateUser = 8;
 }

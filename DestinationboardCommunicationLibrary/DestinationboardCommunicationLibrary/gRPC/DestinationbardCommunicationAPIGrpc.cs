@@ -60,14 +60,14 @@ public static partial class DestinationbardCommunicationAPI
   static readonly grpc::Marshaller<global::GetActionPlanReply> __Marshaller_GetActionPlanReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GetActionPlanReply.Parser));
   static readonly grpc::Marshaller<global::RegistActionPlanRequest> __Marshaller_RegistActionPlanRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionPlanRequest.Parser));
   static readonly grpc::Marshaller<global::RegistActionPlanReply> __Marshaller_RegistActionPlanReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::RegistActionPlanReply.Parser));
-  static readonly grpc::Marshaller<global::StaffMasterRequest> __Marshaller_StaffMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::StaffMasterRequest.Parser));
-  static readonly grpc::Marshaller<global::StaffMasterReply> __Marshaller_StaffMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::StaffMasterReply.Parser));
   static readonly grpc::Marshaller<global::ActionMasterRequest> __Marshaller_ActionMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionMasterRequest.Parser));
   static readonly grpc::Marshaller<global::ActionMasterReply> __Marshaller_ActionMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionMasterReply.Parser));
   static readonly grpc::Marshaller<global::DestinationMasterRequest> __Marshaller_DestinationMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DestinationMasterRequest.Parser));
   static readonly grpc::Marshaller<global::DestinationMasterReply> __Marshaller_DestinationMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DestinationMasterReply.Parser));
   static readonly grpc::Marshaller<global::ActionPlanTableRequest> __Marshaller_ActionPlanTableRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionPlanTableRequest.Parser));
   static readonly grpc::Marshaller<global::ActionPlanTableReply> __Marshaller_ActionPlanTableReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ActionPlanTableReply.Parser));
+  static readonly grpc::Marshaller<global::StaffMasterRequest> __Marshaller_StaffMasterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::StaffMasterRequest.Parser));
+  static readonly grpc::Marshaller<global::StaffMasterReply> __Marshaller_StaffMasterReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::StaffMasterReply.Parser));
 
   static readonly grpc::Method<global::GetStaffsRequest, global::GetStaffsReply> __Method_GetStaffs = new grpc::Method<global::GetStaffsRequest, global::GetStaffsReply>(
       grpc::MethodType.Unary,
@@ -125,13 +125,6 @@ public static partial class DestinationbardCommunicationAPI
       __Marshaller_RegistActionPlanRequest,
       __Marshaller_RegistActionPlanReply);
 
-  static readonly grpc::Method<global::StaffMasterRequest, global::StaffMasterReply> __Method_StaffMaster = new grpc::Method<global::StaffMasterRequest, global::StaffMasterReply>(
-      grpc::MethodType.Unary,
-      __ServiceName,
-      "StaffMaster",
-      __Marshaller_StaffMasterRequest,
-      __Marshaller_StaffMasterReply);
-
   static readonly grpc::Method<global::ActionMasterRequest, global::ActionMasterReply> __Method_ActionMaster = new grpc::Method<global::ActionMasterRequest, global::ActionMasterReply>(
       grpc::MethodType.Unary,
       __ServiceName,
@@ -152,6 +145,13 @@ public static partial class DestinationbardCommunicationAPI
       "ActionPlanTable",
       __Marshaller_ActionPlanTableRequest,
       __Marshaller_ActionPlanTableReply);
+
+  static readonly grpc::Method<global::StaffMasterRequest, global::StaffMasterReply> __Method_StaffMaster = new grpc::Method<global::StaffMasterRequest, global::StaffMasterReply>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "StaffMaster",
+      __Marshaller_StaffMasterRequest,
+      __Marshaller_StaffMasterReply);
 
   /// <summary>Service descriptor</summary>
   public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -252,17 +252,6 @@ public static partial class DestinationbardCommunicationAPI
     }
 
     /// <summary>
-    /// スタッフマスター
-    /// </summary>
-    /// <param name="request">The request received from the client.</param>
-    /// <param name="context">The context of the server-side call handler being invoked.</param>
-    /// <returns>The response to send back to the client (wrapped by a task).</returns>
-    public virtual global::System.Threading.Tasks.Task<global::StaffMasterReply> StaffMaster(global::StaffMasterRequest request, grpc::ServerCallContext context)
-    {
-      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-    }
-
-    /// <summary>
     /// 行動マスター
     /// </summary>
     /// <param name="request">The request received from the client.</param>
@@ -291,6 +280,17 @@ public static partial class DestinationbardCommunicationAPI
     /// <param name="context">The context of the server-side call handler being invoked.</param>
     /// <returns>The response to send back to the client (wrapped by a task).</returns>
     public virtual global::System.Threading.Tasks.Task<global::ActionPlanTableReply> ActionPlanTable(global::ActionPlanTableRequest request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public virtual global::System.Threading.Tasks.Task<global::StaffMasterReply> StaffMaster(global::StaffMasterRequest request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -673,50 +673,6 @@ public static partial class DestinationbardCommunicationAPI
       return CallInvoker.AsyncUnaryCall(__Method_RegistActionPlan, null, options, request);
     }
     /// <summary>
-    /// スタッフマスター
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-    /// <param name="cancellationToken">An optional token for canceling the call.</param>
-    /// <returns>The response received from the server.</returns>
-    public virtual global::StaffMasterReply StaffMaster(global::StaffMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-    {
-      return StaffMaster(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-    }
-    /// <summary>
-    /// スタッフマスター
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="options">The options for the call.</param>
-    /// <returns>The response received from the server.</returns>
-    public virtual global::StaffMasterReply StaffMaster(global::StaffMasterRequest request, grpc::CallOptions options)
-    {
-      return CallInvoker.BlockingUnaryCall(__Method_StaffMaster, null, options, request);
-    }
-    /// <summary>
-    /// スタッフマスター
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-    /// <param name="cancellationToken">An optional token for canceling the call.</param>
-    /// <returns>The call object.</returns>
-    public virtual grpc::AsyncUnaryCall<global::StaffMasterReply> StaffMasterAsync(global::StaffMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-    {
-      return StaffMasterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-    }
-    /// <summary>
-    /// スタッフマスター
-    /// </summary>
-    /// <param name="request">The request to send to the server.</param>
-    /// <param name="options">The options for the call.</param>
-    /// <returns>The call object.</returns>
-    public virtual grpc::AsyncUnaryCall<global::StaffMasterReply> StaffMasterAsync(global::StaffMasterRequest request, grpc::CallOptions options)
-    {
-      return CallInvoker.AsyncUnaryCall(__Method_StaffMaster, null, options, request);
-    }
-    /// <summary>
     /// 行動マスター
     /// </summary>
     /// <param name="request">The request to send to the server.</param>
@@ -848,6 +804,50 @@ public static partial class DestinationbardCommunicationAPI
     {
       return CallInvoker.AsyncUnaryCall(__Method_ActionPlanTable, null, options, request);
     }
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::StaffMasterReply StaffMaster(global::StaffMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return StaffMaster(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The response received from the server.</returns>
+    public virtual global::StaffMasterReply StaffMaster(global::StaffMasterRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_StaffMaster, null, options, request);
+    }
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+    /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+    /// <param name="cancellationToken">An optional token for canceling the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::StaffMasterReply> StaffMasterAsync(global::StaffMasterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return StaffMasterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    /// <summary>
+    /// スタッフマスター
+    /// </summary>
+    /// <param name="request">The request to send to the server.</param>
+    /// <param name="options">The options for the call.</param>
+    /// <returns>The call object.</returns>
+    public virtual grpc::AsyncUnaryCall<global::StaffMasterReply> StaffMasterAsync(global::StaffMasterRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_StaffMaster, null, options, request);
+    }
     /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
     protected override DestinationbardCommunicationAPIClient NewInstance(ClientBaseConfiguration configuration)
     {
@@ -868,10 +868,10 @@ public static partial class DestinationbardCommunicationAPI
         .AddMethod(__Method_RegistActionPlans, serviceImpl.RegistActionPlans)
         .AddMethod(__Method_GetActionPlan, serviceImpl.GetActionPlan)
         .AddMethod(__Method_RegistActionPlan, serviceImpl.RegistActionPlan)
-        .AddMethod(__Method_StaffMaster, serviceImpl.StaffMaster)
         .AddMethod(__Method_ActionMaster, serviceImpl.ActionMaster)
         .AddMethod(__Method_DestinationMaster, serviceImpl.DestinationMaster)
-        .AddMethod(__Method_ActionPlanTable, serviceImpl.ActionPlanTable).Build();
+        .AddMethod(__Method_ActionPlanTable, serviceImpl.ActionPlanTable)
+        .AddMethod(__Method_StaffMaster, serviceImpl.StaffMaster).Build();
   }
 
   /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -888,10 +888,10 @@ public static partial class DestinationbardCommunicationAPI
     serviceBinder.AddMethod(__Method_RegistActionPlans, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionPlansRequest, global::RegistActionPlansReply>(serviceImpl.RegistActionPlans));
     serviceBinder.AddMethod(__Method_GetActionPlan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GetActionPlanRequest, global::GetActionPlanReply>(serviceImpl.GetActionPlan));
     serviceBinder.AddMethod(__Method_RegistActionPlan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::RegistActionPlanRequest, global::RegistActionPlanReply>(serviceImpl.RegistActionPlan));
-    serviceBinder.AddMethod(__Method_StaffMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::StaffMasterRequest, global::StaffMasterReply>(serviceImpl.StaffMaster));
     serviceBinder.AddMethod(__Method_ActionMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ActionMasterRequest, global::ActionMasterReply>(serviceImpl.ActionMaster));
     serviceBinder.AddMethod(__Method_DestinationMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DestinationMasterRequest, global::DestinationMasterReply>(serviceImpl.DestinationMaster));
     serviceBinder.AddMethod(__Method_ActionPlanTable, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ActionPlanTableRequest, global::ActionPlanTableReply>(serviceImpl.ActionPlanTable));
+    serviceBinder.AddMethod(__Method_StaffMaster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::StaffMasterRequest, global::StaffMasterReply>(serviceImpl.StaffMaster));
   }
 
 }
